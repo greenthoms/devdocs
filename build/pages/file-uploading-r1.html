@@ -1,0 +1,231 @@
+<!doctype html>
+<html id="documentation">
+
+<head>
+    <meta charset="utf-8">
+
+<!-- Always force latest IE rendering engine or request Chrome Frame -->
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Import Webfonts -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<!-- Use title if it's in the page YAML frontmatter -->
+<title>Style Guide</title>
+
+<!-- Compiled CSS file -->
+<link href="../css/app-68d5533e.css" rel="stylesheet" type="text/css" /><link href="../css/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+<!-- JS -->
+<script src="../js/jquery.min-164ab4af.js" type="text/javascript"></script><script src="../js/chosen.jquery.min-1305aab5.js" type="text/javascript"></script><script src="../js/kendo.all.min-6e86ce05.js" type="text/javascript"></script><script src="../js/bootstrap.min-8b5e6192.js" type="text/javascript"></script><script src="../js/jquery-ui.min-e1e0eb3a.js" type="text/javascript"></script>
+
+<!-- Flexbox Grid -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
+</head>
+  
+  <body class="pages pages_file-uploading-r1">
+  
+  <header>
+      <nav class="navbar navbar-static-top pageHeader">
+  <div class="container">
+    <div class="navbar-header">
+      <h1>Synergetic Design Guidelines</h1>
+    </div>
+  </div>
+</nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar col-xs-12 col-sm-2">
+          <!-- Could this partial be renamed index? -->
+
+<nav>
+    <div class="sideNav list-group">
+        
+        <a class="list-group-item" href="form-controls.html">Forms Controls</a>
+        <a class="list-group-item" href="form-attributes.html">Forms Attributes</a>
+        <a class="list-group-item" href="form-validation.html">Form Validation</a>
+        <a class="list-group-item" href="navigation.html">Navigation</a>
+        <a class="list-group-item" href="buttons.html">Buttons</a>
+        <a class="list-group-item" href="modals.html">Modals</a>
+        <a class="list-group-item" href="progress-feedback.html">Progress &amp; Feedback</a>
+        <a class="list-group-item" href="emails.html">Emails</a>
+        <a class="list-group-item" href="tooltips-popovers.html">Tooltips &amp; Popovers</a>
+        <a class="list-group-item" href="payment.html">Payment</a>
+        <a class="list-group-item" href="blank-slate.html">Blank Slate</a>
+        <a class="list-group-item" href="grids.html">Grids</a>
+        <a class="list-group-item" href="pageLayout.html">Layout</a>
+        <a class="list-group-item" href="widgets/widgets.html">Widgets</a>
+        <br>
+        <a class="list-group-item" href="css-standards.html">CSS Standards</a>
+        <a class="list-group-item" href="tools-and-frameworks.html">Tools &amp; Frameworks</a>
+        <a class="list-group-item" href="visual-design.html">Visual Design</a>
+        <a class="list-group-item" href="accessibility.html">Accessibility</a>
+        <a class="list-group-item" href="../prototypes.html">Prototypes</a>
+
+    </div>
+</nav>
+
+
+        </nav>
+      
+        <!-- Main content -->
+        <main class="mainContent col-xs-12 col-sm-8">
+          <style>
+	.alertToast {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.alertToast .alert {
+		margin: 0;
+		border-bottom: 0;
+		border-radius: 0;
+		font-size: 12px;
+		padding: 10px;
+	}
+
+	.alertToast .progress {
+		margin-bottom: 10px;
+	}
+
+	.progressSmall {
+		height: 4px;
+	}
+</style>
+
+<div class="clearfix">
+<h2 class="pull-left">Toast Loading</h2>
+<a class="btn btn-default showToast pull-right">Show/Hide toast</a>
+</div>
+
+<!-- Code example -->
+<pre class="highlight html"><code><span class="c">&lt;!-- Toast Alert Container --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alertToast"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+
+	<span class="c">&lt;!-- Alert Danger Multiple --&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"uPaddingBxxs text-center"</span><span class="nt">&gt;</span>There was an error uploading <span class="nt">&lt;strong&gt;</span>medical-certificate.pdf and 7 other files. <span class="nt">&lt;/strong&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Manage documents<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/p&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress progressSmall"</span><span class="nt">&gt;</span>
+	  		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar progress-bar-danger"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">aria-valuenow=</span><span class="s">"60"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 100%;"</span><span class="nt">&gt;</span>
+	    		<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>100%<span class="nt">&lt;/span&gt;</span>
+	    	<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+
+	<span class="c">&lt;!-- Alert Info Multiple --&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"uPaddingBxxs text-center"</span><span class="nt">&gt;</span>Uploading <span class="nt">&lt;strong&gt;</span>report-card.pdf<span class="nt">&lt;/strong&gt;</span> (12 files remaining)
+			<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"text-danger uMarginLs"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"material-icons md-14"</span><span class="nt">&gt;</span>cancel<span class="nt">&lt;/i&gt;</span>Cancel<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/p&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress progressSmall"</span><span class="nt">&gt;</span>
+	  		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">aria-valuenow=</span><span class="s">"60"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 60%;"</span><span class="nt">&gt;</span>
+	    		<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>60%<span class="nt">&lt;/span&gt;</span>
+	    	<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+
+		<span class="c">&lt;!-- Alert Info Multiple --&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"uPaddingBxxs text-center"</span><span class="nt">&gt;</span>Uploading <span class="nt">&lt;strong&gt;</span>photo.jpg<span class="nt">&lt;/strong&gt;</span> (10 files remaining)
+			<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"text-danger uMarginLs"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"material-icons md-14"</span><span class="nt">&gt;</span>cancel<span class="nt">&lt;/i&gt;</span>Cancel<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/p&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress progressSmall"</span><span class="nt">&gt;</span>
+	  		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">aria-valuenow=</span><span class="s">"80"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 80%;"</span><span class="nt">&gt;</span>
+	    		<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>80%<span class="nt">&lt;/span&gt;</span>
+	    	<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+
+	<span class="c">&lt;!-- Alert Success Multiple --&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"uPaddingBxxs text-center"</span><span class="nt">&gt;</span>Successfully uploaded 7 files.<span class="nt">&lt;/p&gt;</span> 
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress progressSmall"</span><span class="nt">&gt;</span>
+	  		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar progress-bar-success"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">aria-valuenow=</span><span class="s">"100"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 100%;"</span><span class="nt">&gt;</span>
+	    		<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>100%<span class="nt">&lt;/span&gt;</span>
+	    	<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+<!-- Toast Alert Container -->
+<div class="alertToast" role="alert" style="visibility: hidden;">
+
+	<!-- Alert Danger Multiple -->
+	<div class="alert alert-danger">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<p class="uPaddingBxxs text-center">There was an error uploading <strong>medical-certificate.pdf and 7 other files. </strong><a href="#">Manage documents</a>
+		</p>
+		<div class="progress progressSmall">
+	  		<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+	    		<span class="sr-only">100%</span>
+	    	</div>
+		</div>
+	</div>
+
+	<!-- Alert Info Multiple -->
+	<div class="alert alert-info">
+		<p class="uPaddingBxxs text-center">Uploading <strong>report-card.pdf</strong> (12 files remaining)
+			<a class="text-danger uMarginLs"><i class="material-icons md-14">cancel</i>Cancel</a>
+		</p>
+		<div class="progress progressSmall">
+	  		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+	    		<span class="sr-only">60%</span>
+	    	</div>
+		</div>
+	</div>
+
+		<!-- Alert Info Multiple -->
+	<div class="alert alert-info">
+		<p class="uPaddingBxxs text-center">Uploading <strong>photo.jpg</strong> (10 files remaining)
+			<a class="text-danger uMarginLs"><i class="material-icons md-14">cancel</i>Cancel</a>
+		</p>
+		<div class="progress progressSmall">
+	  		<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+	    		<span class="sr-only">80%</span>
+	    	</div>
+		</div>
+	</div>
+
+	<!-- Alert Success Multiple -->
+	<div class="alert alert-success">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<p class="uPaddingBxxs text-center">Successfully uploaded 7 files.</p> 
+		<div class="progress progressSmall">
+	  		<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+	    		<span class="sr-only">100%</span>
+	    	</div>
+		</div>
+	</div>
+
+</div>
+
+<script>
+	$('.showToast').click(function(){
+  		if ( $('.alertToast').css('visibility') == 'hidden' )
+    	$('.alertToast').css('visibility','visible');
+  		else
+    	$('.alertToast').css('visibility','hidden');
+	});
+</script>
+        </main>
+    </div>
+    
+  </div>
+
+  </body>
+
+
+</html>
+

@@ -1,0 +1,119 @@
+---
+title: Events
+layout: Portal
+---
+
+<style>
+.panel-body {
+    padding: 0 0.5rem;
+}
+</style>
+
+
+<%= partial "prototypes/community-portal/partials/com-portal-selector" %>
+<div class="container uMarginTm">
+
+<!-- Heading & Filters -->
+<div class="row hidden-xs form-inline">
+    <div class="col-xs-3">
+        <h2>Contact Us</h2>
+    </div>
+    <div class="col-xs-9">
+    <div class="pull-right">
+
+        <div class="form-group">
+            <label for="" style="width: 80px;" class="uPaddingTxxs uMarginRxs text-right">Search</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Start typing">
+        </div>
+
+        <div class="form-group">
+            <label for="" style="width: 160px;" class="uPaddingTxxs uMarginRxs text-right">Select Department</label>
+            <select class="form-control pull-right" style="width: 160px;">
+                <option></option>
+            </select>
+        </div>
+
+    </div>
+    </div>
+</div>
+
+<h2 class="visible-xs uFontSizeH3 uMarginBxs">Contact Us</h2>
+
+<div class="form-group visible-xs">
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Start typing to search...">
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="visible-xs panel-title">Academic</h2>
+        <h2 class="panel-title hidden-xs">Academic</h2>
+    </div>
+    <div class="panel-body uPaddingVn">
+
+        <!-- Contact tile -->
+        <div class="row">
+            <% data.contact.each do |c| %>
+                <div class="uBorderBottom uBorderRight uPaddingVxs col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="row">
+                        <div class="col-xs-9">
+                            <h3 class="uMarginBxxs uFontSizeL"><%= c.department %></h3>
+                            <div class="text-muted"><%= c.title %> <%= c.first_name %> <%= c.last_name %></div>
+                            <div class="text-muted"><%= c.phone_number %></div>
+                            <div class="text-muted"><a href="#0"><%= c.email %></a></div>
+                        </div>
+                        <div class="col-xs-3">
+                            <span class="visible-xs text-center uppercase text-primary">
+                                <a class="small block uPaddingAxxs">
+                                    <i class="material-icons md-16 uMarginTxs">call</i><br>Call
+                                </a>
+                                <a class="small block text-center uPaddingAxxs">
+                                    <i class="material-icons md-16 uMarginTxs">mail</i><br>Email
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="visible-xs panel-title">Co-Curricular</h2>
+        <h2 class="panel-title hidden-xs">Co-Curricular</h2>
+    </div>
+    <div class="panel-body jsMoreContent uPaddingVn">
+
+        <!-- Contact tile -->
+        <div class="row">
+            <% data.sportcontact.each do |c| %>
+                <div class="uBorderBottom uBorderRight uPaddingVxs col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="row">
+                        <div class="col-xs-9">
+                            <h3 class="uMarginBxxs uFontSizeL"><%= c.department %></h3>
+                            <div class="text-muted"><%= c.title %> <%= c.first_name %> <%= c.last_name %></div>
+                            <div class="text-muted"><%= c.phone_number %></div>
+                            <div class="text-muted"><a href="#0"><%= c.email %></a></div>
+                        </div>
+                        <div class="col-xs-3">
+                            <span class="visible-xs text-center uppercase text-primary">
+                                <a class="small block uPaddingAxxs">
+                                    <i class="material-icons md-16 uMarginTxs">call</i><br>Call
+                                </a>
+                                <a class="small block text-center uPaddingAxxs">
+                                    <i class="material-icons md-16 uMarginTxs">mail</i><br>Email
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+
+    </div>
+</div>
+
+</div>

@@ -1,0 +1,78 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Medical Insurance</h3>
+    </div>
+
+    <div class="panel-body">
+        <!-- Medicare Number -->
+        <div class="row uBorderBottom2">
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-group">
+                    <label for="">Medicare Number</label>
+                    <input class="form-control" type="text" value="3210 73001 5">
+                </div>
+            </div>
+            <div class="form-group col-xs-4 col-sm-2">
+                <label for="">Line Number</label>
+                <input class="form-control" type="text" value=""> 
+            </div>
+            <div class="form-group col-xs-8 col-sm-4">
+                <label for="">Expires</label>
+                <input id="datepicker-blank" class="fullWidth datepicker" value="" />
+            </div>
+        </div>
+
+        <!-- Private Health Insurance -->
+        <div class="row uBorderBottom2">
+            <div class="col-xs-12">
+                <label class="uMarginBxs"><input type="checkbox" checked="checked"> Medical Insurance</label>
+            </div>
+            <div class="form-group col-xs-12 col-sm-3">
+                <label for="">Fund</label>
+                <select class="form-control" type="text">
+                    <option>Medibank Private</option>
+                    <option>HCF</option>
+                </select>
+            </div>
+            <div class="form-group col-xs-12 col-sm-3">
+                <label for="">Member Number:</label>
+                <input class="form-control" type="text" value="2248 0010X"> 
+            </div>
+            <div class="form-group col-xs-12 col-sm-3">
+                <label for="">Coverage Level:</label>
+                <input class="form-control" type="text" value=""> 
+            </div>
+            <div class="form-group col-xs-12 col-sm-3">
+                <label for="">Extra coverage:</label>
+                <input class="form-control" type="text" value=""> 
+            </div>
+            <div class="form-group col-xs-12 col-sm-3">
+                <label for="">Expires:</label>
+                <input id="datepicker-blank" class="fullWidth datepicker" value="" />
+            </div>
+        </div>
+
+        <!-- Ambulance Cover -->
+        <div class="row uBorderBottom2">
+            <div class="col-xs-12 col-sm-3">
+                <div class="form-group">
+                    <label class="uMarginBxs"><input type="checkbox" checked="checked"> Ambulance Cover</label>
+                </div>
+            </div>
+            <div class="form-group col-xs-12 col-sm-3">
+                <label for="">Member Number</label>
+                <input class="form-control" type="text" value=""> 
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script>
+    $(document).ready(function() {
+        // create DatePicker from input HTML element
+        $(".datepicker").kendoDatePicker();
+    });
+</script>

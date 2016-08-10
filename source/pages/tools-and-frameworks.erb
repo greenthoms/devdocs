@@ -1,0 +1,66 @@
+---
+title: Tools and Frameworks
+---
+
+<section id="bootstrap">
+	<h2>Bootstrap</h2>
+	<p class="lead"><a href="http://blog.getbootstrap.com/2015/03/16/bootstrap-3-3-4-released/" target="_blank">Bootstrap v3.4.4</a> is used as the foundation for all UI new developments in <strong>Synweb v67</strong>.</p>
+	<p>To avoid conflicts with legacy CSS, the prefix <code>.syn</code> is used to increase the specificity of all Bootstrap styles&mdash;the prefix has been included in the <code>bootstrap/bootstrap.less</code> file so styles can be written normally&mdash;the prefix is added automatically when the Less is compiled.</p>
+</section>
+
+<section id="kendo">
+	<h2>Kendo</h2>
+	<p class="lead"><a href="http://www.telerik.com/kendo-ui">Kendo UI</a> is our primary library for user controls for all new UI developments in <strong>Synweb v67</strong>.</p> <p>These user controls superseed DevExpress but will be used alongside DevExpress controls until a full transition is complete. <a href="http://demos.telerik.com/kendo-ui/">Read the Kendo UI documentation</a> and try the demos for an introduction to the user controls. Specific examples are shown in the <a href="forms.html">Forms</a> and <a href="components.html">Components</a> sections of this document.</p>
+</section>
+
+<section id="less">
+	<h2>Less</h2>
+	<p class="lead">Less is our pre-processor of choice as it is used and maintained in both Kendo and Bootstrap.</p>
+	<p><a href="http://lesscss.org/">Less</a> is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable.</p>
+	
+	<h3 id="file-organisation">Less folder structure</h3>
+	<p>The folder and file structure for is based on Harry Roberts <a href="https://www.youtube.com/watch?v=1OKZOV-iLj4&noredirect=1">ITCSS</a></p>
+<div class="codeOnly">
+<% code("comments") do %>
+CSS/LESS/
+|
+|-- base/                     # Default files
+|   |-- _variables.less       # Variables used in other less files.
+|   |-- _base.less            # Global styles, usually applied to the <body> or <html>.
+|   ...
+|
+|-- libraries/                # Bootstrap, Kendo UI and other frame works or plugins.
+|   |-- _animate.css          # CSS animation library
+|   |-- kendoCustom/          # All overrides to the Kendo framework
+|   `-- bootstrap/            # All the bootstrap less files
+|       |
+|       `-- bootstrapCustom/  # All global overrides to the Bootstrap framework
+|
+|-- modules/                  # Custom modular CSS created by Synergetic.
+|   |-- _purchaseReq.less     # imports for all mixins + global project variables
+|   |-- _userMessages.less    # buttons
+|   |-- _welcomeWidgets.less  # Welcome page widgets
+|   ...
+|
+|-- utilities/                # Helpers and overrides.
+|   |-- _type.less            # 
+|   |-- _utilities.less       # UI Helpers. Use only if a helper does not exist in Bootstrap.
+|   ...
+|
+|-- app.less                # Primary Less file
+`-- app.css          	    # Output CSS. The compiled file loaded by the browser.
+<% end %>
+</div>
+
+<p><strong>Note:</strong> If a LESS file starts with an underscore, for example: <code>_base.less</code> then it won’t create either a .css or .min.css file on save.</p>
+
+<h3 id="compiling-less">Compiling Less</h3>
+<p class="lead">We currently compile less with <a href="https://github.com/jdiehl/brackets-less-autocompile">Brackets Less Auto Compile</a>.</p>
+
+<p class="lead">The <a href="http://vswebessentials.com/download#WE2013" target="_blank">web essentials plugin</a> compiles LESS files on Save. However this will only work with Visual Studio 2013</p>
+<p>The following settings are a good default but customise to your personal preference:</p>
+<img src="img/web-essentials-01.png" class="img-responsive" alt="">
+<img src="img/web-essentials-02.png" class="img-responsive" alt="">
+
+
+</section>

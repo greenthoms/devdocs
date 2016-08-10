@@ -1,0 +1,15 @@
+/* Circle Avatar */
+.avCircle {
+  border: 2px solid #c7b89e;
+}
+.avCircle,
+.avCircle img {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  -webkit-border-radius: 30px;
+  /* Saf3+, Chrome */
+  border-radius: 30px;
+  /* Opera 10.5, IE 9 */
+  /*-moz-border-radius: 30px;  Disabled for FF1+ */
+}

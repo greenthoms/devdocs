@@ -1,0 +1,64 @@
+<h2 class="uBorderTop2">Kendo Grid: Read Only</h2>
+<div id="grid"></div>
+<script>
+    $(document).ready(function() {
+        $("#grid").kendoGrid({
+            dataSource: {
+                type: "odata",
+                transport: {
+                    read: "//demos.telerik.com/kendo-ui/service/Northwind.svc/Orders"
+                },
+                schema: {
+                    model: {
+                        fields: {
+                            OrderID: { type: "number" },
+                            Freight: { type: "number" },
+                            ShipName: { type: "string" },
+                            OrderDate: { type: "date" },
+                            ShipCity: { type: "string" }
+                        }
+                    }
+                },
+                pageSize: 20,
+                serverPaging: true,
+                serverFiltering: true,
+                serverSorting: true
+            },
+            height: 550,
+            filterable: false,
+            scrollable: true,
+            sortable: false,
+            pageable: true,
+            columns: [{
+                    field:"OrderID",
+                    filterable: false
+                },
+                "Freight",
+                {
+                    field: "OrderDate",
+                    title: "Order Date",
+                    format: "{0:MM/dd/yyyy}"
+                }, {
+                    field: "ShipName",
+                    title: "Ship Name"
+                }, {
+                    field: "ShipCity",
+                    title: "Ship City"
+                }
+            ]
+        });
+    });
+</script>
+
+<div class="uPaddingBxxs uMarginTm">
+<strong><p>Default values:</p></strong>
+<% code("html") do %>
+$("#grid").kendoGrid({
+    height: 550,
+    filterable: false,
+    scrollable: true,
+    sortable: false,
+    pageable: true
+});
+<% end %>
+</div>

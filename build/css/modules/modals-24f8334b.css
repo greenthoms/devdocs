@@ -1,0 +1,119 @@
+/* ====== Modal with Tabs ===== */
+.modalSimple .modal-body {
+  padding: 0;
+}
+.modalSimple .nav-tabs > li > a {
+  margin: 0;
+  border: 0;
+  border-bottom: 6px solid transparent;
+  border-radius: 0;
+  color: #333;
+}
+.modalSimple .tab-content {
+  padding: 10px;
+}
+.modalSimple .nav-tabs > li.active > a,
+.modalSimple .nav-tabs > li.active > a:focus,
+.modalSimple .nav-tabs > li.active > a:hover {
+  background: #fff;
+  border: 0;
+  color: #1988FF;
+  border-bottom: solid 6px #1988FF;
+  font-weight: 600;
+}
+/* Style the icons */
+.modalSimple .nav.nav-tabs i {
+  line-height: .5;
+  position: relative;
+  top: .25em;
+  color: inherit;
+}
+/* ====== Uploader Modal ===== */
+.uploaderModal .modal-body {
+  padding: 0;
+}
+.uploaderModal .btn-primary {
+  background: #1988FF;
+  border: 0;
+}
+.uploaderDropArea {
+  font-size: 18px;
+  padding: 2em;
+  background: #eee;
+  border: dashed 3px #ccc;
+  text-align: center;
+}
+.uploaderFileList .row {
+  padding: .5em;
+}
+.uploaderFileList .headerRow {
+  background: #F7F7F7;
+  border-top: solid 1px #ccc;
+}
+.uploaderModal .modal-body {
+  max-height: 700px;
+  max-height: 70vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.uploaderTypeRow {
+  background: #505050;
+  color: #fff;
+}
+.uploaderTypeRow h3 {
+  margin: 10px;
+}
+.uploaderModal .headerRow {
+  font-weight: 600;
+}
+.uploaderModal .modalFilter {
+  background-color: #fafafa;
+  padding: 5px 20px 0;
+  border-bottom: solid 1px #ccc;
+}
+/* ====== Modal with jQuery UI tabs ===== */
+.modal-body .ui-tabs {
+  padding: 0;
+}
+.modal-body .ui-tabs .ui-tabs-nav {
+  padding: 0;
+}
+.modal-body .ui-tabs .ui-tabs-nav li {
+  margin: 0;
+  padding: 0;
+}
+.modal-body .ui-widget-content {
+  border: none;
+}
+.modal-body .ui-widget {
+  border-top: none;
+}
+.modal-body .ui-widget-header {
+  border: none;
+  border-bottom: solid 1px #ddd;
+  background-color: #fff;
+}
+.modal-body .ui-state-default,
+.modal-body .ui-widget-content .ui-state-default,
+.modal-body .ui-widget-header .ui-state-default {
+  border: none;
+  background: #fff;
+}
+.modal-body .ui-widget-header .ui-state-default a {
+  border-bottom: solid 6px transparent;
+}
+.modal-body .ui-widget-header .ui-state-default a:hover {
+  background-color: #eee;
+}
+.modal-body .ui-state-active,
+.modal-body .ui-widget-content .ui-state-active,
+.modal-body .ui-widget-header .ui-state-active {
+  border: none;
+}
+.modal-body .ui-widget-header .ui-state-active a {
+  color: #0275D8;
+  border-bottom: solid 6px;
+}
+.modal-body .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  padding: 1em 1.5em 0.7em;
+}

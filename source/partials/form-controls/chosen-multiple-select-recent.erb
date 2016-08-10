@@ -1,0 +1,46 @@
+<style type="text/css">
+    .recent-label {
+        color: #007dff;
+        border-bottom: solid 1px #B9DAFD;
+    }
+
+    .chosen-recent .chosen-container .chosen-results li.group-option {
+        color: #007dff;
+        background-color: #F1F8FF;
+        border-bottom: solid 1px #B9DAFD;
+        padding-left: 5px;
+        cursor: pointer;
+    }
+
+    .chosen-recent .chosen-container .chosen-results li.group-option:hover {
+        background-color: #007dff;
+        color: #fff;
+    }
+
+
+</style>
+
+<label for="exampleInputEmail1">Multiselect Groups (Chosen)</label>
+<div class="form-group chosen-recent">
+    <select data-placeholder="Select an option" class="chosen-select fullWidth" multiple>
+        <optgroup label="Recent" class="recent-label">
+            <option>Option 8</option>
+            <option>Option 23</option>
+            <option>Option 42</option>
+        </optgroup>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+        <option>Option 4</option>
+        <option>Option 5</option>
+        <option>Option 6</option>
+    </select>
+</div>
+
+<script type="text/javascript">
+
+    $('.chosen-select').chosen({
+        no_results_text: "No results for"
+    });
+
+</script>

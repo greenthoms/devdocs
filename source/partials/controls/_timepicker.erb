@@ -1,0 +1,29 @@
+<div id="window">
+    <p>This is pop-up window is accessible by keyboard.</p>
+</div>
+<script>
+    function onClose() {
+        $("#undo").show();
+    }
+
+    $("#undo")
+        .bind("click", function() {
+            $("#window").data("kendoWindow").open();
+            $("#undo").hide();
+        });
+
+    // focus the widget
+    $(document).on("keydown.examples", function(e) {
+        if (e.altKey && e.keyCode === 87 /* w */) {
+            $("#window").focus();
+        }
+    });
+
+    if (!$("#window").data("kendoWindow")) {
+        $("#window").kendoWindow({
+            width: "600px",
+            title: "About Alvar Aalto",
+            close: onClose
+        });
+    }
+</script>

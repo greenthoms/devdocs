@@ -1,0 +1,72 @@
+<h2 class="uBorderTop2">Kendo Grid: Editable</h2>
+<p><a href="http://demos.telerik.com/kendo-ui/grid/editing">Kendo Docs</a></p>
+<div id="grid2"></div>
+
+<script>
+    $(document).ready(function () {
+        var crudServiceBaseUrl = "//demos.telerik.com/kendo-ui/service",
+            dataSource = new kendo.data.DataSource({
+                transport: {
+                    read:  {
+                        url: crudServiceBaseUrl + "/Products",
+                        dataType: "jsonp"
+                    },
+                    update: {
+                        url: crudServiceBaseUrl + "/Products/Update",
+                        dataType: "jsonp"
+                    },
+                    destroy: {
+                        url: crudServiceBaseUrl + "/Products/Destroy",
+                        dataType: "jsonp"
+                    },
+                    create: {
+                        url: crudServiceBaseUrl + "/Products/Create",
+                        dataType: "jsonp"
+                    },
+                    parameterMap: function(options, operation) {
+                        if (operation !== "read" && options.models) {
+                            return {models: kendo.stringify(options.models)};
+                        }
+                    }
+                },
+                batch: true,
+                pageSize: 20,
+                schema: {
+                    model: {
+                        id: "ProductID",
+                        fields: {
+                            ProductID: { editable: false, nullable: true },
+                            ProductName: { validation: { required: true } },
+                            UnitPrice: { type: "number", validation: { required: true, min: 1} },
+                            Discontinued: { type: "boolean" },
+                            UnitsInStock: { type: "number", validation: { min: 0, required: true } }
+                        }
+                    }
+                }
+            });
+
+        $("#grid2").kendoGrid({
+            dataSource: dataSource,
+            navigatable: true,
+            pageable: true,
+            sortable: true,
+            height: 550,
+            toolbar: ["create", "save", "cancel"],
+            columns: [      
+                { command: { text: "..." }, title: " ", width: 100 },
+                "ProductName",
+                { field: "UnitPrice", title: "Unit Price", format: "{0:c}", width: 120 },
+                { field: "UnitsInStock", title: "Units In Stock", width: 120 },
+                { field: "Discontinued", width: 100 },
+                { command: "destroy", title: "&nbsp;", width: 120 }],
+            editable: true
+        });
+    });
+</script>
+
+<div class="uPaddingBxxs uMarginTm">
+<% code("html") do %>
+...
+<% end %>
+
+</div>

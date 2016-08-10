@@ -1,0 +1,401 @@
+<style>
+    .thumbnail {
+        margin-bottom: 10px;
+    }
+    .toggleAlert .material-icons {
+        top: -1px;
+        color: #717171 !important;
+        margin-right: 5px;
+    }
+</style>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Medical Conditions</h3>
+    </div>
+
+    <div class="panel-body uPaddingAm" style="background-color: #f5f5f5">
+
+        <div class="row thumbnail uPaddingAs uMarginHs">
+            <div class="col-xs-12">
+                <div class="uMarginBs clearfix">
+                    <h3 class="pull-left">Asthma</h3> <button href="#" class="pull-left btn btn-sm btn-primary uMarginLxs">Edit</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" checked="checked" disabled="disabled" class="hidden"> <i class="material-icons text-success md-18">check_circle</i> Has condition
+                    </label>
+                </div>
+                <div class="form-group hidden">
+                    <label>
+                        <input type="checkbox" disabled="disabled"> Confidential
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Severity</label>            
+                    <select class="form-control" disabled="disabled">
+                        <option value="">Life threateaning</option>
+                        <option value="">Severe</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8 col-md-offset-1">
+                
+                <div class="form-group">
+                    <label for="">Details:</label>
+                    <textarea class="form-control" id="" cols="" rows="4" disabled="disabled">Asthma triggers are different from person to person and can include: Airborne allergens, such as pollen, animal dander, mold, cockroaches and dust mites. Respiratory infections, such as the common cold. Physical activity (exercise-induced asthma). Cold air. Air pollutants and irritants, such as smoke.</textarea>
+                </div>
+                <div class="btnRow pull-left">
+                    <a href="#" class="btn btn-default" disabled="disabled"><i class="material-icons md-18">add_circle</i> Add Emergency Treatment Details</a>
+                    <a href="#" class="btn btn-default" disabled="disabled"><i class="material-icons md-18">add_circle</i> Add Other Treatment Details</a> <a href="#" class="btn btn-default" disabled="disabled"><i class="material-icons md-18">add_circle</i> Add Asthma Specific Details</a>
+                </div>
+                <div class="form-group hidden">
+                    <label for="">Emergency Treatment Details:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3"></textarea>
+                </div>
+                <div class="form-group hidden">
+                    <label for="">Other Details:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3"></textarea>
+                </div> 
+                          
+            </div>
+            <div class="col-xs-12 uPaddingTm uMarginTs" style="border-top: dashed 1px #ccc;">
+                <label for="">Medications:</label>
+                <!-- Button trigger modal -->
+                <div class="btnRow">
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Alvesco</button>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal-2">Paracetamol</button>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal-3">Flixotide</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="row thumbnail uPaddingAs uMarginHs" style="background-color: #FFFFE4;">
+            <div class="col-xs-12">
+                <div class="uMarginBs clearfix">
+                    <h3 class="pull-left">Migraine/headaches</h3> <button href="#" class="pull-left btn btn-sm btn-success uMarginLxs">Save</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" checked="checked" > <i class="material-icons text-success md-18 hidden">check_circle</i> Has condition
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox"> Confidential
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Severity</label>            
+                    <select class="form-control">
+                        <option value="">Severe</option>
+                        <option value="">Life threateaning</option>   
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8 col-md-offset-1">
+                
+                <div class="form-group">
+                    <label for="">Details:</label>
+                    <textarea class="form-control" id="" cols="" rows="4">Migraines can be experienced from as little as once or twice a year, or as often as two or three times a week. The pain is severe, throbbing and usually on one side of the head. A migraine attack can last from four hours to three days and is associated with a spasm of the blood vessels leading to the brain. Three times as many women (15 per cent) as men (5 per cent) suffer from migraine, and scientists believe that hormones play a large role.</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Emergency Treatment Details:</label>
+                    <textarea class="form-control" id="" cols="" rows="4">Migraines can be experienced from as little as once or twice a year, or as often as two or three times a week. The pain is severe, throbbing and usually on one side of the head. A migraine attack can last from four hours to three days and is associated with a spasm of the blood vessels leading to the brain. Three times as many women (15 per cent) as men (5 per cent) suffer from migraine, and scientists believe that hormones play a large role.</textarea>
+                </div>
+                <div class="form-group pull-left">
+                    <a href="#" class="btn btn-default"><i class="material-icons md-18">add_circle</i> Add Other Treatment Details</a>
+                </div>
+                <div class="form-group hidden">
+                    <label for="">Emergency Treatment Details:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3"></textarea>
+                </div>
+                <div class="form-group hidden">
+                    <label for="">Other Details:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3"></textarea>
+                </div> 
+                          
+            </div>
+            <div class="col-xs-12 uPaddingTm uMarginTs" style="border-top: dashed 1px #ccc;">
+                <label for="">Medications:</label>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal-2">Paracetamol</button>
+            </div>
+        </div>
+        <h3 class="uFontSizeM uMarginTl">Add other medical conditions:</h3>
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Diabetes</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Whooping cough</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Diet</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Enuresis (bed wetting)</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Epilepsy/convulsions</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Epistaxis (nose bleeds)</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Heart condition</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Travel sickness</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Eyes/sight</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Hearing</a>
+                </div>
+            </div>
+        </div>
+        <div class="uDashedTop2">
+            <a href="#" class="btn btn-default"><i class="material-icons md-18">add_circle</i> Add a medical condition not shown here</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Alvesco Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Alvesco</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-12 col-md-3">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" checked="checked"> Can use medication
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>When</label>            
+                    <select class="form-control">
+                        <option value="">Relief</option>
+                        <option value="">Prevention</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Administration Method:</label>            
+                    <select class="form-control">
+                        <option value="">Oral</option>
+                        <option value="">Injection</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Expires:</label>
+                    <input id="datepicker-blank" class="fullWidth datepicker" value="" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8 col-md-offset-1">
+                
+                <div class="form-group">
+                    <label for="">Medication details:</label>
+                    <textarea class="form-control" id="" cols="" rows="4">Alvesco (ciclesonide) is a man-made corticosteroid. It prevents the release of substances in the body that cause inflammation.</textarea>
+                </div>
+                <div class="form-group pull-left uMarginRs">
+                    <button href="#" class="btn btn-default"><i class="material-icons md-18">add_circle</i> Add Dosage Information</button>
+                </div>
+                <div class="form-group hidden">
+                    <label for="">Dosage:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3"></textarea>
+                </div>
+                <div class="form-group hidden">
+                    <label for="">Other Details:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3"></textarea>
+                </div> 
+                          
+            </div>
+            <div class="col-xs-12 uPaddingTm uMarginTs" style="border-top: dashed 1px #ccc;">
+                <h4>Associated Medical Conditions:</h4>
+                <button class="btn btn-default toggleAlert"><i class="material-icons md-16">close</i>Asthma</button>
+                <button class="btn btn-default"><i class="material-icons md-16">add_circle</i> Link another condition</button>
+                <div class="alert alert-danger hidden uPaddingVxs uMarginVxs" role="alert">Are you sure you want to remove <strong>Asthma</strong> from this medication? <a class="btn btn-danger" href="#">Yes, Remove</a> <a href="#" class="btn btn-default toggleAlert">Cancel</a></div>
+            </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" disabled="disabled">Save changes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Paracetamol Modal -->
+<div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Paracetamol</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-12 col-md-3">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" checked="checked"> Can use medication
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>When</label>            
+                    <select class="form-control">
+                        <option value="">Relief</option>
+                        <option value="">Prevention</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Administration Method:</label>            
+                    <select class="form-control">
+                        <option value="">Oral</option>
+                        <option value="">Injection</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Expires:</label>
+                    <input id="datepicker-blank" class="fullWidth datepicker" value="" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8 col-md-offset-1">
+                
+                <div class="form-group">
+                    <label for="">Medication details:</label>
+                    <textarea class="form-control" id="" cols="" rows="4">Paracetamol is a medication used to treat pain and fever. It is typically used for mild to moderate pain.</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Dosage:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3">As required. Maximum dose is 1 tablet every 4 hours. No patient should receive more than 4 tablets per day.</textarea>
+                </div>
+                          
+            </div>
+            <div class="col-xs-12 uPaddingTm uMarginTs" style="border-top: dashed 1px #ccc;">
+                <h4>Associated Medical Conditions:</h4>
+                <button class="btn btn-default toggleAlert"><i class="material-icons md-16">close</i>Asthma</button>
+                <button class="btn btn-default toggleAlert"><i class="material-icons md-16">close</i>Migraine/headaches</button>
+                <button class="btn btn-default"><i class="material-icons md-16">add_circle</i> Link another condition</button>
+                <div id="myId" class="alert alert-danger hidden uPaddingVxs uMarginVxs" role="alert">Are you sure you want to remove <strong>Asthma</strong> from this medication? <a class="btn btn-danger" href="#">Yes, Remove</a> <a href="#" class="btn btn-default toggleAlert">Cancel</a></div>
+            </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" disabled="disabled">Save changes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Flixotide Modal -->
+<div class="modal fade" id="myModal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Flixotide</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-12 col-md-3">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" checked="checked"> Can use medication
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>When</label>            
+                    <select class="form-control">
+                        <option value="">Relief</option>
+                        <option value="">Prevention</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Administration Method:</label>            
+                    <select class="form-control">
+                        <option value="">Oral</option>
+                        <option value="">Injection</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Expires:</label>
+                    <input id="datepicker-blank" class="fullWidth datepicker" value="" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8 col-md-offset-1">
+                
+                <div class="form-group">
+                    <label for="">Medication details:</label>
+                    <textarea class="form-control" id="" cols="" rows="4">Fluticasone taken by inhalation is known as a 'preventer'. This is because it is taken regularly every day to reduce the inflammation in the lungs and prevent asthma attacks. Symptoms usually start to get better between four to seven days after starting treatment. However, it is important to keep using this medicine regularly, even after your asthma symptoms have improved, in order to prevent them coming back.</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Dosage:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3">Flixotide inhaler can be used twice a day.</textarea>
+                </div>
+                          
+            </div>
+            <div class="col-xs-12 uPaddingTm uMarginTs" style="border-top: dashed 1px #ccc;">
+                <h4>Associated Medical Conditions:</h4>
+                <button class="btn btn-default toggleAlert"><i class="material-icons md-16">close</i> Asthma</button>
+                <button class="btn btn-default"><i class="material-icons md-16">add_circle</i> Link another condition</button>
+                <div id="myId" class="alert alert-danger hidden uPaddingVxs uMarginVxs" role="alert">Are you sure you want to remove <strong>Asthma</strong> from this medication? <a class="btn btn-danger" href="#">Yes, Remove</a> <a href="#" class="btn btn-default toggleAlert">Cancel</a></div>
+            </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" disabled="disabled">Save changes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    $('a').popover();
+
+
+
+    // Toggle hidden class
+    $( ".toggleAlert" ).on( "click", function() {
+        $(".alert-danger").toggleClass('hidden');
+    });
+    
+</script>
+

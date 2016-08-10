@@ -1,0 +1,162 @@
+<!-- All form controls -->
+
+
+
+<!-- Basic text input -->
+<div class="row">
+<div class="col-xs-4">
+<h2>Form Controls</h2>
+</div>
+<div class="col-xs-8"><a class="btn btn-default showcode pull-right">Show/Hide code examples</a></div>
+</div>
+
+<!-- Basic text input -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<%= partial "partials/form-controls/text-input" %>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<% code("html") do %>
+<%= partial "partials/form-controls/text-input" %>
+<% end %>
+</div>
+</div>
+
+<!-- Select -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<%= partial "partials/form-controls/select" %>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<% code("html") do %>
+<%= partial "partials/form-controls/select" %>
+<% end %>
+</div>
+</div>
+
+<!-- Text area -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<%= partial "partials/form-controls/text-area" %>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<% code("html") do %>
+<%= partial "partials/form-controls/text-area" %>
+<% end %>
+</div>
+</div>
+
+<!-- Date Picker -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<%= partial "partials/form-controls/date-picker" %>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<% code("html") do %>
+<%= partial "partials/form-controls/date-picker" %>
+<% end %>
+</div>
+</div>
+
+<!-- Date Time Picker -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<%= partial "partials/form-controls/date-time-picker" %>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<% code("html") do %>
+<%= partial "partials/form-controls/date-time-picker" %>
+<% end %>
+</div>
+</div>
+
+<!-- Drop List Filter -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<%= partial "partials/form-controls/k-drop-list-filter" %>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<% code("html") do %>
+<%= partial "partials/form-controls/k-drop-list-filter" %>
+<% end %>
+</div>
+</div>
+
+<!-- Chosen select -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<%= partial "partials/form-controls/chosen-standard-select" %>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<% code("html") do %>
+<%= partial "partials/form-controls/chosen-standard-select" %>
+<% end %>
+</div>
+</div>
+
+<!-- Chosen select -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<%= partial "partials/form-controls/chosen-multiple-select" %>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<% code("html") do %>
+<%= partial "partials/form-controls/chosen-multiple-select" %>
+<% end %>
+</div>
+</div>
+
+<!-- Chosen select -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<%= partial "partials/form-controls/chosen-multiple-select-groups" %>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<% code("html") do %>
+<%= partial "partials/form-controls/chosen-multiple-select-groups" %>
+<% end %>
+</div>
+</div>
+
+<!-- Chosen Recent -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<%= partial "partials/form-controls/chosen-multiple-select-recent" %>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<% code("html") do %>
+<%= partial "partials/form-controls/chosen-multiple-select-recent" %>
+<% end %>
+</div>
+</div>
+
+<!-- Template -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<% code("html") do %>
+
+<% end %>
+</div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('.showcode').click(function() {
+                $('.codeExample').slideToggle("fast");
+        });
+    });
+</script>

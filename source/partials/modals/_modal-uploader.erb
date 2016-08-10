@@ -1,0 +1,43 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uploaderModal">
+    Upload file
+</button>
+
+<!-- Modal -->
+<div class="modal fade uploaderModal" id="uploaderModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Uploader modal</h4>
+            </div>
+            <div class="modal-body">
+                <div class="uploaderDropArea">
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Select files</button> or Drag and Drop here to upload.
+                </div>
+                <div class="uploaderFileList container-fluid">
+                    <div class="row headerRow">
+                        <div class="col-xs-6">File name</div>
+                        <div class="col-xs-4">Uploaded</div>
+                        <div class="col-xs-2 text-danger"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">Birth certificate.pdf</div>
+                        <div class="col-xs-4">15 Sep, 8:56 AM (2016)</div>
+                        <div class="col-xs-2 text-danger"><a href="#"><i class="material-icons">remove_circle</i> Delete</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">Medical-Record.doc</div>
+                        <div class="col-xs-4">11 Sep, 9:50 PM (2016)</div>
+                        <div class="col-xs-2 text-danger"><a href=""><i class="material-icons">remove_circle</i> Delete</a></div>
+                    </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Done</button>
+            </div>
+        </div>
+    </div>
+</div>

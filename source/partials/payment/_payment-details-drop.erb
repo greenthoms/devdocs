@@ -1,0 +1,50 @@
+
+<div class="paymentForm">
+<h2 class="uMarginBm uFontSizeH3">Card details</h2>
+<form>
+    <%= partial "partials/payment/controls/payment-details-drop" %>
+    <div class="form-group has-feedback">
+        <label class="control-label" for="ccNumber">Card number</label>
+        <input autocompletetype="cc-number" class="form-control" id="ccNumber" maxlength="19" type="tel">
+        <div class="alert alert-danger hidden" role="alert">This is not a valid card number.</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="row has-feedback">
+                <div class="col-xs-6 uPaddingRxxs form-group">
+                    <label class="control-label" for="ccNumber">Expiry month</label>
+                    <select class="form-control">
+                        <option>01</option>
+                    </select>
+                </div>
+                <div class="col-xs-6 uPaddingLn">
+                    <label class="control-label" for="ccNumber">Expiry year</label>
+                    <select class="form-control">
+                        <option>2020</option>
+                    </select>
+                </div>
+            </div>
+            <div class="alert alert-danger hidden" role="alert">Expiry date is incorrect.</div>
+        </div>
+        <div class="col-xs-6">
+            <div class="row has-feedback">
+                <div class="col-xs-6 form-group">
+                    <label for="cvcode" class="control-label">CV code
+                    <i title="" class="material-icons" id="helpTooltip" data-toggle="tooltip" data-placement="right" data-original-title="The Card Verification Code is a 3 or 4 digit code printed on your card for added security.">help_outline</i></label>
+                    <input autocompletetype="cc-number" class="form-control" id="cvcode" maxlength="19" type="tel">
+                </div>
+            </div>
+            <div class="alert alert-danger hidden" role="alert">Verification code is incorrect.</div>
+        </div>
+
+    </div>
+    <div class="btnRow uMarginTl">
+        <button type="submit" class="btn btn-lg btn-primary btn-block" disabled="disabled">Pay</button>
+    </div>
+
+</form>
+</div>
+<script type="text/javascript">
+    $('#helpTooltip').tooltip();
+</script>

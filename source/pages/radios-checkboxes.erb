@@ -1,0 +1,71 @@
+<style>
+.blockLabel {
+    font-size: 18px;
+    display: block;
+    float: none;
+    clear: left;
+    position: relative;
+    background: #eee;
+    border: 1px solid #dee0e2;
+    padding: 18px 30px 20px 54px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+}
+
+.blockLabel input {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    cursor: pointer;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    width: 100%;
+}
+
+.formContainer{
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+}
+
+.blockLabel:hover,
+.selected {
+    background: #fafafa;
+    border: 1px solid #ccc;
+}
+</style>
+
+<h2>Radios and checkboxes</h2>
+<form>
+
+<fieldset>
+
+    <legend class="visuallyhidden">Block label radio buttons</legend>
+    <label class="blockLabel" for="radio-1">
+        <input id="radio-1" type="radio" name="radio-group" value="Northern Ireland" aria-expanded="false"> Pay online now
+    </label>
+    <label class="blockLabel" for="radio-2">
+        <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands" aria-expanded="false"> Pay online at a later date
+    </label>
+    <label class="blockLabel" for="radio-3">
+        <input id="radio-3" type="radio" name="radio-group" value="I am a British citizen living abroad" aria-expanded="false">Pay in person
+    </label>
+
+</fieldset>
+
+
+
+</form>
+
+
+<script>
+
+$('.blockLabel').click(function() {
+  $('.blockLabel').removeClass('selected');    
+  $(this).addClass('selected');
+});
+
+</script>

@@ -1,0 +1,36 @@
+
+<div class="panel panel-default">
+
+    <!-- Panel Heading -->
+    <div class="panel-heading">
+        <h3 class="panel-title"><i class="material-icons">access_time</i> Timetable</h3>
+        
+        <a href="#" class="pull-right uMarginLs panel-heading-link">
+            <i class="material-icons md-16">settings</i> Settings
+        </a>
+
+        <div class="pull-right">
+            <%= partial "partials/controls/datepicker-blank" %>
+        </div>
+    </div>
+
+
+    <!-- Panel Body -->
+    <div class="panel-body uPaddingAn">
+        <%= partial "prototypes/dashboard/partials/timetable-unmarked-grid" %>
+    </div>
+
+
+    <!-- Panel Footer -->
+    <div class="panel-footer">
+        <div class="clearfix">
+        <span class="pull-right">
+            Showing all unmarked 
+            <a href="#" class="linkStyle uMarginLxxs">
+                Show today only
+            </a>
+        </span>
+        </div>
+    </div>
+
+</div>

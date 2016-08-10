@@ -1,0 +1,45 @@
+<h2 id="popups">Popups</h2>
+
+<h3>Confirmation message</h3>
+<div id="example" style="margin-bottom: 265px;">
+<%= partial "partials/popups/confirmation-message" %>
+</div>
+
+<div class="codeOnly">
+<% code("html") do %>
+<div id="window">
+    <p>Your requisition will now be sent for approval. Please review your details.</p>
+    <p><strong>Supplier:</strong> Officeworks<br>
+    <strong>Amount:</strong> $40.00</p>
+    <div class="pull-right">
+        <button type="button" class="btn btn-lg btn-primary">
+            Submit
+        </button>
+        <button type="button" class="btn btn-lg btn-default">
+            Cancel
+        </button>
+    </div>
+</div>
+<% end %>
+</div>
+
+<div class="clearfix">
+<h3>Search criteria</h3>
+<p>Search criteria search popups should used top aligned labels an a consistent form control width.</p>
+<div id="example" style="margin-bottom: 370px;">
+<%= partial "partials/popups/search-criteria" %>
+</div>
+<div class="codeOnly">
+<% code("html") do %>
+<%= partial "partials/popups/search-criteria-code" %>
+<% end %>
+</div>
+
+<h3>Advanced Settings</h3>
+<p>An advanced settings popup should align labels left so the user can scan for the option they require.</p>
+<%= partial "partials/popups/advanced-settings" %>
+<div class="codeOnly">
+<% code("html") do %>
+<%= partial "partials/popups/advanced-settings-code" %>
+<% end %>
+</div>

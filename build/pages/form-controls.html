@@ -1,0 +1,550 @@
+<!doctype html>
+<html id="documentation">
+
+<head>
+    <meta charset="utf-8">
+
+<!-- Always force latest IE rendering engine or request Chrome Frame -->
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Import Webfonts -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<!-- Use title if it's in the page YAML frontmatter -->
+<title>Style Guide</title>
+
+<!-- Compiled CSS file -->
+<link href="../css/app-68d5533e.css" rel="stylesheet" type="text/css" /><link href="../css/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+<!-- JS -->
+<script src="../js/jquery.min-164ab4af.js" type="text/javascript"></script><script src="../js/chosen.jquery.min-1305aab5.js" type="text/javascript"></script><script src="../js/kendo.all.min-6e86ce05.js" type="text/javascript"></script><script src="../js/bootstrap.min-8b5e6192.js" type="text/javascript"></script><script src="../js/jquery-ui.min-e1e0eb3a.js" type="text/javascript"></script>
+
+<!-- Flexbox Grid -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
+</head>
+  
+  <body class="pages pages_form-controls">
+  
+  <header>
+      <nav class="navbar navbar-static-top pageHeader">
+  <div class="container">
+    <div class="navbar-header">
+      <h1>Synergetic Design Guidelines</h1>
+    </div>
+  </div>
+</nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar col-xs-12 col-sm-2">
+          <!-- Could this partial be renamed index? -->
+
+<nav>
+    <div class="sideNav list-group">
+        
+        <a class="list-group-item" href="form-controls.html">Forms Controls</a>
+        <a class="list-group-item" href="form-attributes.html">Forms Attributes</a>
+        <a class="list-group-item" href="form-validation.html">Form Validation</a>
+        <a class="list-group-item" href="navigation.html">Navigation</a>
+        <a class="list-group-item" href="buttons.html">Buttons</a>
+        <a class="list-group-item" href="modals.html">Modals</a>
+        <a class="list-group-item" href="progress-feedback.html">Progress &amp; Feedback</a>
+        <a class="list-group-item" href="emails.html">Emails</a>
+        <a class="list-group-item" href="tooltips-popovers.html">Tooltips &amp; Popovers</a>
+        <a class="list-group-item" href="payment.html">Payment</a>
+        <a class="list-group-item" href="blank-slate.html">Blank Slate</a>
+        <a class="list-group-item" href="grids.html">Grids</a>
+        <a class="list-group-item" href="pageLayout.html">Layout</a>
+        <a class="list-group-item" href="widgets/widgets.html">Widgets</a>
+        <br>
+        <a class="list-group-item" href="css-standards.html">CSS Standards</a>
+        <a class="list-group-item" href="tools-and-frameworks.html">Tools &amp; Frameworks</a>
+        <a class="list-group-item" href="visual-design.html">Visual Design</a>
+        <a class="list-group-item" href="accessibility.html">Accessibility</a>
+        <a class="list-group-item" href="../prototypes.html">Prototypes</a>
+
+    </div>
+</nav>
+
+
+        </nav>
+      
+        <!-- Main content -->
+        <main class="mainContent col-xs-12 col-sm-8">
+          <!-- All form controls -->
+
+
+
+<!-- Basic text input -->
+<div class="row">
+<div class="col-xs-4">
+<h2>Form Controls</h2>
+</div>
+<div class="col-xs-8"><a class="btn btn-default showcode pull-right">Show/Hide code examples</a></div>
+</div>
+
+<!-- Basic text input -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<div class="form-group">
+    <label for="exampleInputEmail1">Text input (Boostrap)</label>
+    <input type="text" class="form-control" id="exampleInputEmail1">
+</div>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail1"</span><span class="nt">&gt;</span>Text input (Boostrap)<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail1"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+</div>
+
+<!-- Select -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<div class="form-group">
+    <label for="exampleInputEmail1">Standard Select (Boostrap)</label>
+    <select class="form-control">
+      <option>Options</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </select>
+</div>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail1"</span><span class="nt">&gt;</span>Standard Select (Boostrap)<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;option&gt;</span>Options<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span>Option 2<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span>Option 3<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+</div>
+
+<!-- Text area -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<div class="form-group">
+    <label for="exampleTextArea1">Text Area (Bootstrap)</label>
+    <textarea class="form-control" id="exampleTextArea1" rows="3"></textarea>
+</div>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleTextArea1"</span><span class="nt">&gt;</span>Text Area (Bootstrap)<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleTextArea1"</span> <span class="na">rows=</span><span class="s">"3"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+</div>
+
+<!-- Date Picker -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<div class="form-group">
+    <label for="exampleInputEmail1">Date Picker (Kendo)</label>
+    <input id="datepicker" class="fullWidth" value="10/10/2020" />
+</div>
+
+<script>
+    $(document).ready(function() {
+        // create DatePicker from input HTML element
+        $("#datepicker").kendoDatePicker();
+    });
+</script>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail1"</span><span class="nt">&gt;</span>Date Picker (Kendo)<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"datepicker"</span> <span class="na">class=</span><span class="s">"fullWidth"</span> <span class="na">value=</span><span class="s">"10/10/2020"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;script&gt;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// create DatePicker from input HTML element</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">"#datepicker"</span><span class="p">).</span><span class="nx">kendoDatePicker</span><span class="p">();</span>
+    <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div>
+</div>
+
+<!-- Date Time Picker -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<div class="form-group">
+    <label for="exampleInputEmail1">Date Time Picker (Kendo)</label>
+    <input id="datetimepicker" class="fullWidth" value="10/10/2020" />
+</div>
+
+<script>
+    $(document).ready(function () {
+        // create DateTimePicker from input HTML element
+        $("#datetimepicker").kendoDateTimePicker({
+            value:new Date()
+        });
+    });
+</script>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail1"</span><span class="nt">&gt;</span>Date Time Picker (Kendo)<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"datetimepicker"</span> <span class="na">class=</span><span class="s">"fullWidth"</span> <span class="na">value=</span><span class="s">"10/10/2020"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;script&gt;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// create DateTimePicker from input HTML element</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">"#datetimepicker"</span><span class="p">).</span><span class="nx">kendoDateTimePicker</span><span class="p">({</span>
+            <span class="na">value</span><span class="p">:</span><span class="k">new</span> <span class="nb">Date</span><span class="p">()</span>
+        <span class="p">});</span>
+    <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div>
+</div>
+
+<!-- Drop List Filter -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<div class="form-group">
+    <label>Drop Down List Filter (Kendo)</label>
+    <input id="products" style="width: 100%;" />
+</div>
+
+<script>
+    $(document).ready(function() {
+        $("#products").kendoDropDownList({
+            filter: "startswith",
+            dataTextField: "ProductName",
+            dataValueField: "ProductID",
+            dataSource: {
+                type: "odata",
+                serverFiltering: true,
+                transport: {
+                    read: {
+                        url: "//demos.telerik.com/kendo-ui/service/Northwind.svc/Products",
+                    }
+                }
+            }
+        });
+    });
+</script>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label&gt;</span>Drop Down List Filter (Kendo)<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"products"</span> <span class="na">style=</span><span class="s">"width: 100%;"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;script&gt;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">"#products"</span><span class="p">).</span><span class="nx">kendoDropDownList</span><span class="p">({</span>
+            <span class="na">filter</span><span class="p">:</span> <span class="s2">"startswith"</span><span class="p">,</span>
+            <span class="na">dataTextField</span><span class="p">:</span> <span class="s2">"ProductName"</span><span class="p">,</span>
+            <span class="na">dataValueField</span><span class="p">:</span> <span class="s2">"ProductID"</span><span class="p">,</span>
+            <span class="na">dataSource</span><span class="p">:</span> <span class="p">{</span>
+                <span class="na">type</span><span class="p">:</span> <span class="s2">"odata"</span><span class="p">,</span>
+                <span class="na">serverFiltering</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="na">transport</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="na">read</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="na">url</span><span class="p">:</span> <span class="s2">"//demos.telerik.com/kendo-ui/service/Northwind.svc/Products"</span><span class="p">,</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">});</span>
+    <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div>
+</div>
+
+<!-- Chosen select -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<div class="form-group">
+    <label for="exampleInputEmail1">Standard Select (Chosen)</label>
+    <select class="chosen-select fullWidth">
+      <option>Options</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </select>
+</div>
+
+<script type="text/javascript">
+
+    $('.chosen-select').chosen({
+        no_results_text: "No results for"
+    });
+
+</script>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail1"</span><span class="nt">&gt;</span>Standard Select (Chosen)<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"chosen-select fullWidth"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;option&gt;</span>Options<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span>Option 2<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span>Option 3<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.chosen-select'</span><span class="p">).</span><span class="nx">chosen</span><span class="p">({</span>
+        <span class="na">no_results_text</span><span class="p">:</span> <span class="s2">"No results for"</span>
+    <span class="p">});</span>
+
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div>
+</div>
+
+<!-- Chosen select -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<div class="form-group">
+    <label for="exampleInputEmail1">Multiselect (Chosen)</label>
+    <select multiple data-placeholder="Select an option" class="chosen-select fullWidth">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+</div>
+
+<script type="text/javascript">
+
+    $('.chosen-select').chosen({
+        no_results_text: "No results for"
+    });
+
+</script>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail1"</span><span class="nt">&gt;</span>Multiselect (Chosen)<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">multiple</span> <span class="na">data-placeholder=</span><span class="s">"Select an option"</span> <span class="na">class=</span><span class="s">"chosen-select fullWidth"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.chosen-select'</span><span class="p">).</span><span class="nx">chosen</span><span class="p">({</span>
+        <span class="na">no_results_text</span><span class="p">:</span> <span class="s2">"No results for"</span>
+    <span class="p">});</span>
+
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div>
+</div>
+
+<!-- Chosen select -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<label for="exampleInputEmail1">Multiselect Groups (Chosen)</label>
+<div class="form-group">
+    <select data-placeholder="Select an option" class="chosen-select fullWidth" multiple>
+    <optgroup label="Group 1">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+    </optgroup>
+    <optgroup label="Group 2">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+    </optgroup>
+    <optgroup label="Group 3">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+    </optgroup>
+    </select>
+</div>
+
+<script type="text/javascript">
+
+    $('.chosen-select').chosen({
+        no_results_text: "No results for"
+    });
+
+</script>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<pre class="highlight html"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail1"</span><span class="nt">&gt;</span>Multiselect Groups (Chosen)<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">data-placeholder=</span><span class="s">"Select an option"</span> <span class="na">class=</span><span class="s">"chosen-select fullWidth"</span> <span class="na">multiple</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;optgroup</span> <span class="na">label=</span><span class="s">"Group 1"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;option&gt;</span>Option 1<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option&gt;</span>Option 2<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option&gt;</span>Option 3<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/optgroup&gt;</span>
+    <span class="nt">&lt;optgroup</span> <span class="na">label=</span><span class="s">"Group 2"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;option&gt;</span>Option 1<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option&gt;</span>Option 2<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option&gt;</span>Option 3<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/optgroup&gt;</span>
+    <span class="nt">&lt;optgroup</span> <span class="na">label=</span><span class="s">"Group 3"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;option&gt;</span>Option 1<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option&gt;</span>Option 2<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option&gt;</span>Option 3<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/optgroup&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.chosen-select'</span><span class="p">).</span><span class="nx">chosen</span><span class="p">({</span>
+        <span class="na">no_results_text</span><span class="p">:</span> <span class="s2">"No results for"</span>
+    <span class="p">});</span>
+
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div>
+</div>
+
+<!-- Chosen Recent -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+<style type="text/css">
+    .recent-label {
+        color: #007dff;
+        border-bottom: solid 1px #B9DAFD;
+    }
+
+    .chosen-recent .chosen-container .chosen-results li.group-option {
+        color: #007dff;
+        background-color: #F1F8FF;
+        border-bottom: solid 1px #B9DAFD;
+        padding-left: 5px;
+        cursor: pointer;
+    }
+
+    .chosen-recent .chosen-container .chosen-results li.group-option:hover {
+        background-color: #007dff;
+        color: #fff;
+    }
+
+
+</style>
+
+<label for="exampleInputEmail1">Multiselect Groups (Chosen)</label>
+<div class="form-group chosen-recent">
+    <select data-placeholder="Select an option" class="chosen-select fullWidth" multiple>
+        <optgroup label="Recent" class="recent-label">
+            <option>Option 8</option>
+            <option>Option 23</option>
+            <option>Option 42</option>
+        </optgroup>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+        <option>Option 4</option>
+        <option>Option 5</option>
+        <option>Option 6</option>
+    </select>
+</div>
+
+<script type="text/javascript">
+
+    $('.chosen-select').chosen({
+        no_results_text: "No results for"
+    });
+
+</script>
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<pre class="highlight html"><code><span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
+    <span class="nc">.recent-label</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#007dff</span><span class="p">;</span>
+        <span class="nl">border-bottom</span><span class="p">:</span> <span class="nb">solid</span> <span class="m">1px</span> <span class="m">#B9DAFD</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.chosen-recent</span> <span class="nc">.chosen-container</span> <span class="nc">.chosen-results</span> <span class="nt">li</span><span class="nc">.group-option</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#007dff</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="m">#F1F8FF</span><span class="p">;</span>
+        <span class="nl">border-bottom</span><span class="p">:</span> <span class="nb">solid</span> <span class="m">1px</span> <span class="m">#B9DAFD</span><span class="p">;</span>
+        <span class="nl">padding-left</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+        <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.chosen-recent</span> <span class="nc">.chosen-container</span> <span class="nc">.chosen-results</span> <span class="nt">li</span><span class="nc">.group-option</span><span class="nd">:hover</span> <span class="p">{</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="m">#007dff</span><span class="p">;</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>
+    <span class="p">}</span>
+
+
+<span class="nt">&lt;/style&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail1"</span><span class="nt">&gt;</span>Multiselect Groups (Chosen)<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group chosen-recent"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">data-placeholder=</span><span class="s">"Select an option"</span> <span class="na">class=</span><span class="s">"chosen-select fullWidth"</span> <span class="na">multiple</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;optgroup</span> <span class="na">label=</span><span class="s">"Recent"</span> <span class="na">class=</span><span class="s">"recent-label"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option 8<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option 23<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Option 42<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/optgroup&gt;</span>
+        <span class="nt">&lt;option&gt;</span>Option 1<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option&gt;</span>Option 2<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option&gt;</span>Option 3<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option&gt;</span>Option 4<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option&gt;</span>Option 5<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option&gt;</span>Option 6<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.chosen-select'</span><span class="p">).</span><span class="nx">chosen</span><span class="p">({</span>
+        <span class="na">no_results_text</span><span class="p">:</span> <span class="s2">"No results for"</span>
+    <span class="p">});</span>
+
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div>
+</div>
+
+<!-- Template -->
+<div class="row uBorderTop2">
+<div class="col-xs-4">
+
+</div>
+<div class="col-xs-8"></div>
+<div class="col-xs-12 codeExample">
+<pre class="highlight html"><code>
+</code></pre></div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('.showcode').click(function() {
+                $('.codeExample').slideToggle("fast");
+        });
+    });
+</script>
+        </main>
+    </div>
+    
+  </div>
+
+  </body>
+
+
+</html>
+

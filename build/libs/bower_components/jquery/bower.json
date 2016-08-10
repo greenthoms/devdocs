@@ -1,0 +1,14 @@
+{
+  "name": "jquery",
+  "main": "dist/jquery-d912de9b.js",
+  "license": "MIT",
+  "ignore": [
+    "package.json"
+  ],
+  "keywords": [
+    "jquery",
+    "javascript",
+    "browser",
+    "library"
+  ]
+}

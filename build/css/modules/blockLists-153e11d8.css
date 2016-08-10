@@ -1,0 +1,34 @@
+.radioBlockList legend {
+  font-size: 21px;
+  border-bottom: 0;
+  font-weight: 600;
+}
+.radioBlockList label {
+  font-size: 14px;
+  display: block;
+  float: none;
+  clear: left;
+  position: relative;
+  border: 1px solid #ddd;
+  background-color: #f3f3f3;
+  padding: 10px 15px 10px 40px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.radioBlockList label:hover,
+.radioBlockList label.selected {
+  background: #148BD2;
+  color: #fff;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.radioBlockList input {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  cursor: pointer;
+  margin: 0;
+  width: 14px;
+  height: 14px;
+}

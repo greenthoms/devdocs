@@ -1,0 +1,85 @@
+<style>
+.navbar-inverse .nav > li {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    margin-left: -2px;
+    margin-right: -2px;
+    border: solid 1px #005F5F;
+    border-top: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-inverse .nav > li {
+    position: relative;
+    display: block;
+    width: inherit;
+    margin: auto;
+    width: inherit;
+    border: 0;
+  }
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #333;
+  }
+}
+
+/* Allow items to wrap properly */
+.nav .material-icons {
+    line-height: 0;
+    font-size: 20px;
+    margin-right: 2px;
+}
+
+</style>
+
+<nav class="navbar z1000 navbar-default navbar-static-top navbar-inverse uMarginAn">
+  <div class="">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <i class="material-icons">menu</i>
+        <span class="float-left">Menu</span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#"><i class="material-icons">home</i> Home</a></li>
+        <li><a href="#"><i class="material-icons">spellcheck</i> Results</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">access_time</i> Timetable <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to 'My Schedule', '/prototypes/community-portal/schedule.html#my-schedule' %></li>
+            <li><%= link_to 'My Timetable', '/prototypes/community-portal/timetable.html#my-timetable' %></li>
+          </ul>
+        </li>
+        <li><%= link_to '<i class="material-icons">assignment_ind</i> Absences', '/prototypes/community-portal/absences.html' %></li>
+        <li><%= link_to '<i class="material-icons">event</i> Events', '/prototypes/community-portal/events.html' %></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">account_balance_wallet</i> Finance <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Payment</a></li>
+            <li><a href="#">Payment Plans</a></li>
+            <li><a href="#">My Cards</a></li>
+          </ul>
+        </li>
+        <li><%= link_to '<i class="material-icons">call</i> Contact Us', '/prototypes/community-portal/contact.html' %></li>
+        <li><a href="#"><i class="material-icons">forum</i> Interviews</a></li>
+        <li><a href="#"><i class="material-icons">attachment</i> Documents</a></li>
+        <li><a href="#"><i class="material-icons">border_color</i> Self Assessment</a></li>
+        <li><%= link_to '<i class="material-icons">account_circle</i> My Details', '/prototypes/community-portal/my-details/medical.html' %></li>
+        <li><%= link_to '<i class="material-icons">directions_bus</i> Excursions', '/prototypes/community-portal/excursions.html' %></li>
+        <li><a href="#"><i class="material-icons">settings</i> Settings</a></li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /. -->
+</nav>
+

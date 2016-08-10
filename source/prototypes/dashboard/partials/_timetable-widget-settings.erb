@@ -1,0 +1,107 @@
+<style>
+    fieldset legend {
+        color: #fff;
+        font-size: inherit;
+        font-weight: 500;
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .k-colorpicker {
+        width: 100%;
+    }
+
+    .k-colorpicker .k-selected-color {
+        vertical-align: top;
+        line-height: 0;
+        display: inline-block;
+        height: 32px;
+        width: 100%;
+    }
+
+    .k-i-arrow-s,
+    .k-state-hover>*>.k-i-arrow-s {
+        background-position: 0 -28px;
+    }
+
+</style>
+
+<div class="panel panel-dark">
+  <div class="panel-heading">
+    <h3 class="panel-title"><i class="material-icons md-16">settings</i> Timetable Settings</h3>
+    <span class="pull-right"><a href="#">Save</a> <a href="#" class="uMarginHs">Cancel</a></span>
+  </div>
+  <div class="panel-body">
+
+    <div class="row">
+        <div class="col-xs-4 uPaddingRl">
+            <div class="form-group">
+                <label for="disabledSelect">File Year</label>
+                <select class="form-control">
+                  <option>2015</option>
+                  <option>2016</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="file-type">File Type</label>
+                <select class="form-control" id="file-type">
+                  <option>A</option>
+                  <option>B</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <label for="file-sem">File Semester</label>
+                    <select class="form-control" id="file-sem">
+                        <option>A</option>
+                        <option>B</option>
+                    </select>
+                </fieldset>
+            </div>
+        </div>
+        <div class="col-xs-4 uPaddingRl">
+            <div class="form-group">
+                <label class="form-label" for="picker">Header Colour</label>
+                <br>
+                <input id="picker" />
+            </div>
+        </div>
+        <div class="col-xs-4">
+       
+        </div>
+    </div>
+
+  </div>
+  <!-- Panel Footer -->
+    <div class="panel-footer">
+        &nbsp;
+    </div>
+</div>
+
+    <script>
+        function preview(e) {
+            $("#background").css("background-color", e.value);
+        }
+
+        $("#palette").kendoColorPalette({
+            columns: 4,
+            tileSize: {
+                width: 34,
+                height: 34
+            },
+            palette: [
+                "#f0d0c9", "#e2a293", "#d4735e", "#65281a",
+                "#eddfda", "#dcc0b6", "#cba092", "#7b4b3a",
+                "#fcecd5", "#f9d9ab", "#f6c781", "#c87d0e",
+                "#e1dca5", "#d0c974", "#a29a36", "#514d1b",
+                "#c6d9f0", "#8db3e2", "#548dd4", "#17365d"
+            ],
+            change: preview
+        });
+
+        $("#picker").kendoColorPicker({
+            value: "#ffffff",
+            buttons: false,
+            select: preview
+        });
+    </script>

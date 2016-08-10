@@ -1,0 +1,13 @@
+/* LESS Variables
+============================================================================ */
+/* Core colours */
+/* Misc Colours */
+/* Misc */
+/* Font sizes */
+/* Font weights */
+/* Candidates
+============================================================================ */
+.popover {
+  font-size: 12px;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

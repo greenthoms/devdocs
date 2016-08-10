@@ -1,0 +1,49 @@
+---
+title: Design Elements
+---
+
+<style type="text/css">
+body {
+	background-color: #fff;
+}
+</style>
+
+<!-- Typography -->
+<div id="typography">
+<h2>Visual Design</h2>
+	
+<h3 class="uBorderTop2">Typeface</h3>
+<p>The user interface font is <a href="https://www.google.com/fonts/specimen/Roboto">Roboto</a>. The typeface is available open source under an <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License</a>.</p>
+
+<h3 class="uBorderTop2">Font Sizes</h3>
+
+<p>The default font size in Synweb is <code>14px</code>. This is set on the <code>&lt;body&gt;</code> element and does not need to be added to individual elements or modules.</p>
+
+<%= partial "partials/fontSizes" %>
+
+<h3 class="uBorderTop2">Font Styles</h3>
+<%= partial "partials/fontStyles" %>
+
+<h3 class="uBorderTop2">Font Weights</h3>
+<p>The following font weights can be used where appropriate:</p>
+<%= partial "partials/fontWeights" %>
+
+<h3 class="uBorderTop2">Line lengths and readability</h3>
+<p>Where possible aim for a maximum line length of 100 characters per line (including spaces).
+
+<!-- Colours -->
+<div id="colours">
+    <%= partial "partials/colours" %>
+</div>
+
+
+<!-- Icons -->
+<div id="icons">
+    <h3 class="uBorderTop2">Material Design Icons:</h3>
+    <%= partial "partials/icons/material-icons" %>
+    <p>The <a href="http://google.github.io/material-design-icons/">Material Design Icons</a> are added using the following element <code> &lt;i class=&quot;material-icons&quot;&gt;edit&lt;/i&gt;</code> . To avoid CSS conflicts with use <code>&lt;em&gt;</code> tags for italics.</p>
+    
+    <h3 class="uBorderTop2">Synergetic Icons:</h3>
+    <p>Icons can be added using the following element <code> &lt;i class=&quot;iconSearch&quot;&gt;&lt;/i&gt;</code> . To avoid CSS conflicts with use <code>&lt;em&gt;</code> tags for italics.
+    <%= partial "partials/icons/synergetic-icons" %>
+</div>

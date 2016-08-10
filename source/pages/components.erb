@@ -1,0 +1,59 @@
+---
+title: Components
+---
+
+<div id="buttons">
+	<h2>Buttons</h2>
+	<p class="lead">Synergetic makes use of the <a href="http://getbootstrap.com/css/#buttons">Bootstrap Buttons</a>.</p>
+  	<p>The main buttons styles used in Synweb are <code>.btn-primary</code> and <code>.btn-default</code>.</p>
+  	<div class="guiExample">
+		<button type="button" class="btn btn-primary">Primary button</button>
+		<button type="button" class="btn btn-default">Default button</button>
+  	</div>
+
+  	<h3>Button order</h3>
+  	<p>lorem</p>
+</div>
+
+<div id="example">
+    <div id="grid"></div>
+
+    <script>
+        $(document).ready(function () {
+            $("#grid").kendoGrid({
+                dataSource: {
+                    type: "odata",
+                    transport: {
+                        read: "http://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+                    },
+                    pageSize: 20
+                },
+                height: 550,
+                groupable: true,
+                sortable: true,
+                pageable: {
+                    refresh: true,
+                    pageSizes: true,
+                    buttonCount: 5
+                },
+                columns: [{
+                    template: "<div class='customer-photo'" +
+                                    "style='background-image: url(../content/web/Customers/#:data.CustomerID#.jpg);'></div>" +
+                                "<div class='customer-name'>#: ContactName #</div>",
+                    field: "ContactName",
+                    title: "Contact Name",
+                    width: 240
+                }, {
+                    field: "ContactTitle",
+                    title: "Contact Title"
+                }, {
+                    field: "CompanyName",
+                    title: "Company Name"
+                }, {
+                    field: "Country",
+                    width: 150
+                }]
+            });
+        });
+    </script>
+</div>

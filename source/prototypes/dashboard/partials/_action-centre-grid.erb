@@ -1,0 +1,85 @@
+<style>
+
+
+    .actionBox {
+        height: 60px;
+        width: 60px;
+        padding-top: 15px;
+    }
+
+    .actionRow {
+        min-height: 10vh;
+    }
+
+    .actionRow a {
+        line-height: 2.3;
+        font-size: 14px;
+        border-bottom: dotted 1px #999;
+        color: #444;
+    }
+
+    .alertBox,
+    .infoBox,
+    .successBox {color: #fff;}
+
+    .alertBox   {background-color: #ed1c24;}
+    .infoBox    {background-color: #2ea7e6;}
+    .successBox {background-color: #29cc43;}
+    
+    .actionAlert    {background-color: #FFD7DE;}
+    .actionSuccess  {background-color: #E3FFE3;}
+    .actionInfo     {background-color: #D2F4FF;}
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-1 {flex: 1;}
+
+    .md-30 {
+        font-size: 30px;
+    }
+
+</style>
+
+<div class="flex">
+<div class="uPaddingAs actionRow actionAlert">
+    <div class="col-xs-2 actionBox alertBox">
+        <i class="material-icons md-30">error</i>
+    </div>
+    <div class="col-xs-10">
+        <ul class="uiList">
+            <li><a href="#">2 debtor arrangement follow-ups are now overdue.</a></li>
+            <li><a href="#">7 messages have been created with no subscribers.</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="uPaddingAs actionRow actionSuccess">
+    <div class="col-xs-2 actionBox successBox">
+        <i class="material-icons md-30">edit</i>
+    </div>
+    <div class="col-xs-10">
+        <ul class="uiList">
+            <li><a href="#">7 messages have been created with no subscribers.</a></li>
+            <li><a href="#">4 messages need to be reviewed for sending.</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="uPaddingAs actionRow actionInfo">
+    <div class="col-xs-2 actionBox infoBox">
+        <i class="material-icons md-30">info</i>
+    </div>
+    <div class="col-xs-10">
+        <ul class="uiList">
+            <li><a href="#">1 accounts need to be reviewed for sending.</a></li>
+            <li><a href="#">5 accounts have been created with no subscribers.</a></li>
+            <li><a href="#">2 debtor arrangement follow-ups are now overdue.</a></li>
+            <li><a href="#">7 messages have been created with no subscribers.</a></li>
+            <li><a href="#">1 accounts need to be reviewed for sending.</a></li>
+            <li><a href="#">5 accounts have been created with no subscribers.</a></li>
+        </ul>
+    </div>
+</div>
+</div>

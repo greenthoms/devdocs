@@ -1,0 +1,86 @@
+<section class="container panel">
+	<h2>Select controls</h2>
+	<div class="sectionCollapsible">
+
+		<div class="form-group required-field">
+			<label for="inputPassword3" class="col-xs-3 control-label">Select</label>
+			<div class="col-xs-2">
+				<select class="form-control">
+					<option value="Select">Select</option>
+				</select>
+				<span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="tel" role="alert">This field is required.</span>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="inputPassword3" class="col-xs-3 control-label">Select</label>
+			<div class="col-xs-3">
+				<select class="form-control">
+				<option value="Select">Select</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="inputPassword3" class="col-xs-3 control-label">Select</label>
+			<div class="col-xs-4">
+				<select class="form-control">
+				<option value="Select">Select</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="inputPassword3" class="col-xs-3 control-label">Select</label>
+			<div class="col-xs-5">
+				<select class="form-control">
+				<option value="Select">Select</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="inputPassword3" class="col-xs-3 control-label">Select</label>
+			<div class="col-xs-6">
+				<select class="form-control">
+				<option value="Select">Select</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="groupDivider"></div>
+
+		<!-- Date picker -->
+		<div class="form-group required-field">
+			<label for="inputPassword3" class="col-xs-3 control-label">Date Picker</label>
+			<div class="col-xs-4">
+				<input id="datepicker" value="10/10/2011" style="width: 100%" />
+				<span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="tel" role="alert">This date must be in the future.</span>
+			</div>
+		</div>
+		
+		<script>
+		    $(document).ready(function() {
+		        // create DatePicker from input HTML element
+		        $("#datepicker").kendoDatePicker();
+		    });
+		</script>
+
+		<!-- DateTime picker -->
+		<div class="form-group required-field">
+			<label for="inputPassword3" class="col-xs-3 control-label">Date Time Picker</label>
+			<div class="col-xs-4">
+				<input id="datetimepicker" style="width: 100%;" />
+				<span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="tel" role="alert">This date and time must be in the past.</span>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function () {
+				// create DateTimePicker from input HTML element
+				$("#datetimepicker").kendoDateTimePicker({
+					value:new Date("11/12/2016")
+				});
+			});
+		</script>
+	</div>
+</section>

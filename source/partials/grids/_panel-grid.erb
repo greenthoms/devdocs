@@ -1,0 +1,88 @@
+<style>
+.panel-heading .k-datepicker {
+    width: 100%;
+    margin-top: -5px;
+    right: -10px;
+    font-weight: 400;
+}
+</style>
+
+
+<h2 class="uBorderTop2">Panel Grid</h2>
+
+<div class="panel kgridLight">
+    <div class="panel-heading">
+        <h2 class="panel-title">Test</h2>
+        <div class="pull-right">
+            <input id="datepicker" value="10/10/2011" style="width: 100%" />
+        </div>
+    </div>
+    <div class="panel-grid panel-body" id="panel-grid"></div>
+    <div class="panel-footer">Panel footer</div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $("#panel-grid").kendoGrid({
+            dataSource: {
+                type: "odata",
+                transport: {
+                    read: "//demos.telerik.com/kendo-ui/service/Northwind.svc/Orders"
+                },
+                schema: {
+                    model: {
+                        fields: {
+                            OrderID: { type: "number" },
+                            Freight: { type: "number" },
+                            ShipName: { type: "string" },
+                            OrderDate: { type: "date" },
+                            ShipCity: { type: "string" }
+                        }
+                    }
+                },
+                pageSize: 20,
+                serverPaging: true,
+                serverFiltering: true,
+                serverSorting: true
+            },
+            height: 350,
+            filterable: false,
+            scrollable: true,
+            sortable: false,
+            pageable: false,
+            columns: [{
+                    field:"OrderID",
+                    filterable: false
+                },
+                "Freight",
+                {
+                    field: "OrderDate",
+                    title: "Order Date",
+                    format: "{0:MM/dd/yyyy}"
+                }, {
+                    field: "ShipName",
+                    title: "Ship Name"
+                }, {
+                    field: "ShipCity",
+                    title: "Ship City"
+                }
+            ]
+        });
+    });
+
+    $(document).ready(function() {
+                // create DatePicker from input HTML element
+                $("#datepicker").kendoDatePicker();
+
+                $("#monthpicker").kendoDatePicker({
+                    // defines the start view
+                    start: "year",
+
+                    // defines when the calendar should return date
+                    depth: "year",
+
+                    // display month and year in the input
+                    format: "MMMM yyyy"
+                });
+            });
+</script>

@@ -1,0 +1,44 @@
+---
+title: Timetable
+layout: Portal
+---
+
+<div class="container panel panel-body">
+
+	<table class="table table-bordered text-center">
+		<div class="row">
+		<div class="col-xs-12 col-sm-2" style="background: pink;">
+			Day 1<br>
+			<% data.timetable.dayone.each do |c| %>		    
+		    	<strong class="bold"><%= c.time %></strong><br>
+				<%= c.teacher_title %>
+				<%= c.teacher_first_name %> 
+				<%= c.teacher_last_name %><br>
+				<%= c.subject %><br>
+				<span class="text-muted">Room: <%= c.room %></span><br><br>
+			<% end %>
+		</div>
+		<div class="col-xs-12 col-sm-2" style="background: #eee;">
+			Day 2<br>
+			<% data.timetable.dayone.each do |c| %>		    
+		    	<strong class="bold"><%= c.time %></strong><br>
+				<%= c.teacher_title %>
+				<%= c.teacher_first_name %> 
+				<%= c.teacher_last_name %><br>
+				<%= c.subject %><br>
+				<span class="text-muted">Room: <%= c.room %></span><br><br>
+			<% end %>
+		</div>
+		<div class="col-xs-12 col-sm-2" style="background: lightblue;">
+			Day 3<br>
+			<% data.timetable.dayone.each do |c| %>
+		    	<div class="uBorderBottom1" style="height: 20vh;">
+			    	<strong class="bold"><%= c.time %></strong><br>
+					<%= c.teacher_first_name %> 
+					<%= c.teacher_last_name %><br>
+					<%= c.subject %><br>
+					<span class="text-muted">Room: <%= c.room %></span>
+				</div>
+			<% end %>
+		</div>
+</div>

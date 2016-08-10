@@ -1,0 +1,239 @@
+---
+title: CSS Style Guide
+---
+
+<section>
+	<div>
+	<h2>Synergetic CSS styleguide</h2>
+    <div class="example">
+		<div class="" id="content">
+		<p>The following document outlines a reasonable style guide for CSS development.
+		These guidelines strongly encourage the use of existing, common, sensible
+		patterns. The guidelines are based on Nicolas Gallagher's <a href="https://github.com/necolas/idiomatic-css" target="_blank">idiomatic-css</a> and <a href="http://cssguidelin.es/" target="_blank">cssguidelin.es</a> by Harry Roberts. </p>
+
+		<h3 id="general-principles">General principles</h3>
+		<blockquote>
+			<p>"Part of being a good steward to a successful project is realizing that
+			writing code for yourself is a Bad Idea™. If other people are using
+			your code, then write your code for maximum clarity, not your personal
+			preference of how to get clever within the spec." - Idan Gazit</p>
+		</blockquote>
+		<ul>
+		<li>Don't try to prematurely optimize your code; keep it readable and
+		understandable.</li>
+		<li>All code in any code-base should look like a single person typed it, even
+		when many people are contributing to it.</li>
+		<li>Strictly enforce the agreed-upon style.</li>
+		<li>If in doubt when deciding upon a style use existing, common patterns.</li>
+		</ul>
+				
+		<h3 id="naming-conventions">Naming Conventions</h3>
+		<ul>
+			<li>Class Names should be written in <code>camelCase</code>.</li>
+			<li>Class names should descriptive and provide meaning to the markup. For example, use <code>.panelHead</code> rather than <code>.ph</code></li>
+			
+		</ul>
+
+		<p>A good naming convention will tell you and your team:</p>
+		<ul>
+			<li>what type of thing a class does;</li>
+			<li>where a class can be used;</li>
+			<li>what (else) a class might be related to.</li>
+		</ul>
+		
+		<p><strong>Example:</strong></p>
+<div class="codeOnly">
+<% code("html") do %>
+<div class="module">
+    <div class="moduleHead">...</div>
+    <div class="moduleBody">...</div>
+    <div class="moduleFoot">...</div>
+</div>
+<% end %>
+</div>
+
+		<h3 id="whitespace">Whitespace</h3>
+		<p>Only one style should exist across the entire source of your code-base. Always
+		be consistent in your use of whitespace. Use whitespace to improve
+		readability.</p>
+		<ul>
+		<li><em>Never</em> mix spaces and tabs for indentation.</li>
+		<li>Choose between soft indents (spaces) or real tabs. Stick to your choice
+		without fail. (Preference: spaces)</li>
+		<li>If using spaces, choose the number of characters used per indentation level.
+		(Preference: 4 spaces)</li>
+		</ul>
+
+		<h3 id="comments">Comments</h3>
+		<p>Well commented code is extremely important. Take time to describe components,
+		how they work, their limitations, and the way they are constructed. Don't leave
+		others in the team guessing as to the purpose of uncommon or non-obvious
+		code.</p>
+		<p>Comment style should be simple and consistent within a single code base.</p>
+		<ul>
+		<li>Place comments on a new line above their subject.</li>
+		<li>Keep line-length to a sensible maximum, e.g., 80 columns.</li>
+		<li>Make liberal use of comments to break CSS code into discrete sections.</li>
+		<li><code class="prettyprint lang- prettyprinted"><span class="com">#region</span></code> lets you specify a block of code that you can expand or collapse when using the outlining feature in Visual Studio.</li>
+		</ul>
+
+		<p><strong>Example:</strong></p>
+<div class="codeOnly">
+<% code("css") do %>
+/* Section Heading
+============================================================================ */
+
+/* Basic comment */
+
+/**
+* Longer description using Doxygen-style comment format
+*
+* The first sentence of the long description starts here and continues on this
+* line for a while finally concluding here at the end of this paragraph.
+*
+* The long description is ideal for more detailed explanations and
+* documentation. It can include example HTML, URLs, or any other information
+* that is deemed necessary or useful.
+*
+*/
+<% end %>
+</div>
+
+		<h3 id="classIds">Classes vs ID's</h3>
+
+		<p>You should only give elements an ID attribute if they are unique. They should be applied to that element only and nothing else. Classes can be applied to multiple elements that share the same style properties. Things that should look and work in the same way can have the same class name.</p>
+		<p>For CSS, prefer classes over ID's. The main problem with ID's is their <a href="http://csswizardry.com/2011/09/when-using-ids-can-be-a-pain-in-the-class" class="subtleLink">high specificity</a>. However, ID's can be used for jQuery and apparently provides <a href="http://stackoverflow.com/questions/1230636/css-optimization-element-id-vs-class" class="subtleLink" target="_blank">performance gains.</a> Using both an ID and class is can be a sensible approach: <code>&lt;div class=&quot;module&quot; id=&quot;module&quot;&gt;&lt;/div&gt;</code></p>
+		<ul>
+			<li>Avoid using <code>!important</code> When used to override another style something is wrong. </li>
+			<li>Chaining selectors can safely increase specificity. For example: 
+				<code>.btn.primary { }</code>
+			</li>
+		</ul>
+
+		<h3 id="format">Format</h3>
+		<p>Anatomy of a Ruleset:
+		When discussing CSS we should try to use consistent terminology:</p>
+		
+<div class="codeOnly">
+<% code("plaintext") do %>
+[selector] {
+    [property]: [value];
+    [<--declaration--->]
+}
+
+.boxFullWidth {
+    width: 100%;
+}
+<% end %>
+</div>
+
+		<p>The chosen code format must ensure that code is: easy to read; easy to clearly
+		comment; minimizes the chance of accidentally introducing errors; and results
+		in useful diffs and blames.</p>
+		<ul>
+			<li>Selectors should be written in <code class="prettyprint lang- prettyprinted"><span class="pun">.</span><span class="pln">camelCase</span></code> with no spaces (the first character should be lowercase).</li>
+			<li>Use one discrete selector per line in multi-selector rulesets.</li>
+			<li>Include a single space before the opening brace of a ruleset.</li>
+			<li>Include one declaration per line in a declaration block.</li>
+			<li>Use one level of indentation for each declaration.</li>
+			<li>Include a single space after the colon of a declaration.</li>
+			<li>Use lowercase and shorthand hex values, e.g., <code class="prettyprint lang- prettyprinted"><span class="com">#aaa</span></code>.</li>
+			<li>Use single or double quotes consistently. Preference is for double quotes,
+			e.g <code>class="foo"</code>.</li>
+			<li>Quote attribute values in selectors, e.g., <code>input[type="checkbox"]</code>.</li>
+			<li><em>Where allowed</em>, avoid specifying units for zero-values, e.g., <code>margin: 0;</code>.</li>
+			<li>Include a space after each comma in comma-separated property or function
+			values.</li>
+			<li>Include a semi-colon at the end of the last declaration in a declaration
+			block.</li>
+			<li>Place the closing brace of a ruleset in the same column as the first
+			character of the ruleset.</li>
+			<li>Separate each ruleset by a blank line.</li>
+		</ul>
+		
+<div class="codeOnly">
+<% code("css") do %>
+.selector-1,
+.selector-2,
+.selector-3 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    color: #333;
+    background: #fff;
+    background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
+}
+
+.selector-a,
+.selector-b {
+    padding: 10px;
+}
+<% end %>
+</div>
+
+		<h4 id="declaration-order"><strong>Declaration order</strong></h4>
+		<p>If declarations are to be consistently ordered, it should be in accordance with
+		a single, simple principle.</p>
+
+<div class="codeOnly">		
+<% code("css") do %>
+.selector {
+    /* Positioning */
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* Display & Box Model */
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 10px solid #333;
+    margin: 10px;
+
+    /* Other */
+    background: #000;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: right;
+}
+<% end %>
+</div>
+		<h4>Exceptions and slight deviations</h4>
+		<p>Large blocks of single declarations can use a slightly different, single-line
+		format. In this case, a space should be included after the opening brace and
+		before the closing brace.</p>
+<div class="codeOnly">
+<% code("css") do %>
+.selector-1 { width: 10%; }
+.selector-2 { width: 20%; }
+.selector-3 { width: 30%; }
+<% end %>
+</div>
+
+		<p>Long, comma-separated property values - such as collections of gradients or
+		shadows - can be arranged across multiple lines in an effort to improve
+		readability and produce more useful diffs. There are various formats that could
+		be used; one example is shown below.</p>
+
+<div class="codeOnly">
+<% code("css") do %>
+.selector {
+    background-image:
+    linear-gradient(#fff, #ccc),
+    linear-gradient(#f3c, #4ec);
+    box-shadow:
+    1px 1px 1px #000,
+    2px 2px 1px 1px #ccc inset;
+}
+<% end %>
+</div>
+
+</section>

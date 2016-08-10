@@ -1,0 +1,23 @@
+.k-autocomplete .k-input,
+.k-dropdown-wrap .k-input,
+.k-numeric-wrap .k-input,
+.k-picker-wrap .k-input,
+.k-selectbox .k-input,
+.k-textbox > input {
+  height: 32px;
+  line-height: 32px;
+  padding: 0;
+  text-indent: .33em;
+  border: 0;
+  margin: 0;
+}
+.k-dropdown-wrap .k-select,
+.k-numeric-wrap .k-select,
+.k-picker-wrap .k-select {
+  min-height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  -moz-box-sizing: border-box;
+  text-align: center;
+  height: 100%;
+}

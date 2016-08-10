@@ -1,0 +1,610 @@
+<!doctype html>
+<html id="documentation">
+
+<head>
+    <meta charset="utf-8">
+
+<!-- Always force latest IE rendering engine or request Chrome Frame -->
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Import Webfonts -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<!-- Use title if it's in the page YAML frontmatter -->
+<title>Style Guide</title>
+
+<!-- Compiled CSS file -->
+<link href="../css/app-68d5533e.css" rel="stylesheet" type="text/css" /><link href="../css/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+<!-- JS -->
+<script src="../js/jquery.min-164ab4af.js" type="text/javascript"></script><script src="../js/chosen.jquery.min-1305aab5.js" type="text/javascript"></script><script src="../js/kendo.all.min-6e86ce05.js" type="text/javascript"></script><script src="../js/bootstrap.min-8b5e6192.js" type="text/javascript"></script><script src="../js/jquery-ui.min-e1e0eb3a.js" type="text/javascript"></script>
+
+<!-- Flexbox Grid -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
+</head>
+  
+  <body class="pages pages_payment">
+  
+  <header>
+      <nav class="navbar navbar-static-top pageHeader">
+  <div class="container">
+    <div class="navbar-header">
+      <h1>Synergetic Design Guidelines</h1>
+    </div>
+  </div>
+</nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar col-xs-12 col-sm-2">
+          <!-- Could this partial be renamed index? -->
+
+<nav>
+    <div class="sideNav list-group">
+        
+        <a class="list-group-item" href="form-controls.html">Forms Controls</a>
+        <a class="list-group-item" href="form-attributes.html">Forms Attributes</a>
+        <a class="list-group-item" href="form-validation.html">Form Validation</a>
+        <a class="list-group-item" href="navigation.html">Navigation</a>
+        <a class="list-group-item" href="buttons.html">Buttons</a>
+        <a class="list-group-item" href="modals.html">Modals</a>
+        <a class="list-group-item" href="progress-feedback.html">Progress &amp; Feedback</a>
+        <a class="list-group-item" href="emails.html">Emails</a>
+        <a class="list-group-item" href="tooltips-popovers.html">Tooltips &amp; Popovers</a>
+        <a class="list-group-item" href="payment.html">Payment</a>
+        <a class="list-group-item" href="blank-slate.html">Blank Slate</a>
+        <a class="list-group-item" href="grids.html">Grids</a>
+        <a class="list-group-item" href="pageLayout.html">Layout</a>
+        <a class="list-group-item" href="widgets/widgets.html">Widgets</a>
+        <br>
+        <a class="list-group-item" href="css-standards.html">CSS Standards</a>
+        <a class="list-group-item" href="tools-and-frameworks.html">Tools &amp; Frameworks</a>
+        <a class="list-group-item" href="visual-design.html">Visual Design</a>
+        <a class="list-group-item" href="accessibility.html">Accessibility</a>
+        <a class="list-group-item" href="../prototypes.html">Prototypes</a>
+
+    </div>
+</nav>
+
+
+        </nav>
+      
+        <!-- Main content -->
+        <main class="mainContent col-xs-12 col-sm-8">
+          <style type="text/css">
+
+body {
+    background: #f3f3f3;
+}
+
+.helpTooltip {
+    font-size: 16px;
+    color: #aaa;
+    float: right;
+    position: relative;
+    margin-left: 5px;
+    top: 2px;
+}
+
+.tooltip {
+    width: 400px;
+}
+
+/* Radio Block List */
+
+.blockListHeader {
+    font-weight: bold;
+}
+
+.panel {
+    margin-bottom: 5em;
+}
+
+</style>
+
+
+
+<!-- Payment Options -->
+
+<div class="panel panel-body">
+    <fieldset class="radioBlockList">
+
+    <legend>Online application payment options</legend>
+    <label for="radio-1" class="radioBlockListLabel">
+        <input id="radio-1" type="radio" name="radio-group" aria-expanded="false"> Pay online now
+    </label>
+    <label for="radio-2" class="radioBlockListLabel">
+        <input id="radio-2" type="radio" name="radio-group" aria-expanded="false"> Pay online at a later date
+    </label>
+    <label for="radio-3" class="radioBlockListLabel">
+        <input id="radio-3" type="radio" name="radio-group" aria-expanded="false">Pay in person at the school
+    </label>
+
+</fieldset>
+
+
+<script type="text/javascript">
+    $('.radioBlockListLabel').click(function() {
+        $('.radioBlockListLabel').removeClass('selected');    
+        $(this).addClass('selected');
+    });
+</script>
+</div>
+
+
+
+<!-- Fee Breakdown -->
+
+<div class="panel panel-body">
+    
+<h3>Payment Breakdown</h3>
+<table class="table">
+    <thead> 
+        <tr> 
+            <th width="100">Select</th>
+            <th>Item</th> 
+            <th>Cost</th>
+        </tr> 
+    </thead>
+    <tfoot> 
+        <tr> 
+            <th></th>
+            <th>Total payable</th> 
+            <th>0.00</th>
+        </tr> 
+    </tfoot> 
+    <tbody>
+        <tr> 
+            <td><input type="checkbox"></td>
+            <td>Application fee</td> 
+            <td>200.00</td>
+        </tr> 
+        <tr> 
+            <td><input type="checkbox"></td>
+            <td>Administration fee</td> 
+            <td>20.00</td>
+        </tr> 
+    </tbody> 
+</table>
+
+</div>
+
+
+
+<!-- Payment Details -->
+
+<div class="panel panel-body">
+    <div class="paymentForm">
+<h2 class="uMarginBm uFontSizeH3">Card details</h2>
+<form>
+
+    <div class="form-group">
+        <!-- <label for="ccNumber">Name on card</label>
+        <input autocompletetype="cc-number" class="form-control" id="ccNumber" maxlength="19" type="tel"> -->
+        <div class="form-group">
+    <label for="ccNumber">Card type</label>
+    <select class="form-control">
+        <option>Visa</option>
+        <option>Mastercard</option>
+        <option>Amex</option>
+    </select>
+</div>
+    </div>
+    <div class="form-group has-feedback">
+        <label class="control-label" for="ccNumber">Card number</label>
+        <input autocompletetype="cc-number" class="form-control" id="ccNumber" maxlength="19" type="tel">
+        <div class="alert alert-danger hidden" role="alert">This is not a valid card number.</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="row has-feedback">
+                <div class="col-xs-6 uPaddingRxxs form-group">
+                    <label class="control-label" for="ccNumber">Expiry month</label>
+                    <select class="form-control">
+                        <option>01</option>
+                    </select>
+                </div>
+                <div class="col-xs-6 uPaddingLn">
+                    <label class="control-label" for="ccNumber">Expiry year</label>
+                    <select class="form-control">
+                        <option>2020</option>
+                    </select>
+                </div>
+            </div>
+            <div class="alert alert-danger hidden" role="alert">Expiry date is incorrect.</div>
+        </div>
+        <div class="col-xs-6">
+            <div class="row has-feedback">
+                <div class="col-xs-6 form-group">
+                    <label for="cvcode" class="control-label">CV code
+                    <i title="" class="material-icons helpTooltip" data-toggle="tooltip" data-placement="right" data-original-title="The Card Verification Code is a 3 or 4 digit code printed on your card for added security.">help_outline</i></label>
+                    <input autocompletetype="cc-number" class="form-control" id="cvcode" maxlength="19" type="tel">
+                </div>
+            </div>
+            <div class="alert alert-danger hidden" role="alert">Verification code is incorrect.</div>
+        </div>
+
+    </div>
+    <div class="btnRow uMarginTl">
+        <button type="submit" class="btn btn-lg btn-primary btn-block" disabled="disabled">Pay</button>
+    </div>
+
+</form>
+</div>
+<script type="text/javascript">
+    $('.helpTooltip').tooltip();
+</script>
+</div>
+
+
+<!-- Payment Details Filled -->
+
+<div class="panel panel-body">
+    <div class="paymentForm">
+<h2 class="uMarginBm uFontSizeH3">Card details</h2>
+<form>
+
+    <!--<div class="form-group">
+        <label for="ccNumber">Name on card</label>
+        <input  autocompletetype="cc-number" 
+                class="form-control" 
+                id="ccNumber" 
+                maxlength="19"
+                value="Thomas Peterson" 
+                type="tel">
+    </div> -->
+    <div class="form-group">
+    <label for="ccNumber">Card type</label>
+    <select class="form-control">
+        <option>Visa</option>
+        <option>Mastercard</option>
+        <option>Amex</option>
+    </select>
+</div>
+    <div class="form-group has-feedback">
+        <label class="control-label" for="ccNumber">Card number</label>
+        <input  autocompletetype="cc-number" 
+                class="form-control" 
+                id="ccNumber" 
+                maxlength="19" 
+                value="54311111111111111"
+                type="tel">
+        <div class="alert alert-danger hidden" role="alert">This is not a valid card number.</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="row has-feedback">
+                <div class="col-xs-6 uPaddingRxxs form-group">
+                    <label class="control-label" for="ccNumber">Expiry month</label>
+                    <select class="form-control">
+                        <option>01</option>
+                    </select>
+                </div>
+                <div class="col-xs-6 uPaddingLn">
+                    <label class="control-label" for="ccNumber">Expiry year</label>
+                    <select class="form-control">
+                        <option>2020</option>
+                    </select>
+                </div>
+            </div>
+            <div class="alert alert-danger hidden" role="alert">Expiry date is incorrect.</div>
+        </div>
+        <div class="col-xs-6">
+            <div class="row has-feedback">
+                <div class="col-xs-6 form-group">
+                    <label for="cvcode" class="control-label">CV code
+                    <i title="" class="material-icons helpTooltip" data-toggle="tooltip" data-placement="right" data-original-title="The Card Verification Code is a 3 or 4 digit code printed on your card for added security.">help_outline</i></label>
+                    <input  autocompletetype="cc-number" 
+                            class="form-control" 
+                            id="cvcode" 
+                            value="123"
+                            maxlength="19" 
+                            type="tel">
+                </div>
+            </div>
+            <div class="alert alert-danger hidden" role="alert">Verification code is incorrect.</div>
+        </div>
+
+    </div>
+    <div class="btnRow uMarginTl">
+        <button type="submit" class="btn btn-lg btn-primary btn-block">Pay</button>
+    </div>
+
+</form>
+</div>
+<script type="text/javascript">
+    $('.helpTooltip').tooltip();
+</script>
+</div>
+
+<!-- Payment Details Error -->
+
+<div class="panel panel-body">
+    <div class="paymentForm">
+<h2 class="uMarginBm uFontSizeH3">Card details</h2>
+<form>
+
+    <div class="form-group has-feedback">
+        <!-- <label class="control-label" for="ccNumber">Name on card</label>
+        <input autocompletetype="cc-number" class="form-control" id="ccNumber" maxlength="19" type="tel">
+        <div class="alert alert-danger" role="alert">This is not a valid name.</div> -->
+        <div class="form-group">
+    <label for="ccNumber">Card type</label>
+    <select class="form-control">
+        <option>Visa</option>
+        <option>Mastercard</option>
+        <option>Amex</option>
+    </select>
+</div>
+    </div>
+    <div class="form-group has-error has-feedback">
+        <label class="control-label" for="ccNumber">Card number</label>
+        <input autocompletetype="cc-number" class="form-control" id="ccNumber" maxlength="19" type="tel">
+        <div class="alert alert-danger" role="alert">This is not a valid card number.</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="row has-error has-feedback">
+                <div class="col-xs-6 uPaddingRxxs">
+                    <label class="control-label" for="ccNumber">Expiry month</label>
+                    <select class="form-control">
+                        <option>01</option>
+                    </select>
+                </div>
+                <div class="col-xs-6 uPaddingLn">
+                    <label class="control-label" for="ccNumber">Expiry year</label>
+                    <select class="form-control">
+                        <option>2020</option>
+                    </select>
+                </div>
+            </div>
+            <div class="alert alert-danger" role="alert">Expiry date is incorrect.</div>
+        </div>
+        <div class="col-xs-6">
+            <div class="row has-error has-feedback">
+                <div class="col-xs-6">
+                    <label for="cvcode" class="control-label">CV code
+                    <i title="" class="material-icons helpTooltip" data-toggle="tooltip" data-placement="right" data-original-title="The Card Verification Code is a 3 or 4 digit code printed on your card for added security.">help_outline</i></label>
+                    <input autocompletetype="cc-number" class="form-control" id="cvcode" maxlength="19" type="tel">
+                </div>
+            </div>
+            <div class="alert alert-danger" role="alert">Verification code is incorrect.</div>
+        </div>
+
+    </div>
+    <div class="btnRow uMarginTl">
+        <button type="submit" class="btn btn-lg btn-primary btn-block" disabled="disabled">Pay</button>
+    </div>
+
+</form>
+</div>
+<script type="text/javascript">
+    $('.helpTooltip').tooltip();
+</script>
+</div>
+
+<!-- Payment Receipt -->
+<style>
+
+.iconCheckFill {
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+    color: #00A000;
+}
+
+.iconCrossFill {
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+    color: #aaa;
+}
+
+</style>
+
+<div class="">
+<div class="panel uPaddingAs">
+
+    <div class="panel-heading" style="margin-bottom: 60px;">
+        <h2 class="pull-left">Receipt</h2>
+        <div class="pull-right btnRow">
+            <a class="btn btn-default lightIcon"><i class="material-icons">print</i> Print</a>
+            <a class="btn btn-default lightIcon"><i class="material-icons">mail</i> Email</a>
+        </div>
+    </div>
+
+    <div class="panel-body">
+
+        <table class="table">
+            <caption>Transaction details</caption>
+            <tbody>
+                <tr> 
+                    <th width="200px;">Transaction processed</th> 
+                    <td>26/02/2016 2:50:07 PM</td>
+                </tr>
+                <tr> 
+                    <th>Reference number</th> 
+                    <td>11001-5 <br><small class="uFontQuiet"><em>Please keep a record of this number for support or questions</em></small></td>
+                </tr> 
+                <tr> 
+                    <th>Description</th> 
+                    <td>Fun park - Aden Abbot</td>
+                </tr> 
+                <tr> 
+                    <th>Amount</th> 
+                    <td>$175.00</td>
+                </tr>
+                <tr> 
+                    <th>Credit Card Reference </th> 
+                    <td>543111...111</td>
+                </tr> 
+                <tr> 
+                    <th>Card Expiry Date</th> 
+                    <td>02/16</td>
+                </tr>
+                <tr> 
+                    <th>Wheelchair access required</th> 
+                    <td><i class="iconCheckFill"></i> Yes</td>
+                </tr>
+                <tr> 
+                    <th>Gluten free</th> 
+                    <td><i class="iconCrossFill"></i> No</td>
+                </tr>
+                <tr> 
+                    <th>Additional details</th> 
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, unde voluptas vitae sunt suscipit, recusandae facilis placeat repellat voluptatibus labore cupiditate accusantium facere, est, quis qui reprehenderit amet nemo quam.</td>
+                </tr>
+            </tbody> 
+        </table>
+
+        <table class="table uMarginBn">
+    <caption>Payment details</caption>
+    <tfoot>
+        <tr>
+            <th>Total</th> 
+            <th class="text-right">$400.00</th>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Application fee</td> 
+            <td class="text-right">300.00</td>
+        </tr> 
+        <tr>
+            <td>Administration fee</td> 
+            <td class="text-right">20.00</td>
+        </tr> 
+        <tr>
+            <td>Transaction fee</td> 
+            <td class="text-right">30.00</td>
+        </tr>
+        <tr>
+            <td>Extra charges</td> 
+            <td class="text-right">12.00</td>
+        </tr>
+    </tbody> 
+</table>
+        
+    </div>
+
+</div>
+</div>
+
+<style>
+    tfoot {
+        font-size: 21px;
+    }
+    .tableEm {
+        font-style: italic;
+        color: purple;
+    }
+</style>
+
+<div class="panel ">
+
+    <div class="panel-body">
+        <h3>Order Summary</h3>
+        <table class="table uMarginBn">
+
+            <tfoot>
+                <tr>
+                    <th>Total</th> 
+                    <th class="text-right">$400.00</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Application fee</td> 
+                    <td class="text-right">300.00</td>
+                </tr> 
+                <tr>
+                    <td>Administration fee</td> 
+                    <td class="text-right">20.00</td>
+                </tr> 
+                <tr>
+                    <td>Transaction fee</td> 
+                    <td class="text-right">30.00</td>
+                </tr>
+                <tr>
+                    <td>Extra charges</td> 
+                    <td class="text-right">12.00</td>
+                </tr>
+            </tbody> 
+        </table>
+    </div>
+
+</div>
+
+<div class="panel ">
+
+    <div class="panel-body">
+        <h3>Order Summary</h3>
+        <table class="table uMarginBn">
+
+            <thead>
+                <tr>
+                    <th>Description</th> 
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th class="text-right">Total</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>Total</th> 
+                    <th></th>
+                    <th></th>
+                    <th class="text-right">$412.00</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Student</td>
+                    <td>2</td>
+                    <td>100.00</td>
+                    <td class="text-right">200.00</td>
+                </tr> 
+                <tr>
+                    <td>Adult</td>
+                    <td>1</td>
+                    <td>100.00</td>
+                    <td class="text-right">100.00</td>
+                </tr> 
+                <tr>
+                    <td>Concesion</td>
+                    <td>2</td>
+                    <td>50.00</td>
+                    <td class="text-right">100.00</td>
+                </tr>
+                <tr class="info">
+                    <td>Card surcharge</td>
+                    <td></td>
+                    <td></td>
+                    <td class="text-right">12.00</td>
+                </tr>
+            </tbody> 
+        </table>
+    </div>
+
+</div>
+
+        </main>
+    </div>
+    
+  </div>
+
+  </body>
+
+
+</html>
+

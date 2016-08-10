@@ -1,0 +1,34 @@
+.syn .sidebar {
+  background-color: #F7F7F7;
+  border: solid 1px #DDDDDD;
+}
+.syn h2 {
+  font-size: 18px;
+}
+.syn .spanLabel {
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 2em;
+  display: block;
+}
+.syn .sidebar label {
+  font-size: 12px;
+}
+.syn .list-group {
+  font-size: 12px;
+  border: solid 1px #ddd;
+  max-height: 200px;
+  overflow: scroll;
+}
+.syn .list-group-item:first-of-type {
+  border-top: 0;
+}
+.syn .list-group-item:last-of-type {
+  border-bottom: 0;
+}
+.syn .merging-spaces {
+  margin-top: 10px;
+}
+.syn .emailMessage {
+  padding: 20px 60px;
+}

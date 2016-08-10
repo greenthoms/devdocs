@@ -1,0 +1,28 @@
+<label for="exampleInputEmail1">Multiselect Groups (Chosen)</label>
+<div class="form-group">
+    <select data-placeholder="Select an option" class="chosen-select fullWidth" multiple>
+    <optgroup label="Group 1">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+    </optgroup>
+    <optgroup label="Group 2">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+    </optgroup>
+    <optgroup label="Group 3">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+    </optgroup>
+    </select>
+</div>
+
+<script type="text/javascript">
+
+    $('.chosen-select').chosen({
+        no_results_text: "No results for"
+    });
+
+</script>

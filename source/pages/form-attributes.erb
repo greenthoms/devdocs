@@ -1,0 +1,171 @@
+<form>
+
+<!-- Intro -->
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <h2>Form Control Attributes</h2>
+        <p>Always use the appropriate <code>type</code> and when appropriate use: <code>autocorrect</code> <code>autocapitalize</code> <code>pattern</code> <code>novalidate</code> and <code>autocomplete</code> attributes.</p>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <div class="alert alert-info" role="alert">
+            <p><strong>All forms should follow accessibility best practices:</strong></p>
+            <ol>
+                <li><a href="http://webaim.org/techniques/forms/#ensure">Ensure forms are logical and easy to use.</a></li>
+                <li><a href="http://webaim.org/techniques/forms/#keyboard">Ensure forms are keyboard accessible.</a></li>
+                <li><a href="http://webaim.org/techniques/forms/#labels">Associate form labels with controls.</a></li>
+            </ol>
+        </div>
+    </div>
+</div>
+<hr>
+
+<!-- Email Address Example -->
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <%= partial "partials/form-attributes/email" %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <ul>
+            <li>Disable auto-correct and disable auto-capitalization.</li> 
+            <li>Invoke special @ keyboard.</li>
+        </ul>
+    </div>
+</div>
+
+<!--  Email Address code  -->
+<div class="codeOnly">
+<% code("html") do %>
+<%= partial "partials/form-attributes/email" %>
+<% end %>
+</div>
+
+<hr>
+
+<!-- Phone number -->
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <%= partial "partials/form-attributes/phone" %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <ul>
+            <li>Invoke special phone keyboard.</li> 
+            <li>Turn off autocorrect.</code> 
+            <li>Note: iOS doesn't allow input of special characters such as parenthesis and dash with the phone keyboard.</li>
+        </ul>
+    </div>
+</div>
+
+<!--  Email Address code  -->
+<div class="codeOnly">
+<% code("html") do %>
+<%= partial "partials/form-attributes/phone" %>
+<% end %>
+</div>
+
+<hr>
+
+<!-- Name Example -->
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <%= partial "partials/form-attributes/name" %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <ul>
+            <li>Disable auto-correct.</li> 
+            <li>Note: while it is recommended to <a href="/blog/mobile-form-usability-single-input-fields">use a single name field</a>, if you split it across multiple fields, be sure to assign the <a href="https://html.spec.whatwg.org/multipage/forms.html#attr-fe-autocomplete-name">appropriate autocomplete values</a>.</li>
+        </ul>
+    </div>
+</div>
+
+<!--  Name code  -->
+<div class="codeOnly">
+<% code("html") do %>
+<%= partial "partials/form-attributes/name" %>
+<% end %>
+</div>
+
+<hr>
+
+<!-- Address example -->
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <%= partial "partials/form-attributes/address" %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <ul>
+            <li>Disable auto-correct.</li>
+            <li>Placeholder adress line number.</li> 
+            <li>Note: be sure to update the autocomplete attribute and placeholder accordingly if using multiple address line fields.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Address code -->
+<div class="codeOnly">
+<% code("html") do %>
+<%= partial "partials/form-attributes/address" %>
+<% end %>
+</div>
+<hr>
+
+<!-- Credit card number field -->
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <%= partial "partials/form-attributes/creditCard" %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <ul>
+            <li>Invoke numeric keyboard.</li>
+            <li>Where possible use a <a href="http://demos.telerik.com/kendo-ui/maskedtextbox/index" target="_blank">masked input</a>.</li>
+        </ul>
+    </div>
+</div>
+<div class="codeOnly">
+<% code("html") do %>
+<%= partial "partials/form-attributes/creditCard" %>
+<% end %>
+</div>
+<hr>
+
+
+<!-- Date picker -->
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <%= partial "partials/form-attributes/datePicker" %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <ul>
+            <li>Include an access key for keyboard only usage.</li> 
+        </ul>
+    </div>
+</div>
+<div class="codeOnly">
+<% code("html") do %>
+<%= partial "partials/form-attributes/datePicker" %>
+<% end %>
+</div>
+<hr>
+
+
+<!-- Submit Button Example -->
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <label>Button</label><br>
+        <%= partial "partials/form-attributes/submitButton" %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <ul>
+            <li>For the 'Go' button on keyboard to work, avoid using <code>type="button"</code>.</li>
+        </ul>
+    </div>
+</div>
+<br>
+<!-- Submit Button Code -->
+<div class="codeOnly uMarginTl">
+<% code("html") do %>
+<%= partial "partials/form-attributes/submitButton" %>
+<% end %>
+</div>
+<hr>
+
+</form>

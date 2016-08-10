@@ -1,0 +1,35 @@
+/* LESS Variables
+============================================================================ */
+/* Core colours */
+/* Misc Colours */
+/* Misc */
+/* Font sizes */
+/* Font weights */
+/* Candidates
+============================================================================ */
+.validationError,
+.field-validation-error {
+  color: #a94442;
+  background-color: #f2dede;
+  padding: 0.25em .5em;
+  display: inline-block;
+}
+.validation-summary-errors {
+  font-weight: 500;
+  color: #a94442;
+}
+/* Highlight inputs which require attention */
+.inputValidationError,
+.input-validation-error {
+  border-color: #dd0000;
+}
+/* Add an asterix to a label */
+.requiredField:after,
+.requiredField label:after {
+  color: red;
+  content: "*";
+  padding: 0 1px;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+}

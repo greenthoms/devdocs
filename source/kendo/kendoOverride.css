@@ -1,0 +1,31 @@
+.minimalGrid {
+  font-size: 0.85rem;
+  color: hsl(0, 0%, 13%);
+}
+
+
+.k-grid-header-wrap {
+  border-color: transparent;
+}
+
+.k-header,
+.k-grid-header,
+.k-grid-header .k-header {
+  border-color: transparent;
+  background-color: transparent;
+  border-width: 0;
+  font-weight: 700;
+}
+
+.k-grid td {
+  border-width: 1px 0 0 0;
+}
+
+..k-widget {
+  border: none;
+}
+
+.k-grid-header th.k-header {
+  vertical-align: bottom;
+  font-weight: 500;
+}

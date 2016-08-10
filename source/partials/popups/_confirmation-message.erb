@@ -1,0 +1,40 @@
+<div id="window">
+    <p>Your requisition will now be sent for approval. Please review your details and click submit when you're ready.</p>
+    <p><strong>Supplier:</strong> Officeworks<br>
+    <strong>Amount:</strong> $40.00</p>
+    <div class="pull-right">
+        <button type="button" class="btn btn-lg btn-primary">
+            Submit
+        </button>
+        <button type="button" class="btn btn-lg btn-default">
+            Cancel
+        </button>
+    </div>
+</div>
+<span id="undo" style="display:none" class="k-button">Click here to open the window.</span>
+
+<script>
+    $(document).ready(function() {
+        var window = $("#window"),
+            undo = $("#undo")
+                    .bind("click", function() {
+                        window.data("kendoWindow").open();
+                        undo.hide();
+                    });
+
+        var onClose = function() {
+            undo.show();
+        }
+
+        if (!window.data("kendoWindow")) {
+            window.kendoWindow({
+                width: "500px",
+                title: "Confirm",
+                actions: [
+                    "Close"
+                ],
+                close: onClose
+            });
+        }
+    });
+</script>

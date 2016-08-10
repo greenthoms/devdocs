@@ -1,0 +1,50 @@
+---
+title: Payment
+layout: prototype
+---
+
+<style>
+body {
+    background-color: #ddd;
+}
+
+tfoot {
+        font-size: 21px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0;
+    }
+    .panel {font-size: 12px;}
+    .panel {
+        margin-bottom: 5px;
+    }
+    .panel-body {
+        padding: 5px;
+    }
+
+    h2, tfoot {
+        font-size: 16px;
+        margin-bottom: 0.75em; 
+    }
+
+}
+
+</style>
+
+<%= partial "partials/navigation/navbar-generic" %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <%= partial "prototypes/partials/payment/payment-order-summary" %>
+            <div class="panel panel-body">
+                All donations are tax deductable.
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <%= partial "prototypes/partials/payment/card-collection" %>
+        </div>
+    </div>
+</div>

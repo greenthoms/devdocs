@@ -1,0 +1,55 @@
+---
+title: Accessibility
+---
+
+<h2>Accessibility</h2>
+<p>Syweb aims to meet Level AA Conformance to the <a href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</a></p>
+
+
+<p><strong>Checklist of common issues:</strong></p>
+<!-- http://www.unimelb.edu.au/accessibility/training/top-ten.htm -->
+<ul>
+	<li>Make each page navigable by keyboard alone.</li>
+	<li>Add labels for all form inputs.</li>
+	<li>Semantic markup: Use heading tags, table headings and lists.</li>
+	<li>Use skip to content links.</li>
+	<li>Add a meaningful page title.</li>
+	<li>Keep navigation consistent.</li>
+	<li>Avoid pop-up windows if possible.</li>
+	<li>Use h1 &ndash; h6 to identify headings.</li>
+	<li>Add alt text to images.</li>
+	<li>Provide sufficient contrast between text and background colors.</li>
+</ul>
+
+<h3 id="keyboard-access">Keyboard Accessibility</h3>
+<p class="lead">Make all functionality available when using keyboard only.</p>
+<p>Keyboard testing is easy - simply put the mouse away and test the page using only a keyboard. The <code>tab</code> and <code>shift</code> + <code>tab</code> keys can be used to navigate through links and form controls, and <code>Enter</code> can be used to activate links, buttons, or other interactive elements. Ensure that all page functionality is available using only the keyboard.
+</p>
+<h3 id="frameworks">Frameworks:</h3>
+
+<h4>Kendo UI framework</h4>
+<h5>Keyboard Support in Kendo UI</h5>
+
+<p>Kendo UI widgets support keyboard controls using an <a href="https://en.wikipedia.org/wiki/Access_key" target="_blank">access key</a>.</p> 
+<p>Check the <a href="http://docs.telerik.com/kendo-ui/accessibility/keyboard-support#built-in-keyboard-support-in-kendo-ui">Kendo UI documentation</a> to ensure it can be controlled with keyboard only.</p>
+
+<h5>Know accessibility issues in Kendo UI</h5>
+<ul>
+	<li>The Kendo UI widgets use attributes to identify the column headers. The Pivot and Scheduler are exceptions that will be addressed by a future update.</li>
+	<li>Data cells and header cells - Kendo UI doesn’t identify headers for complex data tables. Will be addressed by a future update.</li>
+	<li>The Kendo UI Editor doesn’t set the title of the content editable iframe. Will be addressed by a future update.</li>
+	<li>Most forms in Kendo UI are accessible to assistive technologies with some exceptions that will be addressed by a future update.</li>
+</ul>
+
+<h4>Bootstrap framework</h4>
+Bootstrap follows common web standards and but  extra effort to make it accessible to people using assistive technologies such as screen readers. For more information see the <a href="http://getbootstrap.com/getting-started/#accessibility">Bootstrap documentation.</a>
+
+<h3>Resources:</h3>
+<ul>
+	<li><a href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</a></li>
+	<li><a href="http://www.w3.org/TR/WAI-AUTOOLS/">Authoring Tool Accessibility Guidelines (ATAG) 1.0</a></li>
+	<li><a href="http://www.sitepoint.com/making-bootstrap-accessible/">Making Bootstrap a Little More Accessible</a></li>
+	<li><a href="https://paypal.github.io/bootstrap-accessibility-plugin/">Bootstrap accessibility plugin</a></li>
+	<li><a href="http://getbootstrap.com/getting-started/#accessibility">Bootstrap accessibility.</a></li>
+	<li><a href="http://a11yproject.com/posts/skip-nav-links/">Skip to content link.</a></li>
+</ul>

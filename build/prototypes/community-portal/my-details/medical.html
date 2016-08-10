@@ -1,0 +1,803 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+<!-- Always force latest IE rendering engine or request Chrome Frame -->
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Import Webfonts -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<!-- Use title if it's in the page YAML frontmatter -->
+<title>Medical</title>
+
+<!-- Compiled CSS file -->
+<link href="../../../css/app-99b8a19b.css" rel="stylesheet" type="text/css" /><link href="../../../css/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+<!-- JS -->
+<script src="../../../js/jquery.min-164ab4af.js" type="text/javascript"></script><script src="../../../js/chosen.jquery.min-1305aab5.js" type="text/javascript"></script><script src="../../../js/kendo.all.min-6e86ce05.js" type="text/javascript"></script><script src="../../../js/bootstrap.min-8b5e6192.js" type="text/javascript"></script><script src="../../../js/jquery-ui.min-e1e0eb3a.js" type="text/javascript"></script>
+
+<!-- Flexbox Grid -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
+    <link href="../../../css/pages/com-portal-ac1b62ea.css" rel="stylesheet" type="text/css" />
+</head>
+  
+  <body class="prototypes prototypes_community-portal prototypes_community-portal_my-details prototypes_community-portal_my-details_medical">
+      <style>
+.navbar-inverse .nav > li {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    margin-left: -2px;
+    margin-right: -2px;
+    border: solid 1px #005F5F;
+    border-top: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-inverse .nav > li {
+    position: relative;
+    display: block;
+    width: inherit;
+    margin: auto;
+    width: inherit;
+    border: 0;
+  }
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #333;
+  }
+}
+
+/* Allow items to wrap properly */
+.nav .material-icons {
+    line-height: 0;
+    font-size: 20px;
+    margin-right: 2px;
+}
+
+</style>
+
+<nav class="navbar z1000 navbar-default navbar-static-top navbar-inverse uMarginAn">
+  <div class="">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <i class="material-icons">menu</i>
+        <span class="float-left">Menu</span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#"><i class="material-icons">home</i> Home</a></li>
+        <li><a href="#"><i class="material-icons">spellcheck</i> Results</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">access_time</i> Timetable <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../schedule.html#my-schedule">My Schedule</a></li>
+            <li><a href="../timetable.html#my-timetable">My Timetable</a></li>
+          </ul>
+        </li>
+        <li><a href="../absences.html"><i class="material-icons">assignment_ind</i> Absences</a></li>
+        <li><a href="../events.html"><i class="material-icons">event</i> Events</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">account_balance_wallet</i> Finance <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Payment</a></li>
+            <li><a href="#">Payment Plans</a></li>
+            <li><a href="#">My Cards</a></li>
+          </ul>
+        </li>
+        <li><a href="../contact.html"><i class="material-icons">call</i> Contact Us</a></li>
+        <li><a href="#"><i class="material-icons">forum</i> Interviews</a></li>
+        <li><a href="#"><i class="material-icons">attachment</i> Documents</a></li>
+        <li><a href="#"><i class="material-icons">border_color</i> Self Assessment</a></li>
+        <li><a href="medical.html"><i class="material-icons">account_circle</i> My Details</a></li>
+        <li><a href="../excursions.html"><i class="material-icons">directions_bus</i> Excursions</a></li>
+        <li><a href="#"><i class="material-icons">settings</i> Settings</a></li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /. -->
+</nav>
+
+
+      <style>
+    .item-2 {
+        background-color: #0275d8;
+    }
+    a.item-2 {
+        color: #fff;
+    }
+</style>
+
+<style>
+.navbar-selector li.active {
+      border-bottom: solid 3px #3484FF;
+  }
+</style>
+
+<!-- User Selector -->
+<nav class="navbar navbar-default navbar-selector navbar-static-top z900">
+  <div class="container">
+    <div class="clearfix">
+      <!-- Student Selector Current -->
+      <button type="button" class="navbar-toggle btn-block uMarginAn collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+        <a><i class="material-icons">account_circle</i> Jacalyn Abbot <i class="material-icons">arrow_drop_down</i></a>
+      </button>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
+          <li class="active"><a href="#"><i class="material-icons">account_circle</i> Jacalyn Abbot</a></li>
+          <li><a href="#"><i class="material-icons">account_circle</i> Aden Abbot</a></li>
+          <li><a href="#"><i class="material-icons">account_circle</i> Bashir Abbot</a></li>
+          <li><a href="#"><i class="material-icons">account_circle</i> Anna Abbot</a></li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container uMarginTm">
+    <aside class="col-xs-12 col-sm-2">
+        <ul class="list-group">
+	<a class="list-group-item item-1" href="medical.html">Personal</a>
+
+	<a class="list-group-item item-2" href="medical.html">Medical</a>
+
+	<a class="list-group-item item-3" href="immunisations.html">Immunisations <br>&amp; Health Care</a>
+
+	<a class="list-group-item item-4" href="medical.html">Requirements</a>
+
+	<a class="list-group-item item-5" href="medical.html">Abilitites</a>
+</ul>
+    </aside>
+
+    <main class="col-xs-12 col-sm-10">
+
+    <!-- Medical Conditions -->
+    <style>
+    .thumbnail {
+        margin-bottom: 10px;
+    }
+    .toggleAlert .material-icons {
+        top: -1px;
+        color: #717171 !important;
+        margin-right: 5px;
+    }
+</style>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Medical Conditions</h3>
+    </div>
+
+    <div class="panel-body uPaddingAm" style="background-color: #f5f5f5">
+
+        <div class="row thumbnail uPaddingAs uMarginHs">
+            <div class="col-xs-12">
+                <div class="uMarginBs clearfix">
+                    <h3 class="pull-left">Asthma</h3> <button href="#" class="pull-left btn btn-sm btn-primary uMarginLxs">Edit</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" checked="checked" disabled="disabled" class="hidden"> <i class="material-icons text-success md-18">check_circle</i> Has condition
+                    </label>
+                </div>
+                <div class="form-group hidden">
+                    <label>
+                        <input type="checkbox" disabled="disabled"> Confidential
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Severity</label>            
+                    <select class="form-control" disabled="disabled">
+                        <option value="">Life threateaning</option>
+                        <option value="">Severe</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8 col-md-offset-1">
+                
+                <div class="form-group">
+                    <label for="">Details:</label>
+                    <textarea class="form-control" id="" cols="" rows="4" disabled="disabled">Asthma triggers are different from person to person and can include: Airborne allergens, such as pollen, animal dander, mold, cockroaches and dust mites. Respiratory infections, such as the common cold. Physical activity (exercise-induced asthma). Cold air. Air pollutants and irritants, such as smoke.</textarea>
+                </div>
+                <div class="btnRow pull-left">
+                    <a href="#" class="btn btn-default" disabled="disabled"><i class="material-icons md-18">add_circle</i> Add Emergency Treatment Details</a>
+                    <a href="#" class="btn btn-default" disabled="disabled"><i class="material-icons md-18">add_circle</i> Add Other Treatment Details</a> <a href="#" class="btn btn-default" disabled="disabled"><i class="material-icons md-18">add_circle</i> Add Asthma Specific Details</a>
+                </div>
+                <div class="form-group hidden">
+                    <label for="">Emergency Treatment Details:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3"></textarea>
+                </div>
+                <div class="form-group hidden">
+                    <label for="">Other Details:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3"></textarea>
+                </div> 
+                          
+            </div>
+            <div class="col-xs-12 uPaddingTm uMarginTs" style="border-top: dashed 1px #ccc;">
+                <label for="">Medications:</label>
+                <!-- Button trigger modal -->
+                <div class="btnRow">
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Alvesco</button>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal-2">Paracetamol</button>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal-3">Flixotide</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="row thumbnail uPaddingAs uMarginHs" style="background-color: #FFFFE4;">
+            <div class="col-xs-12">
+                <div class="uMarginBs clearfix">
+                    <h3 class="pull-left">Migraine/headaches</h3> <button href="#" class="pull-left btn btn-sm btn-success uMarginLxs">Save</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" checked="checked" > <i class="material-icons text-success md-18 hidden">check_circle</i> Has condition
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox"> Confidential
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Severity</label>            
+                    <select class="form-control">
+                        <option value="">Severe</option>
+                        <option value="">Life threateaning</option>   
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8 col-md-offset-1">
+                
+                <div class="form-group">
+                    <label for="">Details:</label>
+                    <textarea class="form-control" id="" cols="" rows="4">Migraines can be experienced from as little as once or twice a year, or as often as two or three times a week. The pain is severe, throbbing and usually on one side of the head. A migraine attack can last from four hours to three days and is associated with a spasm of the blood vessels leading to the brain. Three times as many women (15 per cent) as men (5 per cent) suffer from migraine, and scientists believe that hormones play a large role.</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Emergency Treatment Details:</label>
+                    <textarea class="form-control" id="" cols="" rows="4">Migraines can be experienced from as little as once or twice a year, or as often as two or three times a week. The pain is severe, throbbing and usually on one side of the head. A migraine attack can last from four hours to three days and is associated with a spasm of the blood vessels leading to the brain. Three times as many women (15 per cent) as men (5 per cent) suffer from migraine, and scientists believe that hormones play a large role.</textarea>
+                </div>
+                <div class="form-group pull-left">
+                    <a href="#" class="btn btn-default"><i class="material-icons md-18">add_circle</i> Add Other Treatment Details</a>
+                </div>
+                <div class="form-group hidden">
+                    <label for="">Emergency Treatment Details:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3"></textarea>
+                </div>
+                <div class="form-group hidden">
+                    <label for="">Other Details:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3"></textarea>
+                </div> 
+                          
+            </div>
+            <div class="col-xs-12 uPaddingTm uMarginTs" style="border-top: dashed 1px #ccc;">
+                <label for="">Medications:</label>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal-2">Paracetamol</button>
+            </div>
+        </div>
+        <h3 class="uFontSizeM uMarginTl">Add other medical conditions:</h3>
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Diabetes</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Whooping cough</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Diet</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Enuresis (bed wetting)</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Epilepsy/convulsions</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Epistaxis (nose bleeds)</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Heart condition</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Travel sickness</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Eyes/sight</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Hearing</a>
+                </div>
+            </div>
+        </div>
+        <div class="uDashedTop2">
+            <a href="#" class="btn btn-default"><i class="material-icons md-18">add_circle</i> Add a medical condition not shown here</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Alvesco Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Alvesco</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-12 col-md-3">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" checked="checked"> Can use medication
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>When</label>            
+                    <select class="form-control">
+                        <option value="">Relief</option>
+                        <option value="">Prevention</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Administration Method:</label>            
+                    <select class="form-control">
+                        <option value="">Oral</option>
+                        <option value="">Injection</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Expires:</label>
+                    <input id="datepicker-blank" class="fullWidth datepicker" value="" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8 col-md-offset-1">
+                
+                <div class="form-group">
+                    <label for="">Medication details:</label>
+                    <textarea class="form-control" id="" cols="" rows="4">Alvesco (ciclesonide) is a man-made corticosteroid. It prevents the release of substances in the body that cause inflammation.</textarea>
+                </div>
+                <div class="form-group pull-left uMarginRs">
+                    <button href="#" class="btn btn-default"><i class="material-icons md-18">add_circle</i> Add Dosage Information</button>
+                </div>
+                <div class="form-group hidden">
+                    <label for="">Dosage:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3"></textarea>
+                </div>
+                <div class="form-group hidden">
+                    <label for="">Other Details:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3"></textarea>
+                </div> 
+                          
+            </div>
+            <div class="col-xs-12 uPaddingTm uMarginTs" style="border-top: dashed 1px #ccc;">
+                <h4>Associated Medical Conditions:</h4>
+                <button class="btn btn-default toggleAlert"><i class="material-icons md-16">close</i>Asthma</button>
+                <button class="btn btn-default"><i class="material-icons md-16">add_circle</i> Link another condition</button>
+                <div class="alert alert-danger hidden uPaddingVxs uMarginVxs" role="alert">Are you sure you want to remove <strong>Asthma</strong> from this medication? <a class="btn btn-danger" href="#">Yes, Remove</a> <a href="#" class="btn btn-default toggleAlert">Cancel</a></div>
+            </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" disabled="disabled">Save changes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Paracetamol Modal -->
+<div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Paracetamol</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-12 col-md-3">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" checked="checked"> Can use medication
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>When</label>            
+                    <select class="form-control">
+                        <option value="">Relief</option>
+                        <option value="">Prevention</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Administration Method:</label>            
+                    <select class="form-control">
+                        <option value="">Oral</option>
+                        <option value="">Injection</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Expires:</label>
+                    <input id="datepicker-blank" class="fullWidth datepicker" value="" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8 col-md-offset-1">
+                
+                <div class="form-group">
+                    <label for="">Medication details:</label>
+                    <textarea class="form-control" id="" cols="" rows="4">Paracetamol is a medication used to treat pain and fever. It is typically used for mild to moderate pain.</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Dosage:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3">As required. Maximum dose is 1 tablet every 4 hours. No patient should receive more than 4 tablets per day.</textarea>
+                </div>
+                          
+            </div>
+            <div class="col-xs-12 uPaddingTm uMarginTs" style="border-top: dashed 1px #ccc;">
+                <h4>Associated Medical Conditions:</h4>
+                <button class="btn btn-default toggleAlert"><i class="material-icons md-16">close</i>Asthma</button>
+                <button class="btn btn-default toggleAlert"><i class="material-icons md-16">close</i>Migraine/headaches</button>
+                <button class="btn btn-default"><i class="material-icons md-16">add_circle</i> Link another condition</button>
+                <div id="myId" class="alert alert-danger hidden uPaddingVxs uMarginVxs" role="alert">Are you sure you want to remove <strong>Asthma</strong> from this medication? <a class="btn btn-danger" href="#">Yes, Remove</a> <a href="#" class="btn btn-default toggleAlert">Cancel</a></div>
+            </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" disabled="disabled">Save changes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Flixotide Modal -->
+<div class="modal fade" id="myModal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Flixotide</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-12 col-md-3">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" checked="checked"> Can use medication
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>When</label>            
+                    <select class="form-control">
+                        <option value="">Relief</option>
+                        <option value="">Prevention</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Administration Method:</label>            
+                    <select class="form-control">
+                        <option value="">Oral</option>
+                        <option value="">Injection</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Expires:</label>
+                    <input id="datepicker-blank" class="fullWidth datepicker" value="" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8 col-md-offset-1">
+                
+                <div class="form-group">
+                    <label for="">Medication details:</label>
+                    <textarea class="form-control" id="" cols="" rows="4">Fluticasone taken by inhalation is known as a 'preventer'. This is because it is taken regularly every day to reduce the inflammation in the lungs and prevent asthma attacks. Symptoms usually start to get better between four to seven days after starting treatment. However, it is important to keep using this medicine regularly, even after your asthma symptoms have improved, in order to prevent them coming back.</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Dosage:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3">Flixotide inhaler can be used twice a day.</textarea>
+                </div>
+                          
+            </div>
+            <div class="col-xs-12 uPaddingTm uMarginTs" style="border-top: dashed 1px #ccc;">
+                <h4>Associated Medical Conditions:</h4>
+                <button class="btn btn-default toggleAlert"><i class="material-icons md-16">close</i> Asthma</button>
+                <button class="btn btn-default"><i class="material-icons md-16">add_circle</i> Link another condition</button>
+                <div id="myId" class="alert alert-danger hidden uPaddingVxs uMarginVxs" role="alert">Are you sure you want to remove <strong>Asthma</strong> from this medication? <a class="btn btn-danger" href="#">Yes, Remove</a> <a href="#" class="btn btn-default toggleAlert">Cancel</a></div>
+            </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" disabled="disabled">Save changes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    $('a').popover();
+
+
+
+    // Toggle hidden class
+    $( ".toggleAlert" ).on( "click", function() {
+        $(".alert-danger").toggleClass('hidden');
+    });
+    
+</script>
+
+
+
+    <!-- Medications -->
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Medications</h3>
+    </div>
+
+    <div class="panel-body uPaddingAm bgMuted">
+
+        <div class="row thumbnail uPaddingAs uMarginHs">
+            <div class="col-xs-12">
+                <div class="uMarginBs clearfix">
+                    <h3 class="pull-left">Alvesco</h3> <button href="#" class="pull-left btn btn-sm btn-primary uMarginLxs">Edit</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" checked="checked" disabled="disabled" class="hidden"> <i class="material-icons text-success md-18">check_circle</i> Can use medication
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>When</label>            
+                    <select class="form-control" disabled="disabled">
+                        <option value="">Relief</option>
+                        <option value="">Prevention</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Administration Method:</label>            
+                    <select class="form-control" disabled="disabled">
+                        <option value="">Oral</option>
+                        <option value="">Injection</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Expires:</label>
+                    <input id="datepicker-blank" class="fullWidth datepicker" value="" disabled="disabled" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8 col-md-offset-1">
+                
+                <div class="form-group">
+                    <label for="">Medication details:</label>
+                    <textarea class="form-control" id="" cols="" rows="4" disabled="disabled">Alvesco (ciclesonide) is a man-made corticosteroid. It prevents the release of substances in the body that cause inflammation.</textarea>
+                </div>
+                <div class="form-group pull-left uMarginRs">
+                    <a href="#" class="btn btn-muted" disabled="disabled"><i class="material-icons md-18">add_circle</i> Add Dosage Information</a>
+                </div>
+                <div class="form-group hidden">
+                    <label for="">Dosage:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3"></textarea>
+                </div>
+                <div class="form-group hidden">
+                    <label for="">Other Details:</label>
+                    <textarea class="form-control" id="" cols="30" rows="3"></textarea>
+                </div> 
+                          
+            </div>
+            <div class="col-xs-12 uDashedTop1">
+                    <label for="">Associated Medical Conditions:  </label>
+                    <a tabindex="0" class="btn btn-default" role="button" data-toggle="popover" data-trigger="focus" title="Asthma" data-content="Ciclesonide is a glucocorticoid used to treat asthma and allergic rhinitis. It is marketed under the brand names Alvesco for asthma and Omnaris, Omniair, and Zetonna for hay fever. Side effects of the medication include headache, nosebleeds, and inflammation of the nose and throat linings.">Asthma</a>
+                    <a tabindex="0" class="btn btn-default" role="button" data-toggle="popover" data-trigger="focus" title="Flutiform" data-content="Ciclesonide is a glucocorticoid used to treat asthma and allergic rhinitis. It is marketed under the brand names Alvesco for asthma and Omnaris, Omniair, and Zetonna for hay fever. Side effects of the medication include headache, nosebleeds, and inflammation of the nose and throat linings.">Migraine/headaches</a>
+            </div>
+        </div>
+        <div class="row thumbnail uPaddingAs uMarginHs bgActive">
+            <div class="col-xs-12">
+                <div class="uMarginBs clearfix">
+                    <h3 class="pull-left">Breo</h3> <button href="#" class="pull-left btn btn-sm btn-success uMarginLxs">Save</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" checked="checked" > <i class="material-icons text-success md-18 hidden">check_circle</i> Can use medication
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>When</label>            
+                    <select class="form-control">
+                        <option value="">Relief</option>
+                        <option value="">Prevention</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Administration Method:</label>            
+                    <select class="form-control">
+                        <option value="">Oral</option>
+                        <option value="">Injection</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Expires:</label>
+                    <input id="datepicker-blank" class="fullWidth datepicker" value="" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8 col-md-offset-1">
+                
+                <div class="form-group">
+                    <label for="">Details:</label>
+                    <textarea class="form-control" id="" cols="" rows="4">Breo Ellipta inhalation powder contains a combination of fluticasone and vilanterol. Fluticasone is a steroid. It prevents the release of substances in the body that cause inflammation. Vilanterol is a bronchodilator. It works by relaxing muscles in the airways to improve breathing.</textarea>
+                    <a href="#" class="btn btn-muted hidden"><i class="material-icons md-18">add_circle</i> Add details</a>
+                </div>
+                <div class="form-group">
+                    <label for="">Dosage information:</label>
+                    <textarea class="form-control" id="" cols="" rows="4">Breo Ellipta is a once-daily combination medicine used in adults with asthma or COPD (chronic obstructive pulmonary disease), to improve symptoms and prevent bronchospasm or asthma attacks.</textarea>
+                    <a href="#" class="btn btn-muted hidden" disabled="disabled"><i class="material-icons md-18">add_circle</i> Add Dosage Information</a>
+                </div>
+                          
+            </div>
+            <div class="col-xs-12 uDashedTop1">
+                    <label for="">Associated Medical Conditions: </label>
+                    <a class="btn btn-default">Asthma</a>
+                    <a  class="btn btn-default">Migraine/headaches</a>
+            </div>
+        </div>
+        <h3 class="uFontSizeM uMarginTl">Add other medications:</h3>
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Diabetes</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Whooping cough</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Diet</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Enuresis (bed wetting)</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Epilepsy/convulsions</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Epistaxis (nose bleeds)</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Heart condition</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Travel sickness</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Eyes/sight</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="uPaddingAxxs clearfix">
+                    <a href="#" class="pull-left uFontSizeM uMarginAn"><i class="material-icons md-14">add_circle</i> Hearing</a>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $('a').popover();
+
+    $(document).ready(function() {
+        // create DatePicker from input HTML element
+        $(".datepicker").kendoDatePicker();
+    });
+</script>
+    
+    <!-- Allergies -->
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Allergies</h3>
+    </div>
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <!-- Ongoing Medical and General Consents -->
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Ongoing Medical and General Consents</h3>
+    </div>
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    </main>
+</div>
+
+<script>
+    $('a').popover();
+</script>
+  </body>
+
+
+</html>

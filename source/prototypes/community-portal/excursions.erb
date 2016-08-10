@@ -1,0 +1,73 @@
+---
+title: Excursions
+layout: Portal
+---
+
+<%= partial "prototypes/community-portal/partials/com-portal-selector" %>
+<div class="container uMarginTm">
+
+<!-- <div class="text-center uMarginBs hidden">
+    <a href="#">Show Filters <i class="material-icons">arrow_drop_down</i></a>
+</div> -->
+
+
+<!-- Heading & Filters -->
+
+<!-- Need a responsive font size utility -->
+<h2 class="visible-xs uFontSizeH3">Excursions</h2>
+<h2 class="hidden-xs">Excursions</h2>
+
+<div class="panel panel-default">
+    <div class="panel-body">
+
+        
+        <!-- Desktop Header -->
+        <div class="row hidden-xs uBorderBottom1 text-muted bold">
+            <div class="col-xs-2">
+                Event
+            </div>
+            <div class="col-xs-2">
+                Date
+            </div>
+            <div class="col-xs-2">
+                RSVP
+            </div>
+            <div class="col-xs-2">
+                Consent
+            </div>
+            <div class="col-xs-2">
+                Payment
+            </div>
+            <div class="col-xs-2">
+            </div>
+        </div>
+
+        <!-- Desktop View -->
+        <%= partial "prototypes/community-portal/partials/excursion-row-desktop-waiting" %>
+        <%= partial "prototypes/community-portal/partials/excursion-row-desktop-pending" %>
+        <%= partial "prototypes/community-portal/partials/excursion-row-desktop" %>
+        <%= partial "prototypes/community-portal/partials/excursion-row-desktop-apology" %>
+
+        <!-- Mobile View -->
+        <%= partial "prototypes/community-portal/partials/excursion-row-mobile-waiting" %>
+        <%= partial "prototypes/community-portal/partials/excursion-row-mobile-pending" %>
+        <%= partial "prototypes/community-portal/partials/excursion-row-mobile" %>
+        <%= partial "prototypes/community-portal/partials/excursion-row-mobile-apology" %>
+
+
+
+    </div>
+</div>
+
+</div>
+
+<script>
+    $('.jsMoreContent').hide();
+    $('.jsMoreTrigger').click(function(ev) {
+      var t = ev.target
+      $('#info' + $(this).attr('target')).slideToggle(90, function() {
+        $(t).html($(this).is(':visible') ? 'Hide' : 'Details')
+      });
+      return false;
+    });
+</script>

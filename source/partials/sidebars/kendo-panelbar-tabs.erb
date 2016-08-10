@@ -1,0 +1,107 @@
+<style>
+body {
+    background: #fafafa;
+}
+
+.tab-content {
+    background-color: #fff;
+    padding: 1em;
+    border: solid 1px #ddd;
+    border-top: none;
+}
+
+.tab-pane .k-panelbar {
+   margin: -15px;
+}
+
+.k-item .k-content {
+    padding: 15px;
+}
+
+.k-content .form-control,
+.k-content .btn {
+    box-sizing: border-box;
+}
+
+.label-primary {
+    font-size: 14px;
+}
+
+</style>
+
+
+<ul id="panelbar">
+<li class="k-state-active">
+    <span class="k-link k-state-selected">Control Properties</span>
+    <div>
+        <p><strong>Selected:</strong> <span class="label label-primary">Control_13</span></p>
+        <div class="form-group full-width">
+        <label for="exampleInputEmail1">Label</label>
+        <input type="email" class="form-control" id="exampleInputEmail1">
+    </div>
+    <div class="form-group full-width">
+        <label for="exampleInputEmail1">Table Mapping</label>
+        <select class="form-control" name="" id=""> <option value="">Not selected</option> </select>
+    </div>
+    <div class="form-group full-width">
+        <label for="exampleInputEmail1">Field Mapping</label>
+        <select class="form-control" name="" id=""> <option value="">Not selected</option> </select>
+    </div>
+
+</li>
+
+<li>
+    More Options
+    <div>
+    <div class="form-group full-width">
+        <label for="exampleInputEmail1">Validation</label>
+        <select class="form-control" name="" id=""> <option value="">Not selected</option> </select>
+    </div>
+    <div class="form-group full-width">
+        <label for="exampleInputEmail1">Default Value</label>
+        <input type="email" class="form-control" id="exampleInputEmail1">
+    </div>
+    <div class="form-group full-width">
+        <label for="exampleInputEmail1">Test Value</label>
+        <input type="email" class="form-control" id="exampleInputEmail1">
+    </div>
+    <div class="form-group full-width">
+        <label for="exampleInputEmail1">Max Length</label>
+        <input type="email" class="form-control" id="exampleInputEmail1">
+    </div>
+    <div class="form-group full-width">
+        <label for="exampleInputEmail1">Width Options</label>
+        <input type="email" class="form-control" id="exampleInputEmail1">
+    </div>
+
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-default btn-sm active">
+            <input type="checkbox" checked="" autocomplete="off"> Required
+        </label>
+        <label class="btn btn-default btn-sm">
+            <input type="checkbox" autocomplete="off"> Enabled
+        </label>
+        <label class="btn btn-default btn-sm">
+            <input type="checkbox" autocomplete="off"> Visible
+        </label>
+    </div>
+    <br>
+    <br>
+    <a href="" class="btn btn-md btn-block btn-primary">Event Manager</a>
+    </div>
+
+
+</li>
+
+
+
+</ul>
+
+<script>
+$(document).ready(function() {
+    $("#panelbar").kendoPanelBar({
+        expandMode: "single"
+    });
+});
+</script>
+

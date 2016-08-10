@@ -1,0 +1,86 @@
+---
+title: Account Manager
+layout: prototype
+---
+
+<style>
+
+.greybg {
+    background-color: #f3f3f3;
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+.whitebg {
+    background-color: #fff;
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+.label-pill {
+    padding-right: .6em;
+    padding-left: .6em;
+    border-radius: 12rem;
+}
+
+.codeExampleDark pre {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #ccc;
+}
+
+strong {font-weight:bold;}
+
+</style>
+
+<div class="modal-dialog" role="document" style="width: 800px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Account Manager</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-6">
+                <div>
+                    <strong><p class="uMarginBxxs uFontSizeL">Map <span class="text-primary">Control_11</span> control to:</p></strong>
+                    <div class="">
+                        <select class="form-control" name="" id="">
+                            <option value="">Given Name</option>
+                            <option value="">Surname</option>
+                            <option value="">Email</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 whitebg uBorderLeft uPaddingVs uPaddingHm" style="min-height: 200px;">
+                <p class="uMarginBxxs uFontSizeL"><strong>Current Mappings</strong></p>
+                <table class="table table-bordered">
+                  <caption>Online Application Portal</caption>
+                  <thead>
+                    <tr>
+                      <th>Label</th>
+                      <th>Control name</th>
+                      <th>Maps to</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">Given1</td>
+                      <td>Control_11</td>
+                      <td>Given Name</td>
+                      <td><a href="#" class="text-danger"><i class="material-icons md-16">remove_circle</i> Delete</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+/* LESS Variables
+============================================================================ */
+/* Core colours */
+/* Misc Colours */
+/* Misc */
+/* Font sizes */
+/* Font weights */
+/* Candidates
+============================================================================ */
+.widget {
+  font-size: 12px;
+}
+.widget a.linkStyle {
+  color: #0275d8;
+  text-decoration: underline;
+}
+.widget a i {
+  color: #666666;
+}
+.widget .panel-heading {
+  padding: 8px 10px;
+  height: 50px;
+  border-bottom: dotted 1px #ccc;
+}
+.widget .panel-heading-link {
+  position: relative;
+  top: 2px;
+  text-decoration: none;
+}
+.widget .panel-body {
+  height: 350px;
+  height: 35vh;
+  overflow: auto;
+}
+.widget .panel table {
+  margin-bottom: 0;
+}
+.widget .panel-dark {
+  background-color: #333;
+  color: #fff;
+}
+.widget .panel-dark .panel-heading {
+  background-color: #fff;
+  color: #333;
+  border-bottom: solid 1px #fff;
+}
+.widget .panel-dark .panel-footer {
+  background-color: #333;
+  border-top: solid 1px #333;
+  color: #fff;
+}
+.widget .panel-dark .panel-footer a {
+  color: #51aeff;
+  font-weight: 600;
+}
+.widget .panel-heading .k-datepicker {
+  position: relative;
+  top: -2px;
+}
+.widget .panel .dropdown.open {
+  position: absolute;
+}
+@media all and (min-width: 1200px) {
+  .widget {
+    font-size: 12px;
+  }
+}
+.container-fluid.container-large {
+  max-width: 1500px;
+}

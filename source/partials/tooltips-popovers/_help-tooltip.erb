@@ -1,0 +1,22 @@
+<div class="form-group">
+  <label for="input" class="control-label">CV code</label>
+    <a  tabindex="0" 
+        class="" 
+        id="popExample"
+        role="button"
+        data-toggle="popover" 
+        data-trigger="focus"
+        data-content="Tooltip content. This would provide relevent information about the input.">
+        <i class="material-icons md-14" >help_outline</i>
+    </a>
+  <input class="form-control" id="input" maxlength="19" type="tel">
+</div>
+
+
+<script type="text/javascript">
+  $("body").popover({
+    selector: "[data-toggle='popover']",
+    container: ".row",
+    html: true
+  });
+</script>

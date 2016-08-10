@@ -1,0 +1,41 @@
+---
+title: Immunisations
+layout: Portal
+---
+
+<style>
+    .item-3 {
+        background-color: #0275d8;
+    }
+    a.item-3 {
+        color: #fff;
+    }
+</style>
+
+<div class="container uMarginTm">
+    <aside class="col-xs-12 col-sm-2">
+        <%= partial "prototypes/community-portal/my-details/_my-details-nav" %>
+    </aside>
+
+    <main class="col-xs-12 col-sm-10">
+
+        <!-- Immunisations -->
+        <%= partial "prototypes/community-portal/my-details/panels/_immunisations-2" %>
+
+        <!-- Blood Type -->
+
+        <!-- Immunisations -->
+        <%= partial "prototypes/community-portal/my-details/panels/_medical-insurance" %>
+        
+        <!-- Emergency Contact Details Disabled -->
+        <%= partial "prototypes/community-portal/my-details/panels/emergency-contact-1" %>
+
+        <!-- Medical Contact Details -->
+        <%= partial "prototypes/community-portal/my-details/panels/_medical-contact-1" %>
+
+    </main>
+</div>
+
+<script>
+    $('a').popover();
+</script>

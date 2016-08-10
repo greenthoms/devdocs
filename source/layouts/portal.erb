@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+
+<head>
+    <%= partial "partials/headImports" %>
+    <%= stylesheet_link_tag 'pages/com-portal' %>
+</head>
+  
+  <body class="<%= page_classes %>">
+      <%= partial "prototypes/community-portal/partials/portal-site-navigation" %>
+      <%= yield %>
+  </body>
+
+
+</html>

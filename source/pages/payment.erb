@@ -1,0 +1,72 @@
+<style type="text/css">
+
+body {
+    background: #f3f3f3;
+}
+
+.helpTooltip {
+    font-size: 16px;
+    color: #aaa;
+    float: right;
+    position: relative;
+    margin-left: 5px;
+    top: 2px;
+}
+
+.tooltip {
+    width: 400px;
+}
+
+/* Radio Block List */
+
+.blockListHeader {
+    font-weight: bold;
+}
+
+.panel {
+    margin-bottom: 5em;
+}
+
+</style>
+
+
+
+<!-- Payment Options -->
+
+<div class="panel panel-body">
+    <%= partial "partials/syn-online/application-payment-options" %>
+</div>
+
+
+
+<!-- Fee Breakdown -->
+
+<div class="panel panel-body">
+    <%= partial "partials/payment/payment-breakdown" %>
+</div>
+
+
+
+<!-- Payment Details -->
+
+<div class="panel panel-body">
+    <%= partial "partials/payment/payment-details" %>
+</div>
+
+
+<!-- Payment Details Filled -->
+
+<div class="panel panel-body">
+    <%= partial "partials/payment/payment-details-filled" %>
+</div>
+
+<!-- Payment Details Error -->
+
+<div class="panel panel-body">
+    <%= partial "partials/payment/payment-details-error" %>
+</div>
+
+<!-- Payment Receipt -->
+<%= partial "partials/payment/payment-receipt-two" %>
+
+<%= partial "partials/payment/payment-order-summary" %>

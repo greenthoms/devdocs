@@ -1,0 +1,23 @@
+<div class="form-group">
+    <label>Drop Down List Filter (Kendo)</label>
+    <input id="products" style="width: 100%;" />
+</div>
+
+<script>
+    $(document).ready(function() {
+        $("#products").kendoDropDownList({
+            filter: "startswith",
+            dataTextField: "ProductName",
+            dataValueField: "ProductID",
+            dataSource: {
+                type: "odata",
+                serverFiltering: true,
+                transport: {
+                    read: {
+                        url: "//demos.telerik.com/kendo-ui/service/Northwind.svc/Products",
+                    }
+                }
+            }
+        });
+    });
+</script>

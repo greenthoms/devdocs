@@ -1,0 +1,46 @@
+.panel {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+.panel,
+.panel-heading {
+  border-radius: 0;
+}
+.panel a {
+  color: #666;
+}
+.panel-heading a {
+  font-weight: 500;
+}
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #fff;
+  border-color: #ddd;
+}
+.panel-heading .material-icons {
+  font-size: 21px;
+}
+/* Synergetic Brand Panel */
+.panel-brand > .panel-heading {
+  color: #fff;
+  border: none;
+  background-color: #1A8080;
+  border-color: #ddd;
+}
+.panel-brand a {
+  color: #fff;
+}
+/* Synergetic Brand Panel */
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+  display: inline;
+}
+.panel .badge {
+  font-size: 1em;
+  height: 1.4em;
+  line-height: .9;
+  margin: 0 .2em;
+}

@@ -1,0 +1,46 @@
+body {
+  color: #333333;
+  font-family: 'Roboto', sans-serif;
+}
+.brandBg {
+  background-color: #009090;
+  color: #fff;
+}
+/* ====== Background Colour Overlay ====== */
+.bgOverlay {
+  background: #009090;
+  opacity: 0.75;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+/* ====== Background Image ====== */
+.bgImage {
+  background-image: url(../../images/background.jpg);
+  filter: grayscale(100%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+  opacity: 1;
+}
+/* ====== Dashboard ====== */
+.synOnlineDashboard .panel-brand > .panel-heading {
+  color: #fff;
+  border: none;
+  background-color: #1A8080;
+  border-color: #ddd;
+}
+.synOnlineDashboard .panel-brand .panel-heading a {
+  color: #fff;
+}

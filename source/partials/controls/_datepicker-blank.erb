@@ -1,0 +1,12 @@
+<input id="datepicker-blank" value="" style="width: 100%" />
+<script>
+    $(document).ready(function() {
+        $("#datepicker-blank").kendoDatePicker();
+
+        $("#monthpicker").kendoDatePicker({
+            start: "year",
+            depth: "year",
+            format: "MMMM yyyy"
+        });
+    });
+</script>

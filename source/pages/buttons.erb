@@ -1,0 +1,137 @@
+<h2>Buttons</h2>
+
+<h3 class="uBorderTop2" id="primary-actions">Primary actions</h3>
+
+
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label class="control-label" for="exampleInputName">Input</label>
+            <input type="test" class="form-control" id="exampleInputName">
+        </div>
+        <div class="pull-right">
+            <button class="btn btn-primary">Primary action</button>
+            <button class="btn btn-default">Secondary action</button>
+        </div>
+    </div>
+    <div class="col-sm-5 col-sm-offset-1">
+        <ul>
+            <li>Reset, Cancel, and Go Back are secondary actions: Avoid using secondary actions if possible.</li>
+            <li>Save, Continue, and Submit are primary actions: directly responsible for task completion.</li>
+            <li>Ensure a clear visual distinction between primary and secondary actions with the classes <code>btn-default</code> and <code>btn-primary</code>.</li>
+        </ul>
+    </div>
+</div>
+
+
+<h3 class="uBorderTop2" id="primary-actions">Button order</h3>
+
+<div class="guiExample">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="control-label" for="exampleInputName">Input</label>
+                <input type="test" class="form-control" id="exampleInputName">
+            </div>
+            <div class="pull-right">
+                <button class="btn btn-primary">Save</button>
+                <button class="btn btn-default">Cancel</button>
+            </div>
+        </div>
+        <div class="col-sm-5 col-sm-offset-1">
+            <ul>
+                <li>Buttons are sorted by importance from left to right.</li>
+                <li>Buttons should be ordered with the primary action first in the tab order.</li>
+                <li>Buttons should be aligned with a form’s input elements to provide a clear path to completion &mdash; this helps people complete forms faster.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<h3 class="uBorderTop2" id="primary-actions">Button labels</h3>
+<div class="guiExample">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="uMarginBs">
+                <button class="btn btn-primary">Save</button>
+                <button class="btn btn-primary">Update</button>
+                <button class="btn btn-primary">Submit</button>
+                <button class="btn btn-primary">Apply</button>
+                <button class="btn btn-primary">OK</button>
+            </div>
+            <div>
+                <button class="btn btn-default">Cancel</button>
+                <button class="btn btn-default">Reset</button>
+                <button class="btn btn-default">Clear</button>
+            </div>
+        </div>
+        <div class="col-sm-5 col-sm-offset-1">
+            <ul>
+                <li>All button labels should be written in <strong>sentence case</strong> except for "OK" which should be uppercase.</li> 
+                <li>Button labels should be as short as possible and clearly explain the action.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<h3 class="uBorderTop2" id="primary-actions">Loading state</h3>
+
+<!-- Example -->
+
+
+<!-- Code Example -->
+<div class="row">
+    <div class="col-sm-6">
+        <%= partial "partials/button-loading" %>
+    </div>
+    <div class="col-sm-5 col-sm-offset-1"> 
+        <ul>
+            <li>Use a loading state when submitting to indicate progress.</li>
+            <li>Use a present participle of the orginal label. For example: <em>Save</em> becomes <em>Saving...</em></li>
+            <li>Further documentation: <a href="http://getbootstrap.com/javascript/#buttons-stateful">Boostrap Stateful Button.</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="codeOnly">
+<% code("html") do %>
+<%= partial "partials/button-loading" %>
+<% end %>
+</div>
+
+<h3 class="uBorderTop2" id="primary-actions">Disabled buttons</h3>
+
+<div class="row">
+    <div class="col-sm-6">
+        <%= partial "partials/button-disabled" %>
+    </div>
+    <div class="col-sm-5 col-sm-offset-1"> 
+        <ul>
+            <li>Disable primary action buttons until all mandatory fields are filled.</li>
+            <li>Allow users to opt out if the cannot fill all mandatory fields. (Eg Use a Cancel or Close button on modals).</li>
+        </ul>
+    </div>
+</div>
+
+<div class="codeOnly">
+<% code("html") do %>
+<%= partial "partials/button-disabled" %>
+<% end %>
+</div>
+
+<h3 class="uBorderTop2" id="primary-actions">Button checkboxes</h3>
+
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-default active">
+    <input type="checkbox" checked autocomplete="off"> Checkbox 1
+  </label>
+  <label class="btn btn-default">
+    <input type="checkbox" autocomplete="off"> Checkbox 2
+  </label>
+  <label class="btn btn-default">
+    <input type="checkbox" autocomplete="off"> Checkbox 3
+  </label>
+</div>
+
+<hr>

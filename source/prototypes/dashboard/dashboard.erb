@@ -1,0 +1,29 @@
+---
+title: My Homepage
+layout: prototype
+---
+
+<style>
+body {
+    background-color: #ddd;
+}
+</style>
+
+<%= partial "partials/navigation/site-navigation" %>
+<div class="container-fluid container-large">
+    <div class="row">
+        
+        <div class="widget col-xs-12 col-lg-6">
+            <%= partial "prototypes/dashboard/partials/timetable-widget" %>
+        </div>
+
+        <div class="widget col-xs-12 col-lg-6">
+            <%= partial "prototypes/dashboard/partials/classes-widget" %>
+        </div>
+
+        <div class="widget col-xs-12 col-lg-6">
+            <%= partial "prototypes/dashboard/partials/pti-widget" %>
+        </div>
+
+    </div>
+</div>

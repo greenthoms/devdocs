@@ -1,0 +1,78 @@
+---
+title: Layout
+---
+
+<section id="box-model">
+	<div>
+		<div>
+			<h2>Box Model</h2>
+		</div>
+		<p class="lead">Intimate knowledge and understanding of the CSS and browser-based box model is essential when working with CSS layouts. For more information check out <a href="https://css-tricks.com/the-css-box-model/" target="_blank">this article</a> or <a href="https://www.youtube.com/watch?v=lPm8lK4C7nc">this video</a>.</p>
+	</div>
+</section>
+
+<section id="spacing">
+	<div>
+		<div>
+			<h2>Spacing</h2>
+		</div>
+		<div>
+			<p>Spacing utilities allow you to insert generic spacing to elements and components.</p>
+			<p>The classes take the following form <code>.uTypeDirectionsize</code></p>
+
+			<div class="row uMarginTl">
+				<div class="col-xs-2">
+					<ul class="uiList spacingExample">
+					  <li><code>A</code> &nbsp; All</li>
+					  <li><code>T</code> &nbsp; Top</li>
+					  <li><code>R</code> &nbsp; Right</li>
+					  <li><code>B</code> &nbsp; Bottom</li>
+					  <li><code>L</code> &nbsp; Left</li>
+					  <li><code>H</code> &nbsp; Horizontal</li>
+					  <li><code>V</code> &nbsp; Vertical</li>
+					</ul>
+				</div>
+				<div class="col-xs-3">
+					<ul class="uiList spacingExample">
+					  <li><code>n</code> &nbsp; None</li>
+					  <li><code>xxs</code> &nbsp; 5px</li>
+					  <li><code>xs</code> &nbsp; 10px</li>
+					  <li><code>s</code> &nbsp; 15px</li>
+					  <li><code>m</code> &nbsp; 20px</li>
+					  <li><code>l</code> &nbsp; 25px</li>
+					  <li><code>xl</code> &nbsp; 35px</li>
+					</ul>
+				</div>
+			</div>
+
+<div class="uMarginTl uMarginBs">Example:</div>
+<div class="guiExampleDotted guiExample">			
+<%= partial "partials/spaceExample" %>
+</div>
+<% code("html") do %>
+<%= partial "partials/spaceExample" %>
+<% end %>
+
+		</div>
+	</div>
+</section>
+
+<section id="page-layout">
+<h2>Page Layout</h2>
+<p class="lead">Synergetic makes use of the <a href="http://getbootstrap.com/css/#grid">Bootstrap Grid</a> for basic page layout.</p>
+<p>As a default and for simplicity use <code>.col-xs-</code> as this targets all screen sizes. Additional classes, e.g <code>.col-lg-</code> s, <code>.col-sm-</code> can be added for layouts which need to respond to different screen widths.</p>
+<div class="guiExampleDotted guiExample">			
+<%= partial "partials/layoutGridExample" %>
+</div>
+<% code("html") do %>
+<%= partial "partials/layoutGridExample" %>
+<% end %>
+</section>
+
+
+<section id="page-layout">
+<h2 class="uBorderTop2">Flex Box</h2>
+<p class="lead">Synergetic makes use of the <a href="../examples/flexbox.html">Flex Box Examples</a></p>
+
+</section>
+

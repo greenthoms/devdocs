@@ -1,0 +1,56 @@
+/* Font-size utility */
+.uFontSizeS {
+  font-size: 12px;
+}
+.uFontSizeM {
+  font-size: 14px;
+}
+.uFontSizeL {
+  font-size: 16px;
+}
+.uFontSizeH4 {
+  font-size: 18px;
+}
+.uFontSizeH3 {
+  font-size: 21px;
+}
+.uFontSizeH2 {
+  font-size: 28px;
+}
+.uFontSizeH1 {
+  font-size: 35px;
+}
+/* Basscss Typography */
+.font-family-inherit {
+  font-family: inherit;
+}
+.font-size-inherit {
+  font-size: inherit;
+}
+.text-decoration-none {
+  text-decoration: none;
+}
+.bold {
+  font-weight: 700;
+}
+.regular {
+  font-weight: normal;
+}
+.italic {
+  font-style: italic;
+}
+.caps {
+  text-transform: uppercase;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.break-word {
+  word-wrap: break-word;
+}
+.list-style-none {
+  list-style: none;
+}
+.underline {
+  text-decoration: underline;
+}

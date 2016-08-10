@@ -1,0 +1,145 @@
+<style>
+	.alertToast {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.alertToast .alert {
+		margin: 0;
+		border-bottom: 0;
+		border-radius: 0;
+		font-size: 12px;
+		padding: 10px;
+	}
+
+	.alertToast .progress {
+		margin-bottom: 10px;
+	}
+
+	.progressSmall {
+		height: 4px;
+	}
+</style>
+
+<div class="clearfix">
+<h2 class="pull-left">Toast Loading</h2>
+<a class="btn btn-default showToast pull-right">Show/Hide toast</a>
+</div>
+
+<!-- Code example -->
+<% code("html") do %>
+<!-- Toast Alert Container -->
+<div class="alertToast" role="alert">
+
+	<!-- Alert Danger Multiple -->
+	<div class="alert alert-danger">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<p class="uPaddingBxxs text-center">There was an error uploading <strong>medical-certificate.pdf and 7 other files. </strong><a href="#">Manage documents</a>
+		</p>
+		<div class="progress progressSmall">
+	  		<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+	    		<span class="sr-only">100%</span>
+	    	</div>
+		</div>
+	</div>
+
+	<!-- Alert Info Multiple -->
+	<div class="alert alert-info">
+		<p class="uPaddingBxxs text-center">Uploading <strong>report-card.pdf</strong> (12 files remaining)
+			<a class="text-danger uMarginLs"><i class="material-icons md-14">cancel</i>Cancel</a>
+		</p>
+		<div class="progress progressSmall">
+	  		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+	    		<span class="sr-only">60%</span>
+	    	</div>
+		</div>
+	</div>
+
+		<!-- Alert Info Multiple -->
+	<div class="alert alert-info">
+		<p class="uPaddingBxxs text-center">Uploading <strong>photo.jpg</strong> (10 files remaining)
+			<a class="text-danger uMarginLs"><i class="material-icons md-14">cancel</i>Cancel</a>
+		</p>
+		<div class="progress progressSmall">
+	  		<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+	    		<span class="sr-only">80%</span>
+	    	</div>
+		</div>
+	</div>
+
+	<!-- Alert Success Multiple -->
+	<div class="alert alert-success">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<p class="uPaddingBxxs text-center">Successfully uploaded 7 files.</p> 
+		<div class="progress progressSmall">
+	  		<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+	    		<span class="sr-only">100%</span>
+	    	</div>
+		</div>
+	</div>
+
+</div>
+<% end %>
+
+<!-- Toast Alert Container -->
+<div class="alertToast" role="alert" style="visibility: hidden;">
+
+	<!-- Alert Danger Multiple -->
+	<div class="alert alert-danger">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<p class="uPaddingBxxs text-center">There was an error uploading <strong>medical-certificate.pdf and 7 other files. </strong><a href="#">Manage documents</a>
+		</p>
+		<div class="progress progressSmall">
+	  		<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+	    		<span class="sr-only">100%</span>
+	    	</div>
+		</div>
+	</div>
+
+	<!-- Alert Info Multiple -->
+	<div class="alert alert-info">
+		<p class="uPaddingBxxs text-center">Uploading <strong>report-card.pdf</strong> (12 files remaining)
+			<a class="text-danger uMarginLs"><i class="material-icons md-14">cancel</i>Cancel</a>
+		</p>
+		<div class="progress progressSmall">
+	  		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+	    		<span class="sr-only">60%</span>
+	    	</div>
+		</div>
+	</div>
+
+		<!-- Alert Info Multiple -->
+	<div class="alert alert-info">
+		<p class="uPaddingBxxs text-center">Uploading <strong>photo.jpg</strong> (10 files remaining)
+			<a class="text-danger uMarginLs"><i class="material-icons md-14">cancel</i>Cancel</a>
+		</p>
+		<div class="progress progressSmall">
+	  		<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+	    		<span class="sr-only">80%</span>
+	    	</div>
+		</div>
+	</div>
+
+	<!-- Alert Success Multiple -->
+	<div class="alert alert-success">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<p class="uPaddingBxxs text-center">Successfully uploaded 7 files.</p> 
+		<div class="progress progressSmall">
+	  		<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+	    		<span class="sr-only">100%</span>
+	    	</div>
+		</div>
+	</div>
+
+</div>
+
+<script>
+	$('.showToast').click(function(){
+  		if ( $('.alertToast').css('visibility') == 'hidden' )
+    	$('.alertToast').css('visibility','visible');
+  		else
+    	$('.alertToast').css('visibility','hidden');
+	});
+</script>

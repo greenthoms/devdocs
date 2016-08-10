@@ -1,0 +1,41 @@
+---
+title: Medical
+layout: Portal
+---
+
+<style>
+    .item-2 {
+        background-color: #0275d8;
+    }
+    a.item-2 {
+        color: #fff;
+    }
+</style>
+
+<%= partial "prototypes/community-portal/partials/com-portal-selector" %>
+
+<div class="container uMarginTm">
+    <aside class="col-xs-12 col-sm-2">
+        <%= partial "prototypes/community-portal/my-details/_my-details-nav" %>
+    </aside>
+
+    <main class="col-xs-12 col-sm-10">
+
+    <!-- Medical Conditions -->
+    <%= partial "prototypes/community-portal/my-details/panels/_medical-conditions-5" %>
+
+    <!-- Medications -->
+    <%= partial "prototypes/community-portal/my-details/panels/_medications" %>
+    
+    <!-- Allergies -->
+    <%= partial "prototypes/community-portal/my-details/panels/_allergies" %>
+
+    <!-- Ongoing Medical and General Consents -->
+    <%= partial "prototypes/community-portal/my-details/panels/_consents" %>
+
+    </main>
+</div>
+
+<script>
+    $('a').popover();
+</script>

@@ -1,0 +1,42 @@
+/* LESS Variables
+============================================================================ */
+/* Colours */
+/* Misc */
+/* Font sizes */
+/* Font weights */
+i.material-icons {
+  line-height: 0;
+  position: relative;
+  top: 7px;
+}
+i.addCircle {
+  font-size: 17px;
+  top: 4px;
+  padding-left: 3px;
+}
+i.helpTooltip {
+  font-size: 14px;
+  top: 2px;
+  left: 5px;
+  color: #aaa;
+}
+.required-field i.helpTooltip {
+  position: relative;
+  float: right;
+  line-height: inherit;
+}
+i.helpTooltip:hover {
+  color: #1b8ff2;
+  cursor: default !important;
+}
+h2 i.helpTooltip {
+  font-size: 16px;
+  top: 2px;
+  color: #aaa;
+}
+a.thumbTipMenu {
+  padding: 10px 15px;
+  color: #666;
+  box-sizing: border-box;
+}
+/*# sourceMappingURL=icons.css.map */

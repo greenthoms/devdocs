@@ -1,0 +1,88 @@
+.navbar-inverse {
+  background-color: #1A8080;
+  border-color: #1A8080;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.navbar-inverse .navbar-brand {
+  color: #fff;
+}
+.navbar-inverse .navbar-brand:hover {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  color: #FFF;
+  background-color: #0D7171;
+  font-weight: 600;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #fff;
+  color: #fff;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #1A8080;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #1A8080;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: #166D6D;
+}
+.navbar.navbar-selector a:hover,
+.navbar.navbar-selector a:focus {
+  text-decoration: none;
+}
+.navbar.navbar-selector {
+  position: relative;
+  min-height: inherit;
+  margin-bottom: 0;
+  border: 1px solid transparent;
+}
+.navbar-selector .navbar-toggle:hover,
+.navbar-selector .navbar-toggle:focus {
+  background-color: #fafafa;
+}
+.navbar-selector .navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+}
+.navbar.navbar-selector {
+  border: none;
+  border-bottom: solid 1px #ccc;
+}
+/* Navigation: Back to top */
+.BackToTop {
+  color: #999;
+  border-top: solid 1px #ccc;
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding-top: .5em;
+}
+.BackToTop:hover,
+.BackToTop:focus,
+.BackToTop:active {
+  text-decoration: none;
+  color: #222;
+}

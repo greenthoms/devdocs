@@ -1,0 +1,38 @@
+.kgridLight .panel-heading {
+  border-bottom: 1px solid #ddd;
+}
+.kgridLight .panel-grid.panel-body {
+  padding: 0;
+}
+.kgridLight .k-alt {
+  background-color: transparent;
+}
+.kgridLight .k-widget {
+  border: none;
+}
+.kgridLight .k-grid-header th.k-header,
+.kgridLight .k-filter-row th {
+  border-width: 0 0 0px 0px;
+}
+.kgridLight .k-grid tr td {
+  border-style: solid;
+  border-color: #ddd;
+}
+.kgridLight .k-grid td {
+  border-width: 0 0 1px 0;
+}
+.kgridLight .k-header,
+.kgridLight .k-grid-header {
+  background-color: #fafafa;
+  border-color: #ddd;
+  font-weight: 700;
+}
+.kgridLight .k-grid-header-wrap {
+  border: none;
+}
+.kgridLight .k-grid-header th.k-header {
+  font-weight: 500;
+}
+.kgridLight .panel-footer {
+  background-color: #fff;
+}

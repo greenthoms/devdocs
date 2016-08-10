@@ -1,0 +1,327 @@
+---
+title: Timetable
+layout: Portal
+---
+
+<style>
+
+body {
+  font-size: 14px;
+  background-color: #eee;
+}
+
+ul {
+  list-style: none;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+ul li li {
+  border: solid 1px #ccc;
+  border-top: 0;
+  overflow: scroll;
+  background: #fafafa;
+  margin: 0;
+  padding: .5rem;
+}
+
+.header {
+  background-color: #333;
+  color: #eee;
+  padding: 5px;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.row {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.ruler {
+  display: none;
+}
+
+.ttBreak   {background: #eee;}
+.ttTime    {float: left;}
+.ttTeacher {float: left;clear:right;}
+.ttClass   {float: right; width: 40%;}
+.ttRoom    {float: right; width: 40%;}
+
+.tth15 {height: 1.5rem;}
+.tth30 {height: 3rem;}
+.tth60 {height: 6rem;}
+.tth90 {height: 9rem;}
+
+
+
+li {padding: 5px;}
+ul li li {padding: 5px;}
+ul {padding: 0px;}
+
+</style>
+
+<div class="container-fluid uMarginTl">
+
+    <div class="row">
+        <div class="col-sm-12 col-sm-10 col-sm-offset-1">
+            <h2 class="uMarginBs uMarginTn">My Timetable</h2>
+        </div>
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-1"></div>
+
+        <!-- Day 01 -->
+        <ul class="col-xs-12 col-sm-2">
+            <!-- Monday: -->
+            <li>
+                <div class="header">Day 1</div>
+                <ul class="classes">
+                    <li class="tth15">
+                        <span class="ttTime">8:45 &ndash; 8:55</span>
+                        <div class="ttClass">Homeroom</div>
+                        <div class="ttTeacher">Mr Mandela</div>
+                        <div class="ttRoom">SCI 4</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">9:00 &ndash; 10:30</span>
+                        <div class="ttClass">Science</div>
+                        <div class="ttTeacher">Miss Robertson</div>
+                        <div class="ttRoom">SCI 4</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">10:30 &ndash; 12:00</span>
+                        <div class="ttClass">Maths</div>
+                        <div class="ttTeacher">Mr Wheeler</div>
+                        <div class="ttRoom">MA 2</div>
+                    </li>
+                    <li class="tth30 ttBreak">
+                        <span class="ttTime">11:00 &ndash; 11:30</span>
+                        <div class="ttClass pull-right bold text-muted">Recess</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">11:30 &ndash; 1:00</span>
+                        <div class="ttClass">Economics</div>
+                        <div class="ttTeacher">Miss Hudson</div>
+                        <div class="ttRoom">20</div>
+                    </li>
+                    <li class="tth60 ttBreak">
+                        <span class="ttTime">1:00 &ndash; 2:00</span>
+                        <div class="ttClass">Lunch</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">2:00 &ndash; 3:30</span>
+                        <div class="ttClass">Design</div>
+                        <div class="ttTeacher">Mrs Hall</div>
+                        <div class="ttRoom">DES 1</div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Day 01 -->
+        <ul class="col-xs-12 col-sm-2">
+            <!-- Monday: -->
+            <li>
+                <div class="header">Day 1</div>
+                <ul class="classes">
+                    <li class="tth15">
+                        <span class="ttTime">8:45 &ndash; 8:55</span>
+                        <div class="ttClass">Homeroom</div>
+                        <div class="ttTeacher">Mr Mandela</div>
+                        <div class="ttRoom">SCI 4</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">9:00 &ndash; 10:30</span>
+                        <div class="ttClass">Science</div>
+                        <div class="ttTeacher">Miss Robertson</div>
+                        <div class="ttRoom">SCI 4</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">10:30 &ndash; 12:00</span>
+                        <div class="ttClass">Maths</div>
+                        <div class="ttTeacher">Mr Wheeler</div>
+                        <div class="ttRoom">MA 2</div>
+                    </li>
+                    <li class="tth30 ttBreak">
+                        <span class="ttTime">11:00 &ndash; 11:30</span>
+                        <div class="ttClass pull-right bold text-muted">Recess</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">11:30 &ndash; 1:00</span>
+                        <div class="ttClass">Economics</div>
+                        <div class="ttTeacher">Miss Hudson</div>
+                        <div class="ttRoom">20</div>
+                    </li>
+                    <li class="tth60 ttBreak">
+                        <span class="ttTime">1:00 &ndash; 2:00</span>
+                        <div class="ttClass">Lunch</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">2:00 &ndash; 3:30</span>
+                        <div class="ttClass">Design</div>
+                        <div class="ttTeacher">Mrs Hall</div>
+                        <div class="ttRoom">DES 1</div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Day 01 -->
+        <ul class="col-xs-12 col-sm-2">
+            <!-- Monday: -->
+            <li>
+                <div class="header">Day 1</div>
+                <ul class="classes">
+                    <li class="tth15">
+                        <span class="ttTime">8:45 &ndash; 8:55</span>
+                        <div class="ttClass">Homeroom</div>
+                        <div class="ttTeacher">Mr Mandela</div>
+                        <div class="ttRoom">SCI 4</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">9:00 &ndash; 10:30</span>
+                        <div class="ttClass">Science</div>
+                        <div class="ttTeacher">Miss Robertson</div>
+                        <div class="ttRoom">SCI 4</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">10:30 &ndash; 12:00</span>
+                        <div class="ttClass">Maths</div>
+                        <div class="ttTeacher">Mr Wheeler</div>
+                        <div class="ttRoom">MA 2</div>
+                    </li>
+                    <li class="tth30 ttBreak">
+                        <span class="ttTime">11:00 &ndash; 11:30</span>
+                        <div class="ttClass pull-right bold text-muted">Recess</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">11:30 &ndash; 1:00</span>
+                        <div class="ttClass">Economics</div>
+                        <div class="ttTeacher">Miss Hudson</div>
+                        <div class="ttRoom">20</div>
+                    </li>
+                    <li class="tth60 ttBreak">
+                        <span class="ttTime">1:00 &ndash; 2:00</span>
+                        <div class="ttClass">Lunch</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">2:00 &ndash; 3:30</span>
+                        <div class="ttClass">Design</div>
+                        <div class="ttTeacher">Mrs Hall</div>
+                        <div class="ttRoom">DES 1</div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Day 01 -->
+        <ul class="col-xs-12 col-sm-2">
+            <!-- Monday: -->
+            <li>
+                <div class="header">Day 1</div>
+                <ul class="classes">
+                    <li class="tth15">
+                        <span class="ttTime">8:45 &ndash; 8:55</span>
+                        <div class="ttClass">Homeroom</div>
+                        <div class="ttTeacher">Mr Mandela</div>
+                        <div class="ttRoom">SCI 4</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">9:00 &ndash; 10:30</span>
+                        <div class="ttClass">Science</div>
+                        <div class="ttTeacher">Miss Robertson</div>
+                        <div class="ttRoom">SCI 4</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">10:30 &ndash; 12:00</span>
+                        <div class="ttClass">Maths</div>
+                        <div class="ttTeacher">Mr Wheeler</div>
+                        <div class="ttRoom">MA 2</div>
+                    </li>
+                    <li class="tth30 ttBreak">
+                        <span class="ttTime">11:00 &ndash; 11:30</span>
+                        <div class="ttClass pull-right bold text-muted">Recess</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">11:30 &ndash; 1:00</span>
+                        <div class="ttClass">Economics</div>
+                        <div class="ttTeacher">Miss Hudson</div>
+                        <div class="ttRoom">20</div>
+                    </li>
+                    <li class="tth60 ttBreak">
+                        <span class="ttTime">1:00 &ndash; 2:00</span>
+                        <div class="ttClass">Lunch</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">2:00 &ndash; 3:30</span>
+                        <div class="ttClass">Design</div>
+                        <div class="ttTeacher">Mrs Hall</div>
+                        <div class="ttRoom">DES 1</div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Day 01 -->
+        <ul class="col-xs-12 col-sm-2">
+            <!-- Monday: -->
+            <li>
+                <div class="header">Day 1</div>
+                <ul class="classes">
+                    <li class="tth15">
+                        <span class="ttTime">8:45 &ndash; 8:55</span>
+                        <div class="ttClass">Homeroom</div>
+                        <div class="ttTeacher">Mr Mandela</div>
+                        <div class="ttRoom">SCI 4</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">9:00 &ndash; 10:30</span>
+                        <div class="ttClass">Science</div>
+                        <div class="ttTeacher">Miss Robertson</div>
+                        <div class="ttRoom">SCI 4</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">10:30 &ndash; 12:00</span>
+                        <div class="ttClass">Maths</div>
+                        <div class="ttTeacher">Mr Wheeler</div>
+                        <div class="ttRoom">MA 2</div>
+                    </li>
+                    <li class="tth30 ttBreak">
+                        <span class="ttTime">11:00 &ndash; 11:30</span>
+                        <div class="ttClass pull-right bold text-muted">Recess</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">11:30 &ndash; 1:00</span>
+                        <div class="ttClass">Economics</div>
+                        <div class="ttTeacher">Miss Hudson</div>
+                        <div class="ttRoom">20</div>
+                    </li>
+                    <li class="tth60 ttBreak">
+                        <span class="ttTime">1:00 &ndash; 2:00</span>
+                        <div class="ttClass">Lunch</div>
+                    </li>
+                    <li class="tth90">
+                        <span class="ttTime">2:00 &ndash; 3:30</span>
+                        <div class="ttClass">Design</div>
+                        <div class="ttTeacher">Mrs Hall</div>
+                        <div class="ttRoom">DES 1</div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+
+        <div class="col-xs-12 col-sm-1"></div>
+
+    </div>
+
+
+
+</div>

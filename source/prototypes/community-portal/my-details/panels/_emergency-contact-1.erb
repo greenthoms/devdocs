@@ -1,0 +1,55 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Emergency Contact 1</h3>
+    </div>
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-group">
+                    <label for="">Name</label>
+                    <input class="form-control" type="text" value="Jane Smithy">
+                    <a class="help-block" data-toggle="popover" data-content="This information was updated at 5:25pm. The change is pending entry by the school. The value show below is the current record."><i class="material-icons md-18 uMarginRxxs">access_time</i> John Smith</a>
+                </div>
+                <div class="form-group">
+                    <label for="">Relationship</label>
+                    <input class="form-control" type="text" value="Aunty"> 
+                </div>
+
+                <div class="form-group">
+                    <label for="">Address:</label>
+                    <input class="form-control" type="text" value="5/40 Roger Street">
+                    <input class="form-control" type="text" value="Melbounre">
+                    <input class="form-control" type="text" value="Victoria">
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-group">
+                    <label for="">Phone</label>
+                    <input class="form-control" type="text" value="(02) 3984 7575">
+                </div>
+                <div class="form-group">
+                    <label for="">Phone 2</label>
+                    <input class="form-control" type="text" value="(02) 3984 7575"> 
+                    <a class="help-block" data-toggle="popover" data-content="This information was updated at 5:36pm. The change is pending entry by the school. The value show below is the current record."><i class="material-icons md-18 uMarginRxxs">access_time</i> (02) 3984 7576</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+
+$('[data-toggle="popover"]').popover();
+
+$('body').on('click', function (e) {
+    //only buttons
+    if ($(e.target).data('toggle') !== 'popover'
+        && $(e.target).parents('.popover.in').length === 0) { 
+        $('[data-toggle="popover"]').popover('hide');
+    }
+});
+
+</script>

@@ -1,0 +1,112 @@
+---
+title: Timetable
+layout: Kendo
+---
+
+<style>
+.k-event {
+    min-height: .3em;
+}
+
+.k-event, .k-task-complete {
+    /* border-color: #0187cb; */
+    background: #0187cb;
+    color: #fff;
+    border: solid 1px #006da5;
+    box-sizing: border-box;
+    padding: 0 6px;
+}
+
+
+/* This removes a weird space before first value */
+.k-event-actions:first-child {
+    margin: 0;
+}
+</style>
+
+
+
+<div class="container uMarginTs">
+    <h2 class="pull-left">My Schedule</h2>
+    <div id="team-schedule" class="pull-right">
+        <div id="people" class="uMarginTxxs">
+            <label class="uMarginHs" for="aden">
+                <input checked type="checkbox" id="aden" value="1"> Aden
+            </label>
+
+            <label class="uMarginHs" for="jacalyn">
+                <input type="checkbox" id="jacalyn" value="2"> Jacalyn
+            </label>
+
+            <label class="uMarginHs" for="robin">
+                <input type="checkbox" id="robin" value="3"> Robin
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div id="scheduler"></div>
+</div>
+
+<script id="event-template" type="text/x-kendo-template">
+    <div class="movie-template">
+        <div>#:kendo.toString(start,"hh:mm")#-#: kendo.toString(end,"hh:mm")#</div>
+        <div class="ttClass">#= schoolclass #</div>
+        <div class="ttTeacher">#= teacher #</div>
+        <div class="ttRoom">#= room #</div>
+    </div>
+</script>
+
+<script>
+$(function() {
+    $("#scheduler").kendoScheduler({
+        date: new Date("2016/6/20"),
+        startTime: new Date("2016/6/20 8:45"),
+        endTime: new Date("2016/6/25 18:00"),
+        height: 700,
+        views: [{type: "day", majorTick: 40}, 
+                {type: "week", selected: true, majorTick: 40}, 
+                {type: "workWeek", title: "School Week", majorTick: 40, selected: true }],
+        editable: false,
+        eventTemplate: $("#event-template").html(),
+        dataSource: [ 
+            <%= partial "prototypes/community-portal/partials/schedule/schedule-student-1" %>
+            <%= partial "prototypes/community-portal/partials/schedule/schedule-student-2" %>
+            <%= partial "prototypes/community-portal/partials/schedule/schedule-student-3" %>
+         ],
+        resources: [
+            {
+              field: "studentId",
+              name: "Student",
+              dataColorField: "key",
+              dataSource: [
+                { text: "Aden", value: 1, key: "#B10DC9" },
+                { text: "Jacalyn", value: 2, key: "#FF851B" },
+                { text: "Robin", value: 3, key: "#3D9970" }
+              ]
+            }
+          ]
+    });
+});
+
+// Checkboxes
+$("#people :checkbox").change(function(e) {
+    var checked = $.map($("#people :checked"), function(checkbox) {
+        return parseInt($(checkbox).val());
+    });
+
+    var scheduler = $("#scheduler").data("kendoScheduler");
+
+    scheduler.dataSource.filter({
+        operator: function(task) {
+            return $.inArray(task.ownerId, checked) >= 0;
+        }
+    });
+});
+</script>
+
+
+
+</body>
+</html>

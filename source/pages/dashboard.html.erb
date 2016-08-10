@@ -1,0 +1,57 @@
+---
+title: Dashboard
+layout: prototype
+---
+
+  <header>
+      <%= partial "partials/dashboard-header" %>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      
+        <!-- Main content -->
+        <main class="mainContent col-xs-12">
+
+        <div class="synOnlineDashboard">
+            <div class="row">
+
+                <!-- Main Content-->
+                <div class="col-xs-12 col-lg-8">
+
+                    <!-- StatusGrid -->
+                    <section class="panel StatusGrid">
+                        <div class="panel-heading"><h2>Current Applications</h2></div>
+                        <div class="panel-body">
+                            <%= partial "partials/syn-online/dashboard-row-one" %>
+                        </div>
+                    </section>
+                    
+                    <div class="row">
+
+                        <!-- History -->
+                        <div class="col-xs-12 col-sm-8">
+                            <%= partial "partials/syn-online/dashboard-history" %>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <div class="col-xs-12 col-sm-4">
+                            <%= partial "partials/syn-online/dashboard-quick-links" %>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- Side Bar -->
+                <div class="col-xs-12 col-lg-4">
+                    <%= partial "partials/syn-online/dashboard-aside" %>
+                </div>
+
+            </div>
+        </div>
+
+
+        </main>
+        
+    </div>
+  </div>

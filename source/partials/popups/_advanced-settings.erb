@@ -1,0 +1,94 @@
+<div id="example" style="margin-bottom: 300px;">
+    <div id="window">
+        <div class="form-horizontal form-widgets col-sm-12 labelLeft">
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="name">Order Type:</label>
+                <div class="col-sm-8 col-md-8">
+                    <input class="form-control" id="name" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="birthday">Requisition No.:</label>
+                <div class="col-sm-8 col-md-8">
+                    <select id="select1" placeholder="Select size..." style="width: 100%;" accesskey="w">
+                        <option>Select</option>
+                    </select>
+                    <script>
+                        $(document).ready(function () {
+                            $("#select1").kendoDropDownList();
+                        });
+                    </script>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="gender">Urgency:</label>
+                <div class="col-sm-8 col-md-8">
+                    <select id="select2" style="width: 100%;" accesskey="w">
+                        <option>Select</option>
+                    </select>
+                    <script>
+                        $(document).ready(function () {
+                            $("#select2").kendoDropDownList();
+                        });
+                    </script>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="language">Notify by:</label>
+                <div class="col-sm-8 col-md-8">
+                    <select id="select3" placeholder="Select size..." style="width: 100%;" accesskey="w">
+                        <option>Select</option>
+                    </select>
+                    <script>
+                        $(document).ready(function () {
+                            $("#select3").kendoDropDownList();
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pull-right">
+            <button type="button" class="btn btn-lg btn-primary">
+                Save
+            </button>
+            <button type="button" class="btn btn-lg btn-default">
+                Cancel
+            </button>
+        </div>
+    </div>
+
+    <script>
+
+        // Set the window properties
+        $(document).ready(function() {
+            var window = $("#window"),
+                undo = $("#undo")
+                        .bind("click", function() {
+                            window.data("kendoWindow").open();
+                            undo.hide();
+                        });
+
+            var onClose = function() {
+                undo.show();
+            }
+
+            if (!window.data("kendoWindow")) {
+                window.kendoWindow({
+                    width: "400px",
+                    title: "Advanced settings",
+                    actions: [
+                        "Close"
+                    ],
+                    close: onClose
+                });
+            }
+        });
+
+        // Drop down list 1
+
+    </script>
+</div>

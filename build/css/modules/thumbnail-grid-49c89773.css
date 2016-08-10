@@ -1,0 +1,6 @@
+.thumbnail-grid .thumbnail a {
+  color: #0056FF;
+}
+.thumbnail-grid .thumbnail-active {
+  background-color: #FFFFD8;
+}

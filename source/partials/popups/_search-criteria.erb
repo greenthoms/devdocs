@@ -1,0 +1,123 @@
+    <div id="window2">
+
+        <!-- Column 1 -->
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label class="control-label" for="name">File type:</label>
+                <input class="form-control" id="name" />
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="birthday">Staff code:</label>
+                <select id="select1" placeholder="Select size..." style="width: 100%;" accesskey="w">
+                    <option>Select</option>
+                </select>
+                <script>
+                    $(document).ready(function () {
+                        $("#select1").kendoDropDownList();
+                    });
+                </script>
+            </div>
+            <div class="form-group">
+                <label for="gender">Campus:</label>
+                <select id="select2" style="width: 100%;" accesskey="w">
+                    <option>Select</option>
+                </select>
+                <script>
+                    $(document).ready(function () {
+                        $("#select2").kendoDropDownList();
+                    });
+                </script>
+            </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="col-sm-4">   
+            <div class="form-group">
+                <label for="language">Description:</label>
+                <select id="select3" placeholder="Select size..." style="width: 100%;" accesskey="w">
+                    <option>Select</option>
+                </select>
+                <script>
+                    $(document).ready(function () {
+                        $("#select3").kendoDropDownList();
+                    });
+                </script>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="language">Assessment Code:</label>
+                <input class="form-control" id="name" />
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="occupation">Year &amp; term:</label>
+                <input class="form-control" id="occupation" />
+            </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label class="control-label" for="skills">Staff ID:</label>
+                <select id="select4" placeholder="Select size..." style="width: 100%;" accesskey="w">
+                    <option>Select</option>
+                </select>
+                <script>
+                    $(document).ready(function () {
+                        $("#select4").kendoDropDownList();
+                    });
+                </script>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="experience">Class code:</label>
+                <select id="select5" placeholder="Select size..." style="width: 100%;" accesskey="w">
+                    <option>Select</option>
+                </select>
+                <script>
+                    $(document).ready(function () {
+                        $("#select5").kendoDropDownList();
+                    });
+                </script>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="experience">Year level:</label>
+                <select id="select6" placeholder="Select size..." style="width: 100%;" accesskey="w">
+                    <option>Select</option>
+                </select>
+                <script>
+                    $(document).ready(function () {
+                        $("#select6").kendoDropDownList();
+                    });
+                </script>
+            </div>
+        </div>
+
+        <div class="buttons-wrap uMarginTl pull-right">
+            <button class="btn btn-lg btn-primary">Search</button>
+            <button class="btn btn-lg btn-default">Cancel</button>
+        </div>
+    </div>
+
+<script>
+    $(document).ready(function() {
+        var window = $("#window2"),
+            undo = $("#undo")
+                    .bind("click", function() {
+                        window.data("kendoWindow").open();
+                        undo.hide();
+                    });
+
+        var onClose = function() {
+            undo.show();
+        }
+
+        if (!window.data("kendoWindow")) {
+            window.kendoWindow({
+                width: "700px",
+                title: "Search",
+                actions: [
+                    "Close"
+                ],
+                close: onClose
+            });
+        }
+    });
+</script>

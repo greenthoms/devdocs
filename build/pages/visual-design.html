@@ -1,0 +1,499 @@
+<!doctype html>
+<html id="documentation">
+
+<head>
+    <meta charset="utf-8">
+
+<!-- Always force latest IE rendering engine or request Chrome Frame -->
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Import Webfonts -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<!-- Use title if it's in the page YAML frontmatter -->
+<title>Design Elements</title>
+
+<!-- Compiled CSS file -->
+<link href="../css/app-68d5533e.css" rel="stylesheet" type="text/css" /><link href="../css/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+<!-- JS -->
+<script src="../js/jquery.min-164ab4af.js" type="text/javascript"></script><script src="../js/chosen.jquery.min-1305aab5.js" type="text/javascript"></script><script src="../js/kendo.all.min-6e86ce05.js" type="text/javascript"></script><script src="../js/bootstrap.min-8b5e6192.js" type="text/javascript"></script><script src="../js/jquery-ui.min-e1e0eb3a.js" type="text/javascript"></script>
+
+<!-- Flexbox Grid -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
+</head>
+  
+  <body class="pages pages_visual-design">
+  
+  <header>
+      <nav class="navbar navbar-static-top pageHeader">
+  <div class="container">
+    <div class="navbar-header">
+      <h1>Synergetic Design Guidelines</h1>
+    </div>
+  </div>
+</nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar col-xs-12 col-sm-2">
+          <!-- Could this partial be renamed index? -->
+
+<nav>
+    <div class="sideNav list-group">
+        
+        <a class="list-group-item" href="form-controls.html">Forms Controls</a>
+        <a class="list-group-item" href="form-attributes.html">Forms Attributes</a>
+        <a class="list-group-item" href="form-validation.html">Form Validation</a>
+        <a class="list-group-item" href="navigation.html">Navigation</a>
+        <a class="list-group-item" href="buttons.html">Buttons</a>
+        <a class="list-group-item" href="modals.html">Modals</a>
+        <a class="list-group-item" href="progress-feedback.html">Progress &amp; Feedback</a>
+        <a class="list-group-item" href="emails.html">Emails</a>
+        <a class="list-group-item" href="tooltips-popovers.html">Tooltips &amp; Popovers</a>
+        <a class="list-group-item" href="payment.html">Payment</a>
+        <a class="list-group-item" href="blank-slate.html">Blank Slate</a>
+        <a class="list-group-item" href="grids.html">Grids</a>
+        <a class="list-group-item" href="pageLayout.html">Layout</a>
+        <a class="list-group-item" href="widgets/widgets.html">Widgets</a>
+        <br>
+        <a class="list-group-item" href="css-standards.html">CSS Standards</a>
+        <a class="list-group-item" href="tools-and-frameworks.html">Tools &amp; Frameworks</a>
+        <a class="list-group-item" href="visual-design.html">Visual Design</a>
+        <a class="list-group-item" href="accessibility.html">Accessibility</a>
+        <a class="list-group-item" href="../prototypes.html">Prototypes</a>
+
+    </div>
+</nav>
+
+
+        </nav>
+      
+        <!-- Main content -->
+        <main class="mainContent col-xs-12 col-sm-8">
+          <style type="text/css">
+body {
+	background-color: #fff;
+}
+</style>
+
+<!-- Typography -->
+<div id="typography">
+<h2>Visual Design</h2>
+	
+<h3 class="uBorderTop2">Typeface</h3>
+<p>The user interface font is <a href="https://www.google.com/fonts/specimen/Roboto">Roboto</a>. The typeface is available open source under an <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License</a>.</p>
+
+<h3 class="uBorderTop2">Font Sizes</h3>
+
+<p>The default font size in Synweb is <code>14px</code>. This is set on the <code>&lt;body&gt;</code> element and does not need to be added to individual elements or modules.</p>
+
+<table class="table uMarginTl">
+    <thead>
+        <tr>
+            <th width="200">Pixel sizes</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="uFontSizeS">
+            <td>12px</td>
+            <td>Small text <code>&lt;small&gt;</code> can be used help text and as secondary supporting text.</td>
+        </tr>
+        <tr>
+            <td>14px</td>
+            <td>The default for all type is 14px.</td>
+        </tr>
+        <tr class="uFontSizeL">
+            <td>16px</td>
+            <td>Use the class <code>.large</code> for text which needs to be bigger than the default.</td>
+        </tr>
+        <tr class="uFontSizeH4">
+            <td><h4>18px</h4></td>
+            <td>H4 Headings are set at 18px.</td>
+        </tr>
+        <tr class="uFontSizeH3">
+            <td><h3>21px</h3></td>
+            <td>H3 Headings are set at 21px.</td>
+        </tr>
+        <tr class="uFontSizeH2">
+            <td><h2>28px</h2></td>
+            <td>H2 Headings are set at 28px.</td>
+        </tr>
+        <tr class="uFontSizeH1">
+            <td><h1>35px</h1></td>
+            <td>H1 Headings are set at 35px.</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<h3 class="uBorderTop2">Font Styles</h3>
+<table class="table uMarginTl">
+    <thead>
+        <tr>
+            <th width="200">Element</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="type-element">Regular</td>
+            <td>The default font style all type is Regular.</td>
+        </tr>
+        <tr>
+            <td class="type-element"><strong>Bold</strong></td>
+            <td>Use the <code>&lt;strong&gt;</code> to signify important text. Use <code>.bold</code> for bold styling text on text without special importance.</td>
+        </tr>
+        <tr>
+            <td class="type-element"><em>Italic text</em></td>
+            <td>Use the <code>&lt;em&gt;</code> to add <em>emphasis</em> to a word or phrase.</td>
+        </tr>
+        <tr>
+            <td class="type-element"><small>Small text</small></td>
+            <td>Small <code>&lt;small&gt;</code> can be used help text and as secondary supporting text.</td>
+        </tr>
+        <tr class="lead">
+            <td class="type-element">Lead</td>
+            <td>Use the class <code>.lead</code> is used to introduce a section.</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<h3 class="uBorderTop2">Font Weights</h3>
+<p>The following font weights can be used where appropriate:</p>
+<div style="font-size: 18px;">
+<ul class="uiList">
+    <li style="font-weight: 300;">Light 300</li>
+    <li style="font-weight: 400;">Normal 400</li>
+    <li style="font-weight: 400;">Normal 400 Italic</li>
+    <li style="font-weight: 500;">Medium 500</li>
+    <li style="font-weight: 600;">Bold 600 </li>
+</ul>
+</div>
+
+
+
+<h3 class="uBorderTop2">Line lengths and readability</h3>
+<p>Where possible aim for a maximum line length of 100 characters per line (including spaces).
+
+<!-- Colours -->
+<div id="colours">
+    <h3 class="uBorderTop2">Text Colours</h3>
+
+<div class="colourPallet typeColours">
+    <p>This is main default colour for all text. <code>#333333</code></p>
+    <p><span style="color: #757575;">Grey text can be used for secondary text.</span> <code>#757575</code></p>
+    <p><a href="">Blue text is used for links.</a> <code>#0275D8</code></p>
+</div>
+
+<h3 class="uBorderTop2">UI Chrome</h3>
+<div class="colourPallet">
+    <ul class="uiList">
+        <li style="background: #f7f7f7;">#f7f7f7<br>greyLight</li>
+        <li style="background: #cccccc;">#cccccc<br>greyMed</li>
+        <li style="background: #666666; color: #fff;">#666666<br>greyDark</li>
+        <li style="background: #333333; color: #fff;">#333333<br>black</li>
+    </ul>
+</div>
+
+<h3 class="uBorderTop2">UI Colours</h3>
+<div class="colourPallet">
+    <ul class="uiList">
+        <li style="background: #0275d8; color: #fff;">#0275d8<br>Info</li>
+        <li style="background: #5cb85c; color: #fff;">#5cb85c<br>Success</li>
+        <li style="background: #f0ad4e; color: #fff;">#f0ad4e<br>Warning</li>
+        <li style="background: #d9534f; color: #fff;">#d9534f<br>Danger</li>
+    </ul>
+</div>
+
+<h3 class="uBorderTop2">Synergetic Brand</h3>
+<div class="colourPallet">
+    <ul class="uiList">
+        <li style="background: #1A8080; color: #fff;">#1A8080<br>Syn</li>
+        <li style="background: #156666; color: #fff;">#156666<br>SynDark</li>
+        <li style="background: #4D9999; color: #fff;">#4D9999<br>SynLight</li>
+    </ul>
+</div>
+
+<h3 class="uBorderTop2">Severity Colours</h3>
+<div class="colourPallet uMarginBl">
+    <ul class="severity uiList">
+        <li style="background: #BF8CF2;"> #BF8CF2<br>Purple</li>
+        <li style="background: #F985DE;"> #F985DE<br>Pink</li>
+        <li style="background: #33BBFF;"> #33BBFF<br>Blue</li>
+        <li style="background: #00E6D2;"> #00E6D2<br>Teal</li>
+        <li style="background: #5CD65C;"> #5CD65C<br>Green</li>
+        <li style="background: #6DC59D;"> #6DC59D<br>Olive</li>
+        <li style="background: #FFDD00;"> #FFDD00<br>Yellow</li>
+        <li style="background: #FF9538;"> #FF9538<br>Orange</li>
+        <li style="background: #FF5F57;"> #FF5F57<br>Red</li>
+        <li style="background: #DEDEDE;"> #DEDEDE<br>Silver</li>
+    </ul>
+</div>
+</div>
+
+
+<!-- Icons -->
+<div id="icons">
+    <h3 class="uBorderTop2">Material Design Icons:</h3>
+    <div class="iconDemo">
+    <div class="frame">
+        <i class="material-icons">access_time</i>
+        <div class="iconClass">
+            <code>access_time</code>
+        </div>
+    </div>
+
+    <div class="frame">
+        <i class="material-icons">view_module</i>
+        <div class="iconClass">
+            <code>view_module</code>
+        </div>
+    </div>
+
+    <div class="frame">
+        <i class="material-icons">edit</i>
+        <div class="iconClass">
+            <code>edit</code>
+        </div>
+    </div>
+
+    <div class="frame">
+        <i class="material-icons">remove_circle</i>
+        <div class="iconClass">
+            <code>remove_circle</code>
+        </div>
+    </div>
+
+    <div class="frame">
+        <i class="material-icons">description</i>
+        <div class="iconClass">
+            <code>description</code>
+        </div>
+    </div>
+
+    <div class="frame">
+        <i class="material-icons">settings</i>
+        <div class="iconClass">
+            <code>settings</code>
+        </div>
+    </div>
+
+    <div class="frame">
+        <i class="material-icons">access_time</i>
+        <div class="iconClass">
+            <code>access_time</code>
+        </div>
+    </div>
+
+    <div class="frame">
+        <i class="material-icons">group</i>
+        <div class="iconClass">
+            <code>group</code>
+        </div>
+    </div>
+
+    <div class="frame">
+        <i class="material-icons">email</i>
+        <div class="iconClass">
+            <code>email</code>
+        </div>
+    </div>
+
+    <div class="frame">
+        <i class="material-icons">phone_android</i>
+        <div class="iconClass">
+            <code>phone_android</code>
+        </div>
+    </div>
+
+    <div class="frame">
+        <i class="material-icons">more_horiz</i>
+        <div class="iconClass">
+            <code>more_horiz</code>
+        </div>
+    </div>
+
+</div>
+    <p>The <a href="http://google.github.io/material-design-icons/">Material Design Icons</a> are added using the following element <code> &lt;i class=&quot;material-icons&quot;&gt;edit&lt;/i&gt;</code> . To avoid CSS conflicts with use <code>&lt;em&gt;</code> tags for italics.</p>
+    
+    <h3 class="uBorderTop2">Synergetic Icons:</h3>
+    <p>Icons can be added using the following element <code> &lt;i class=&quot;iconSearch&quot;&gt;&lt;/i&gt;</code> . To avoid CSS conflicts with use <code>&lt;em&gt;</code> tags for italics.
+    <div class="iconDemo">
+
+	<div class="frame">
+		<i class="iconSearch"></i>
+		<div class="iconClass">
+			<code>iconSearch</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconCogs"></i>
+		<div class="iconClass">
+			<code>iconCogs</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconCog"></i>
+		<div class="iconClass">
+			<code>iconCog</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconPrint"></i>
+		<div class="iconClass">
+			<code>iconPrint</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconTrash"></i>
+		<div class="iconClass">
+			<code>iconTrash</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconPhoto"></i>
+		<div class="iconClass">
+			<code>iconPhoto</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconEnvelope"></i>
+		<div class="iconClass">
+			<code>iconEnvelope</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconDownload"></i>
+		<div class="iconClass">
+			<code>iconDownload</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconBulkAdd"></i>
+		<div class="iconClass">
+			<code>iconBulkAdd</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconPopOut"></i>
+		<div class="iconClass">
+			<code>iconPopOut</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconContract"></i>
+		<div class="iconClass">
+			<code>iconContract</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconHistory"></i>
+		<div class="iconClass">
+			<code>iconHistory</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconAlertFill"></i>
+		<div class="iconClass">
+			<code>iconAlertFill</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconCheckFill"></i>
+		<div class="iconClass">
+			<code>iconCheckFill</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconCheckFill"></i>
+		<div class="iconClass">
+			<code>iconCheckFill</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconwarnFill"></i>
+		<div class="iconClass">
+			<code>iconwarnFill</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconCrossFill"></i>
+		<div class="iconClass">
+			<code>iconCrossFill</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconAddFill"></i>
+		<div class="iconClass">
+			<code>iconAddFill</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconRemoveFill"></i>
+		<div class="iconClass">
+			<code>iconRemoveFill</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconCourtOrder"></i>
+		<div class="iconClass">
+			<code>iconCourtOrder</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconAna"></i>
+		<div class="iconClass">
+			<code>iconAna</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconImpComments"></i>
+		<div class="iconClass">
+			<code>iconImpComments</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconIndPlan"></i>
+		<div class="iconClass">
+			<code>iconIndPlan</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconMedicalAlert"></i>
+		<div class="iconClass">
+			<code>iconMedicalAlert</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconParentsSep"></i>
+		<div class="iconClass">
+			<code>iconParentsSep</code>
+		</div>
+	</div>
+	<div class="frame">
+		<i class="iconSpecialNeeds"></i>
+		<div class="iconClass">
+			<code>iconSpecialNeeds</code>
+		</div>
+	</div>
+
+</div>
+</div>
+        </main>
+    </div>
+    
+  </div>
+
+  </body>
+
+
+</html>
+

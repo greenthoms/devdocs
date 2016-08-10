@@ -1,0 +1,377 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic);
+/* LESS Variables
+============================================================================ */
+/* Colours */
+/* Misc */
+/* Font sizes */
+/* Font weights */
+/* LESS Variables
+============================================================================ */
+/* Colours */
+/* Misc */
+/* Font sizes */
+/* Elements
+============================================================================ */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  background-color: #fafafa;
+}
+legend {
+  font-size: 16px;
+  font-weight: bolder;
+  border-bottom: none;
+  margin-bottom: 1em;
+}
+h2 {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 0 0 .75em;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 1em;
+}
+i.material-icons {
+  line-height: 0;
+  position: relative;
+  top: 7px;
+}
+i.addCircle {
+  font-size: 17px;
+  top: 4px;
+  padding-left: 3px;
+}
+i.helpTooltip {
+  font-size: 14px;
+  top: 2px;
+  left: 5px;
+  color: #aaa;
+}
+.required-field i.helpTooltip {
+  position: relative;
+  float: right;
+  line-height: inherit;
+}
+i.helpTooltip:hover {
+  color: #419bf9;
+  cursor: default !important;
+}
+h2 i.helpTooltip {
+  font-size: 16px;
+  top: 2px;
+  color: #aaa;
+}
+/* Page Header
+============================================================================ */
+#header {
+  background-color: #329999;
+  color: white;
+  padding: 10px;
+}
+#header h2 {
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0;
+  color: #fff;
+}
+/* Form Editor
+============================================================================ */
+.canvasPageTabs {
+  display: inline-block;
+}
+.editorFrame {
+  margin-top: 30px;
+  min-height: 600px;
+  padding-bottom: 50px;
+  /* Canvis Editor: The area that can be dropped onto */
+  /* Handle: Area the user can grab onto, drag and drop */
+  /* Toolbar: Sidebar where the controls live */
+}
+.editorFrame .canvisEditor {
+  min-height: 600px;
+  background-color: #fff;
+  /* Hides tool tops in the edit canvas for now. */
+}
+.editorFrame .canvisEditor .controlsContainer {
+  min-height: 60px;
+}
+.editorFrame .canvisEditor .helpTooltip {
+  display: none;
+}
+.editorFrame .handle {
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: solid 1px transparent;
+  box-sizing: border-box;
+}
+.editorFrame .handle.selectedHandle {
+  background-color: #fffad3;
+  border: solid 1px #d1c874;
+}
+.editorFrame .invisibleControl {
+  opacity: 0.3;
+}
+.editorFrame .handle .btn-default:hover {
+  background-color: #fff;
+}
+.editorFrame .toolbar .handle {
+  background-color: #f5f5f5;
+  border: solid 1px #eee;
+}
+.editorFrame .toolbar .handle:hover {
+  background: #eee;
+}
+.editorFrame .toolbar .handle * {
+  cursor: move;
+}
+.editorFrame .toolbar .controlsContainer {
+  min-height: 60px;
+  border: dashed 1px #bbb;
+  margin: 5px auto;
+}
+.editorFrame .anPanel {
+  padding: 0;
+}
+.editorFrame .PropertiesPanel {
+  padding: 1em;
+}
+/* Refactor - TG 2/11/15 */
+.groupsPallet .panel {
+  margin: 1em;
+}
+/* Toolbar: Sidebar where the controls live */
+.editorFrame .toolbar ul.tabs {
+  width: 100%;
+  clear: both;
+}
+.editorFrame .toolbar .toolPanel,
+.editorFrame .toolbar .regionTools {
+  padding: 1em;
+}
+.editorFrame .toolbar .toolPanel .ctrlRow {
+  width: inherit;
+  margin-bottom: 5px;
+}
+.editorFrame .toolbar .k-widget .k-panelbar {
+  border: none;
+}
+.editorFrame .toolbar hr {
+  margin: 4px 0px 4px 0px;
+}
+#ToolsTabPanel {
+  max-width: 300px;
+}
+@media (min-width: 979px) {
+  #Toolbar.affix {
+    position: fixed;
+  }
+}
+#Toolbar {
+  margin-top: 39px;
+}
+/* Form Validation
+============================================================================ */
+.has-error .form-control {
+  background-color: #FFEFEE;
+}
+.statusPanels .row {
+  border-top: solid 1px #ddd;
+  padding: 20px 0 10px;
+}
+.statusPanels .row:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+.k-widget.k-tooltip-validation {
+  border: none;
+  border-radius: 0;
+  margin-left: 5px;
+  color: #d00;
+  padding: 5px;
+  font-size: 12px;
+  text-align: left;
+}
+.required-field .control-label:after {
+  content: "*";
+  position: relative;
+  padding-left: 2px;
+  font-weight: normal;
+  color: #FF3030;
+}
+.groupPanelHeading {
+  padding-bottom: 0.5em;
+  border-bottom: solid 1px #ccc;
+  margin-top: 0;
+}
+/* Panel customisations
+============================================================================ */
+.panel {
+  box-shadow: none;
+  background: transparent;
+}
+.canvasPage .box {
+  background-color: #eee;
+}
+.regionTools .box {
+  background-color: #ccc;
+  height: 130px;
+}
+.regionTools h2 {
+  margin-bottom: 0.5em;
+}
+.regionTools .panel {
+  margin-bottom: 0;
+}
+/* Template page
+============================================================================ */
+.formEdTemplatePage .formEdTemplateLink {
+  color: #333;
+  text-decoration: none;
+}
+.formEdTemplatePage .formEdTemplateLink:hover {
+  color: #3F97FF;
+  text-decoration: none;
+}
+.formEdTemplatePage .formEdTemplateLink img {
+  border-radius: 6px;
+  border: solid 1px #ccc;
+  padding: 5px;
+  background: #fff;
+  margin-bottom: 1em;
+}
+.formEdTemplatePage .formEdTemplateLink img:Hover {
+  border: solid 1px #3F97FF;
+}
+.formEdTemplatePage h2 {
+  margin: 0 0 0.35em;
+}
+/* Global Kendo overrides
+============================================================================ */
+/* Remove Kendo boxsizing for form controls */
+.form-group * {
+  box-sizing: border-box;
+}
+.k-tab-button {
+  background: #f6f6f6;
+  border: solid 1px #eee;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  padding: .5em .92em;
+  display: inline-block;
+  top: 8px;
+  position: relative;
+  margin: 0;
+  color: #666;
+  cursor: pointer;
+}
+.k-tab-button i {
+  color: #58b957;
+}
+.k-tab-button:hover {
+  background: #eee;
+}
+/* jControlHover added and removed by jscript  */
+.jControlHover {
+  background-color: #e3ffec;
+  border: solid 1px #e3ffec !important;
+  border-radius: 6px;
+  cursor: move;
+}
+.jControlHover * {
+  cursor: move;
+}
+.jhint {
+  opacity: 0.8;
+}
+.jplaceHolder {
+  opacity: 0.7;
+  border: 1px dashed #000000;
+}
+.selectedHandle .panel.jControlHover,
+.selectedHandle.jControlHover {
+  background-color: inherit;
+  border: solid 1px  #fffad3 !important;
+  border-radius: 6px;
+  cursor: move;
+}
+.selectedHandle.jControlHover {
+  border: solid 1px  #d1c874 !important;
+}
+/* Top menu
+============================================================================ */
+.FormNameGroup input[type='text'] {
+  background-color: transparent;
+  border: none;
+  font-size: 26px;
+  color: #222;
+  min-height: 50px;
+  border-right: solid 1px #ccc;
+  z-index: 1;
+}
+.FormNameGroup input[type='text']:after {
+  content: "&#xE254";
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+}
+.FormNameGroup input[type='text']:focus {
+  background-color: #FFFED3;
+  color: #222;
+  text-indent: 5px;
+}
+.FormNameGroup input[type='text']:active,
+.FormNameGroup input[type='text']:hover {
+  z-index: 99;
+}
+i.material-icons.FormNameIcon {
+  top: 4px;
+  left: -40px;
+  position: relative;
+  z-index: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+/* Global Helpers
+============================================================================ */
+.font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.groupDivider {
+  border-top: dotted 1px #ccc;
+  margin: 30px 0;
+}
+.k-tabstrip-items .k-loading {
+  border-top: 0;
+}
+.dropHandle {
+  display: block;
+  float: none;
+  width: auto;
+  height: auto;
+  /* border:  1px red solid;*/
+}
+span.progMessages {
+  display: inline-block;
+  float: left;
+  width: auto;
+  text-align: left;
+  line-height: 40px;
+}
+/* Properties
+============================================================================ */
+.properties-controlsID .properties-controlsID {
+  display: block;
+  float: none;
+  width: 100%;
+  height: 16px;
+  line-height: 16px;
+  font-size: 10px;
+  text-align: right;
+  color: grey;
+}
+/*# sourceMappingURL=editor-a1651ee0.css.map */

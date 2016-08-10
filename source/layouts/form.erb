@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    <%= partial "partials/headImports" %>
+</head>
+  
+    <body class="<%= page_classes %> appDashboardMain syn">
+
+    <header class="brandBg dashboardHeader">
+    <div class="row">
+        <div class="logo">
+            <img src="../../img/syn-logo.svg" class="pull-left img-responsive" alt="">
+        </div>
+        <div class="schoolName">
+            <h1><strong>Synergetic College</strong><br>Enquiry form</h1>
+        </div>
+    </div>
+    </header>
+
+    <%= yield %>
+
+
+    </body>
+
+
+</html>
+
